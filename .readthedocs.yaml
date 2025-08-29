@@ -14,8 +14,4 @@ formats:
 
 python:
   install:
-    - method: pip
-      packages:
-        - sphinx>=8.2
-        - breathe
-        - sphinx-rtd-theme
+    - requirements: docs/requirements.txt
