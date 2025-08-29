@@ -1,0 +1,162 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/include/nvs\+\_\+manager.h File Reference}
+\hypertarget{nvs__manager_8h}{}\label{nvs__manager_8h}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/nvs\_manager.h@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/nvs\_manager.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for nvs\+\_\+manager.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{nvs__manager_8h_afa7779fe56b160955b535cd6a8aaf8f4}{NAMESPACE}}~"{}memory"{}
+\item 
+\#define \mbox{\hyperlink{nvs__manager_8h_a1e101c783a22c7da1755d3150cbb793a}{KEY\+\_\+\+NVS\+\_\+\+INIT}}~"{}nvs\+\_\+init"{}
+\item 
+\#define \mbox{\hyperlink{nvs__manager_8h_af7f392a5d16adbd68edd97898cb9d268}{KEY\+\_\+\+OP\+\_\+\+MIN}}~"{}op\+\_\+minutes"{}
+\item 
+\#define \mbox{\hyperlink{nvs__manager_8h_a865b7bdd57f5ed2e21d6db5fb2e807c5}{KEY\+\_\+\+OP\+\_\+\+HOURS}}~"{}op\+\_\+hours"{}
+\item 
+\#define \mbox{\hyperlink{nvs__manager_8h_a1f7972830cca2ec9a7d9c9b08c3f4e01}{KEY\+\_\+\+BOOT\+\_\+\+COUNTER}}~"{}boot\+\_\+count"{}
+\item 
+\#define \mbox{\hyperlink{nvs__manager_8h_a46fcc98b6ef274ff52db0243d4c85b83}{KEY\+\_\+\+SYS\+\_\+\+LANGUAGE}}~"{}language"{}
+\item 
+\#define \mbox{\hyperlink{nvs__manager_8h_a67c7496c74bd4666922f2dba06477fa9}{KEY\+\_\+\+SYS\+\_\+\+COLOR}}~"{}color"{}
+\item 
+\#define \mbox{\hyperlink{nvs__manager_8h_a12e0ec2872971263a8238f0b699bc548}{KEY\+\_\+\+MAINTENANCE\+\_\+\+MIN}}~"{}mnt\+\_\+minutes"{}
+\item 
+\#define \mbox{\hyperlink{nvs__manager_8h_a4bda739bd43d6cbc49f5a4445bfab66b}{KEY\+\_\+\+MAINTENANCE\+\_\+\+HOURS}}~"{}mnt\+\_\+hours"{}
+\item 
+\#define \mbox{\hyperlink{nvs__manager_8h_aea21083fbc81f818313e73efcfb49a74}{KEY\+\_\+\+NUMBER\+\_\+\+OF\+\_\+\+MAINTENANCES}}~"{}mnt\+\_\+count"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{nvs__manager_8h_a77336aed281bafc61cdc6ecfc8572d15}{init\+\_\+nvs\+\_\+manager}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the NVS (Non-\/\+Volatile Storage). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{nvs__manager_8h_aaec9f002eed7b2794c9babcfa7d3f50b}{save\+\_\+int\+\_\+to\+\_\+nvs}} (const char \texorpdfstring{$\ast$}{*}key, int32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Loads an integer value from NVS using the specified key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{nvs__manager_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{nvs__manager_8h_a1f7972830cca2ec9a7d9c9b08c3f4e01}\index{nvs\_manager.h@{nvs\_manager.h}!KEY\_BOOT\_COUNTER@{KEY\_BOOT\_COUNTER}}
+\index{KEY\_BOOT\_COUNTER@{KEY\_BOOT\_COUNTER}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_BOOT\_COUNTER}{KEY\_BOOT\_COUNTER}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_a1f7972830cca2ec9a7d9c9b08c3f4e01} 
+\#define KEY\+\_\+\+BOOT\+\_\+\+COUNTER~"{}boot\+\_\+count"{}}
+
+\Hypertarget{nvs__manager_8h_a4bda739bd43d6cbc49f5a4445bfab66b}\index{nvs\_manager.h@{nvs\_manager.h}!KEY\_MAINTENANCE\_HOURS@{KEY\_MAINTENANCE\_HOURS}}
+\index{KEY\_MAINTENANCE\_HOURS@{KEY\_MAINTENANCE\_HOURS}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_MAINTENANCE\_HOURS}{KEY\_MAINTENANCE\_HOURS}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_a4bda739bd43d6cbc49f5a4445bfab66b} 
+\#define KEY\+\_\+\+MAINTENANCE\+\_\+\+HOURS~"{}mnt\+\_\+hours"{}}
+
+\Hypertarget{nvs__manager_8h_a12e0ec2872971263a8238f0b699bc548}\index{nvs\_manager.h@{nvs\_manager.h}!KEY\_MAINTENANCE\_MIN@{KEY\_MAINTENANCE\_MIN}}
+\index{KEY\_MAINTENANCE\_MIN@{KEY\_MAINTENANCE\_MIN}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_MAINTENANCE\_MIN}{KEY\_MAINTENANCE\_MIN}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_a12e0ec2872971263a8238f0b699bc548} 
+\#define KEY\+\_\+\+MAINTENANCE\+\_\+\+MIN~"{}mnt\+\_\+minutes"{}}
+
+\Hypertarget{nvs__manager_8h_aea21083fbc81f818313e73efcfb49a74}\index{nvs\_manager.h@{nvs\_manager.h}!KEY\_NUMBER\_OF\_MAINTENANCES@{KEY\_NUMBER\_OF\_MAINTENANCES}}
+\index{KEY\_NUMBER\_OF\_MAINTENANCES@{KEY\_NUMBER\_OF\_MAINTENANCES}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_NUMBER\_OF\_MAINTENANCES}{KEY\_NUMBER\_OF\_MAINTENANCES}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_aea21083fbc81f818313e73efcfb49a74} 
+\#define KEY\+\_\+\+NUMBER\+\_\+\+OF\+\_\+\+MAINTENANCES~"{}mnt\+\_\+count"{}}
+
+\Hypertarget{nvs__manager_8h_a1e101c783a22c7da1755d3150cbb793a}\index{nvs\_manager.h@{nvs\_manager.h}!KEY\_NVS\_INIT@{KEY\_NVS\_INIT}}
+\index{KEY\_NVS\_INIT@{KEY\_NVS\_INIT}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_NVS\_INIT}{KEY\_NVS\_INIT}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_a1e101c783a22c7da1755d3150cbb793a} 
+\#define KEY\+\_\+\+NVS\+\_\+\+INIT~"{}nvs\+\_\+init"{}}
+
+\Hypertarget{nvs__manager_8h_a865b7bdd57f5ed2e21d6db5fb2e807c5}\index{nvs\_manager.h@{nvs\_manager.h}!KEY\_OP\_HOURS@{KEY\_OP\_HOURS}}
+\index{KEY\_OP\_HOURS@{KEY\_OP\_HOURS}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_OP\_HOURS}{KEY\_OP\_HOURS}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_a865b7bdd57f5ed2e21d6db5fb2e807c5} 
+\#define KEY\+\_\+\+OP\+\_\+\+HOURS~"{}op\+\_\+hours"{}}
+
+\Hypertarget{nvs__manager_8h_af7f392a5d16adbd68edd97898cb9d268}\index{nvs\_manager.h@{nvs\_manager.h}!KEY\_OP\_MIN@{KEY\_OP\_MIN}}
+\index{KEY\_OP\_MIN@{KEY\_OP\_MIN}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_OP\_MIN}{KEY\_OP\_MIN}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_af7f392a5d16adbd68edd97898cb9d268} 
+\#define KEY\+\_\+\+OP\+\_\+\+MIN~"{}op\+\_\+minutes"{}}
+
+\Hypertarget{nvs__manager_8h_a67c7496c74bd4666922f2dba06477fa9}\index{nvs\_manager.h@{nvs\_manager.h}!KEY\_SYS\_COLOR@{KEY\_SYS\_COLOR}}
+\index{KEY\_SYS\_COLOR@{KEY\_SYS\_COLOR}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_SYS\_COLOR}{KEY\_SYS\_COLOR}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_a67c7496c74bd4666922f2dba06477fa9} 
+\#define KEY\+\_\+\+SYS\+\_\+\+COLOR~"{}color"{}}
+
+\Hypertarget{nvs__manager_8h_a46fcc98b6ef274ff52db0243d4c85b83}\index{nvs\_manager.h@{nvs\_manager.h}!KEY\_SYS\_LANGUAGE@{KEY\_SYS\_LANGUAGE}}
+\index{KEY\_SYS\_LANGUAGE@{KEY\_SYS\_LANGUAGE}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_SYS\_LANGUAGE}{KEY\_SYS\_LANGUAGE}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_a46fcc98b6ef274ff52db0243d4c85b83} 
+\#define KEY\+\_\+\+SYS\+\_\+\+LANGUAGE~"{}language"{}}
+
+\Hypertarget{nvs__manager_8h_afa7779fe56b160955b535cd6a8aaf8f4}\index{nvs\_manager.h@{nvs\_manager.h}!NAMESPACE@{NAMESPACE}}
+\index{NAMESPACE@{NAMESPACE}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{NAMESPACE}{NAMESPACE}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_afa7779fe56b160955b535cd6a8aaf8f4} 
+\#define NAMESPACE~"{}memory"{}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{nvs__manager_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{nvs__manager_8h_a77336aed281bafc61cdc6ecfc8572d15}\index{nvs\_manager.h@{nvs\_manager.h}!init\_nvs\_manager@{init\_nvs\_manager}}
+\index{init\_nvs\_manager@{init\_nvs\_manager}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{init\_nvs\_manager()}{init\_nvs\_manager()}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_a77336aed281bafc61cdc6ecfc8572d15} 
+void init\+\_\+nvs\+\_\+manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the NVS (Non-\/\+Volatile Storage). 
+
+This function initializes the NVS system, allowing for data storage and retrieval. \begin{DoxyNote}{Note}
+This function should be called before using any NVS functions. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 5, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{nvs__manager_8h_aaec9f002eed7b2794c9babcfa7d3f50b}\index{nvs\_manager.h@{nvs\_manager.h}!save\_int\_to\_nvs@{save\_int\_to\_nvs}}
+\index{save\_int\_to\_nvs@{save\_int\_to\_nvs}!nvs\_manager.h@{nvs\_manager.h}}
+\doxysubsubsection{\texorpdfstring{save\_int\_to\_nvs()}{save\_int\_to\_nvs()}}
+{\footnotesize\ttfamily \label{nvs__manager_8h_aaec9f002eed7b2794c9babcfa7d3f50b} 
+void save\+\_\+int\+\_\+to\+\_\+nvs (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{key}{, }\item[{int32\+\_\+t}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Loads an integer value from NVS using the specified key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key associated with the integer value in NVS. \\
+\hline
+{\em value} & int32\+\_\+t variable to store the loaded value.\\
+\hline
+\end{DoxyParams}
+This function does not return a value. Instead, it updates the global variable associated with the key. \begin{DoxyNote}{Note}
+Make sure that all keys used in this function are defined in the NVS namespace. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 16, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 3

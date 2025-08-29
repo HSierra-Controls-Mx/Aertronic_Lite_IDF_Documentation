@@ -1,0 +1,92 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/include/sensors.h File Reference}
+\hypertarget{sensors_8h}{}\label{sensors_8h}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/sensors.h@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/sensors.h}}
+{\ttfamily \#include "{}esp\+\_\+err.\+h"{}}\newline
+Include dependency graph for sensors.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{sensors_8h_a7a541577440ac4cb1da9b8ef7261cfec}{sensors\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the sensors. This function sets up the ADC channels for reading pressure and temperature sensors. It should be called before any sensor readings are performed. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{sensors_8h_a9456bf17ccbaf37989d9a869c891a294}{sensors\+\_\+read}} (\mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Read sensor data. This function reads the current values from the pressure and temperature sensors. It populates the provided \doxylink{structsensor__data__t}{sensor\+\_\+data\+\_\+t} structure with the latest readings. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{sensors_8h_a4a239a8cec68742c37e150a05c836ecc}{sensors\+\_\+get\+\_\+latest}} (\mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{sensors_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{sensors_8h_a4a239a8cec68742c37e150a05c836ecc}\index{sensors.h@{sensors.h}!sensors\_get\_latest@{sensors\_get\_latest}}
+\index{sensors\_get\_latest@{sensors\_get\_latest}!sensors.h@{sensors.h}}
+\doxysubsubsection{\texorpdfstring{sensors\_get\_latest()}{sensors\_get\_latest()}}
+{\footnotesize\ttfamily \label{sensors_8h_a4a239a8cec68742c37e150a05c836ecc} 
+esp\+\_\+err\+\_\+t sensors\+\_\+get\+\_\+latest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{sensors_8h_a7a541577440ac4cb1da9b8ef7261cfec}\index{sensors.h@{sensors.h}!sensors\_init@{sensors\_init}}
+\index{sensors\_init@{sensors\_init}!sensors.h@{sensors.h}}
+\doxysubsubsection{\texorpdfstring{sensors\_init()}{sensors\_init()}}
+{\footnotesize\ttfamily \label{sensors_8h_a7a541577440ac4cb1da9b8ef7261cfec} 
+esp\+\_\+err\+\_\+t sensors\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the sensors. This function sets up the ADC channels for reading pressure and temperature sensors. It should be called before any sensor readings are performed. 
+
+\begin{DoxyReturn}{Returns}
+ESP\+\_\+\+OK on success, or an error code on failure. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 10, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{sensors_8h_a9456bf17ccbaf37989d9a869c891a294}\index{sensors.h@{sensors.h}!sensors\_read@{sensors\_read}}
+\index{sensors\_read@{sensors\_read}!sensors.h@{sensors.h}}
+\doxysubsubsection{\texorpdfstring{sensors\_read()}{sensors\_read()}}
+{\footnotesize\ttfamily \label{sensors_8h_a9456bf17ccbaf37989d9a869c891a294} 
+esp\+\_\+err\+\_\+t sensors\+\_\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Read sensor data. This function reads the current values from the pressure and temperature sensors. It populates the provided \doxylink{structsensor__data__t}{sensor\+\_\+data\+\_\+t} structure with the latest readings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to a \doxylink{structsensor__data__t}{sensor\+\_\+data\+\_\+t} structure where the sensor readings will be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ESP\+\_\+\+OK on success, or an error code on failure. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 10, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyNote}{Note}
+The function assumes that \doxylink{sensors_8h_a7a541577440ac4cb1da9b8ef7261cfec}{sensors\+\_\+init()} has been called successfully before this function. It will read the ADC values, convert them to pressure and temperature, and store them in the provided structure. 
+\end{DoxyNote}
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5

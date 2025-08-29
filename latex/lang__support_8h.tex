@@ -1,0 +1,98 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/include/lang\+\_\+support.h File Reference}
+\hypertarget{lang__support_8h}{}\label{lang__support_8h}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/lang\_support.h@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/lang\_support.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{lang__support_8h_a326089ff74f824b77e9bf1274a74fa5f}{get\+\_\+day\+\_\+of\+\_\+week}} (int language, int day\+\_\+of\+\_\+week)
+\begin{DoxyCompactList}\small\item\em Gets the name of the day of the week in the specified language. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{lang__support_8h_a2682334f405ae6d109b45818d1e61abf}{get\+\_\+month\+\_\+name}} (int langauge, int month)
+\begin{DoxyCompactList}\small\item\em Gets the name of the month in the specified language. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{lang__support_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{lang__support_8h_a326089ff74f824b77e9bf1274a74fa5f}\index{lang\_support.h@{lang\_support.h}!get\_day\_of\_week@{get\_day\_of\_week}}
+\index{get\_day\_of\_week@{get\_day\_of\_week}!lang\_support.h@{lang\_support.h}}
+\doxysubsubsection{\texorpdfstring{get\_day\_of\_week()}{get\_day\_of\_week()}}
+{\footnotesize\ttfamily \label{lang__support_8h_a326089ff74f824b77e9bf1274a74fa5f} 
+const char \texorpdfstring{$\ast$}{*} get\+\_\+day\+\_\+of\+\_\+week (\begin{DoxyParamCaption}\item[{int}]{language}{, }\item[{int}]{day\+\_\+of\+\_\+week}{}\end{DoxyParamCaption})}
+
+
+
+Gets the name of the day of the week in the specified language. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lanaguage} & Integer representing the system langauge\+:
+\begin{DoxyItemize}
+\item 0\+: English
+\item 1\+: Spanish
+\item 2\+: Portuguese
+\item 3\+: French
+\item 4\+: German 
+\end{DoxyItemize}\\
+\hline
+{\em day\+\_\+of\+\_\+week} & Integer representing the day of the week (0 = Sunday, 6 = Saturday). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a string containing the name of the day of the week in the specified language. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned string is static and should not be modified or freed. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{lang__support_8h_a2682334f405ae6d109b45818d1e61abf}\index{lang\_support.h@{lang\_support.h}!get\_month\_name@{get\_month\_name}}
+\index{get\_month\_name@{get\_month\_name}!lang\_support.h@{lang\_support.h}}
+\doxysubsubsection{\texorpdfstring{get\_month\_name()}{get\_month\_name()}}
+{\footnotesize\ttfamily \label{lang__support_8h_a2682334f405ae6d109b45818d1e61abf} 
+const char \texorpdfstring{$\ast$}{*} get\+\_\+month\+\_\+name (\begin{DoxyParamCaption}\item[{int}]{langauge}{, }\item[{int}]{month}{}\end{DoxyParamCaption})}
+
+
+
+Gets the name of the month in the specified language. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em language} & Integer representing the system language\+:
+\begin{DoxyItemize}
+\item 0\+: English
+\item 1\+: Spanish
+\item 2\+: Portuguese
+\item 3\+: French
+\item 4\+: German 
+\end{DoxyItemize}\\
+\hline
+{\em month} & Integer representing the month (1 = January, 12 = December). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a string containing the name of the month in the specified language. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned string is static and should not be modified or freed. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 2

@@ -1,0 +1,13 @@
+digraph "print_operation_time"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="print_operation_time",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Prints the current operation time to the console."];
+  Node1 -> Node2 [id="edge3_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="send_text_to_display",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$serial__send_8c.html#aa46fe2f4b02e9852f9f7a06c4ebd08a3",tooltip="Sends a command to update a text attribute of an object on the Nextion display."];
+  Node2 -> Node3 [id="edge4_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="uart_send_command",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$serial__send_8c.html#a396d4a4f67f557de2870d2c47d9a7103",tooltip="Sends the termination command to the Nextion display."];
+}

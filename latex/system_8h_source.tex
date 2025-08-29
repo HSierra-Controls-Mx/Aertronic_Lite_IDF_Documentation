@@ -1,0 +1,53 @@
+\doxysection{system.\+h}
+\hypertarget{system_8h_source}{}\label{system_8h_source}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/system.h@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/system.h}}
+\mbox{\hyperlink{system_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SYSTEM\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SYSTEM\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sensors_8h}{sensors.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ethernet_8h}{ethernet.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ Global\ variables\ to\ stored\ in\ NVS}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{extern}\ int32\_t\ \mbox{\hyperlink{system_8h_a8a41b8d5ae95b81f5b1ff677783a40dc}{system\_state}};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{extern}\ int32\_t\ \mbox{\hyperlink{system_8h_a2ef5919214974cb155ce0f62aec2c46f}{operation\_minutes}};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{extern}\ int32\_t\ \mbox{\hyperlink{system_8h_afefba2969f86ee117cf53a6709050a21}{operation\_hours}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{extern}\ int32\_t\ \mbox{\hyperlink{system_8h_aae68550ad38d9fd2a74d96a4f6efdc54}{boot\_count}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{extern}\ int32\_t\ \mbox{\hyperlink{system_8h_a10a3fa33bae024190264a8321128a41d}{system\_language}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{extern}\ int32\_t\ \mbox{\hyperlink{system_8h_a30436bd24c155c7ff8b58f89cc4907d9}{system\_color}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{extern}\ int32\_t\ \mbox{\hyperlink{system_8h_a792282433d9feffdd90742acc4b7cf84}{maintenance\_minutes}};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{extern}\ int32\_t\ \mbox{\hyperlink{system_8h_a7935be2326bd362ec59592d133232a12}{maintenance\_hours}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{extern}\ int32\_t\ \mbox{\hyperlink{system_8h_aa828b108037b528aa15a5dc2bbf20195}{number\_of\_maintenances}};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{system_8h_a059052b01f9d0d07827ac4a6829daff9}{acknowledged}};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{system_8h_aa6e9c9788e43b630369a07406e64b47e}{warning\_or\_alarm\_occurred}};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{system_8h_a0aa958ac5a7c712b3ea2f61fd27268be}{warning\_or\_alarm\_active}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{system_8h_a9b9864a018686c986b17d57495766f24}{attributes}}[4];\ \textcolor{comment}{//\ Array\ to\ store\ status\ attributes\ for\ the\ header}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00072\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{system_8h_a43f5e0d6db0fb41a437cc9096b32e9b5}{system\_init}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00084\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{system_8h_a3f45cb82b07f9844b825d73f091413a7}{operation\_time}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00098\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{system_8h_add779b9d830853ab883651b998ad43d8}{store\_system\_event}}(\textcolor{keywordtype}{int}\ type,\ \textcolor{keywordtype}{int}\ sensor\_index);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00115\ int32\_t\ \mbox{\hyperlink{system_8h_a012f23b509b22ea369b2f708e3d15330}{update\_system\_status}}(\mbox{\hyperlink{structsensor__data__t}{sensor\_data\_t}}\ *data);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00127\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{system_8h_a97ec9415a474734bbfe4819763f72c3f}{update\_header}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SYSTEM\_H}}
+
+\end{DoxyCode}

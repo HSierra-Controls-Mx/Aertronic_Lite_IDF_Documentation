@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="setup_8h" kind="file" language="C++">
+    <compoundname>setup.h</compoundname>
+    <includedby refid="main_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</includedby>
+    <includedby refid="serial__receive_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</includedby>
+    <includedby refid="serial__send_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_send.c</includedby>
+    <includedby refid="setup_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c</includedby>
+    <includedby refid="system_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h</label>
+        <link refid="setup_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</label>
+        <link refid="serial__receive_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_send.c</label>
+        <link refid="serial__send_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c</label>
+        <link refid="setup_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</label>
+        <link refid="system_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" prot="public" static="no">
+        <name>UART_PORT_NUM</name>
+        <initializer>UART_NUM_0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" line="5" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" bodystart="5" bodyend="-1"/>
+        <referencedby refid="setup_8h_1abf1f7169537cbd8629caa4345fe28394" compoundref="setup_8c" startline="46" endline="76">display_ready</referencedby>
+        <referencedby refid="setup_8h_1a7c8ab9435f095e55019fe880192c3537" compoundref="setup_8c" startline="16" endline="34">init_uart</referencedby>
+        <referencedby refid="serial__receive_8h_1ac59bf1ef42c41a76073468fec8e82d74" compoundref="serial__receive_8c" startline="20" endline="56">serial_read</referencedby>
+        <referencedby refid="serial__send_8h_1a396d4a4f67f557de2870d2c47d9a7103" compoundref="serial__send_8c" startline="16" endline="26">uart_send_command</referencedby>
+        <referencedby refid="setup_8h_1a409b2f4c4106092dafb1db940c5f85d4" compoundref="setup_8c" startline="78" endline="119">wait_for_datetime</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a615aed21aa6825462b7c17b0c238ffe2" prot="public" static="no">
+        <name>UART_BAUD_RATE</name>
+        <initializer>115200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" line="6" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" bodystart="6" bodyend="-1"/>
+        <referencedby refid="setup_8h_1a7c8ab9435f095e55019fe880192c3537" compoundref="setup_8c" startline="16" endline="34">init_uart</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a6c82a6844388a551e8f06d249598989e" prot="public" static="no">
+        <name>UART_TX_PIN</name>
+        <initializer>UART_PIN_NO_CHANGE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" line="7" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1aa37eca6fe61f6938d925975dff27c8fd" prot="public" static="no">
+        <name>UART_RX_PIN</name>
+        <initializer>UART_PIN_NO_CHANGE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" line="8" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="setup_8h_1a3c64efae8dadfdf4bad585cad0f02ccf" prot="public" static="no">
+        <name>END_COMMAND</name>
+        <initializer>&quot;\xFF\xFF\xFF&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" line="10" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="serial__send_8h_1a396d4a4f67f557de2870d2c47d9a7103" compoundref="serial__send_8c" startline="16" endline="26">uart_send_command</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="setup_8h_1a7c8ab9435f095e55019fe880192c3537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_uart</definition>
+        <argsstring>()</argsstring>
+        <name>init_uart</name>
+        <briefdescription>
+<para>Initializes the serial communication. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets up the UART(Universal Asynchronous Receiver-Transmitter). <simplesect kind="note"><para>This function should be called before using any serial communication functions. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>May 5, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" line="22" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" bodystart="16" bodyend="34" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" declline="22" declcolumn="6"/>
+        <references refid="setup_8h_1a615aed21aa6825462b7c17b0c238ffe2" compoundref="setup_8h" startline="6">UART_BAUD_RATE</references>
+        <references refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" compoundref="setup_8h" startline="5">UART_PORT_NUM</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="setup_8h_1aa2c353c6e3271404cdf45ce4601951c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_nvs</definition>
+        <argsstring>()</argsstring>
+        <name>init_nvs</name>
+        <briefdescription>
+<para>Initializes the NVS (Non-Volatile Storage). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function initializes the NVS system, allowing for data storage and retrieval. This function does not return any value. <simplesect kind="note"><para>This function should be called before attempting to read or write any data to NVS. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>May 6, 2025 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" line="32" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" bodystart="36" bodyend="44" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" declline="32" declcolumn="6"/>
+        <references refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="setup_8h_1abf1f7169537cbd8629caa4345fe28394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_ready</definition>
+        <argsstring>(void)</argsstring>
+        <name>display_ready</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Waits for the Nextion display to send the command indicating that it is ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function blocks until the display sends the command: 0x88, 0xFF, 0xFF, 0xFF <simplesect kind="note"><para>This function should be called right after the initialization of the UART and NVS. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada. </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025. </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" line="42" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" bodystart="46" bodyend="76" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" declline="42" declcolumn="6"/>
+        <references refid="system_8h_1a30436bd24c155c7ff8b58f89cc4907d9" compoundref="system_8c" startline="19">system_color</references>
+        <references refid="system_8h_1a10a3fa33bae024190264a8321128a41d" compoundref="system_8c" startline="18">system_language</references>
+        <references refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" compoundref="setup_8h" startline="5">UART_PORT_NUM</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="setup_8h_1a409b2f4c4106092dafb1db940c5f85d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wait_for_datetime</definition>
+        <argsstring>(void)</argsstring>
+        <name>wait_for_datetime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Blocks until a valid date/time string is received via UART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The expected string format is p00,MM,HH,DD,MM,YYYY followed by three 0xFF bytes. <simplesect kind="warning"><para>Ensure that the Nextion display is properly configured to send the date and time in the expected format. </para>
+</simplesect>
+<simplesect kind="note"><para>This function should be called before starting any FreeRTOS tasks. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 5, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" line="53" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" bodystart="78" bodyend="119" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h" declline="53" declcolumn="6"/>
+        <references refid="time__manager_8h_1a94c1c4594f51852e46a30e2f025ebc16" compoundref="time__manager_8c" startline="14" endline="29">set_system_time</references>
+        <references refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" compoundref="setup_8h" startline="5">UART_PORT_NUM</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>header<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>AERtronic<sp/>Lite<sp/>project.<sp/>It<sp/>contains<sp/>function<sp/>declarations<sp/>for<sp/>the<sp/>setup<sp/>and<sp/>initialization<sp/>of<sp/>the<sp/>system.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SETUP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SETUP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_PORT_NUM<sp/><sp/><sp/><sp/><sp/><sp/>UART_NUM_0<sp/></highlight><highlight class="comment">//<sp/>Defines<sp/>UART_PORT_NUM<sp/>as<sp/>UART_NUM_0<sp/>(a<sp/>constant<sp/>from<sp/>ESP-IDF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="setup_8h_1a615aed21aa6825462b7c17b0c238ffe2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUD_RATE<sp/><sp/><sp/><sp/><sp/>115200<sp/></highlight><highlight class="comment">//<sp/>Defines<sp/>UART_BAUD_RATE<sp/>as<sp/>115200<sp/>(an<sp/>integer<sp/>constant)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="setup_8h_1a6c82a6844388a551e8f06d249598989e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_TX_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UART_PIN_NO_CHANGE<sp/></highlight><highlight class="comment">//<sp/>Uses<sp/>a<sp/>special<sp/>macro<sp/>from<sp/>ESP-IDF<sp/>meaning<sp/>&quot;don&apos;t<sp/>change<sp/>default<sp/>pin&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="setup_8h_1aa37eca6fe61f6938d925975dff27c8fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_RX_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UART_PIN_NO_CHANGE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="setup_8h_1a3c64efae8dadfdf4bad585cad0f02ccf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>END_COMMAND<sp/>&quot;\xFF\xFF\xFF&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>declarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="setup_8h_1a7c8ab9435f095e55019fe880192c3537" kindref="member">init_uart</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="setup_8h_1aa2c353c6e3271404cdf45ce4601951c7" kindref="member">init_nvs</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="setup_8h_1abf1f7169537cbd8629caa4345fe28394" kindref="member">display_ready</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="setup_8h_1a409b2f4c4106092dafb1db940c5f85d4" kindref="member">wait_for_datetime</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SETUP_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/setup.h"/>
+  </compounddef>
+</doxygen>

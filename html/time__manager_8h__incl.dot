@@ -1,0 +1,10 @@
+digraph "C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="C:/Users/Hammurabi.Sierra\l/Documents/GIT/AERtronic\l_Lite_2.0/ESP-IDF/Aertronic\l_Lite/include/time_manager.h",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="stdint.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+}

@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="lang__support_8h" kind="file" language="C++">
+    <compoundname>lang_support.h</compoundname>
+    <includedby refid="lang__support_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/lang_support.c</includedby>
+    <includedby refid="time__manager_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/lang_support.h</label>
+        <link refid="lang__support_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/lang_support.c</label>
+        <link refid="lang__support_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c</label>
+        <link refid="time__manager_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="lang__support_8h_1a326089ff74f824b77e9bf1274a74fa5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * get_day_of_week</definition>
+        <argsstring>(int language, int day_of_week)</argsstring>
+        <name>get_day_of_week</name>
+        <param>
+          <type>int</type>
+          <declname>language</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>day_of_week</declname>
+        </param>
+        <briefdescription>
+<para>Gets the name of the day of the week in the specified language. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lanaguage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the system langauge:<itemizedlist>
+<listitem><para>0: English</para>
+</listitem><listitem><para>1: Spanish</para>
+</listitem><listitem><para>2: Portuguese</para>
+</listitem><listitem><para>3: French</para>
+</listitem><listitem><para>4: German </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>day_of_week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the day of the week (0 = Sunday, 6 = Saturday). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to a string containing the name of the day of the week in the specified language. </para>
+</simplesect>
+<simplesect kind="note"><para>The returned string is static and should not be modified or freed. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/lang_support.h" line="19" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/lang_support.c" bodystart="5" bodyend="15" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/lang_support.h" declline="19" declcolumn="12"/>
+        <referencedby refid="time__manager_8h_1a7adef7574674ceb8389ad51f9865a608" compoundref="time__manager_8c" startline="48" endline="80">format_current_date</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="lang__support_8h_1a2682334f405ae6d109b45818d1e61abf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * get_month_name</definition>
+        <argsstring>(int langauge, int month)</argsstring>
+        <name>get_month_name</name>
+        <param>
+          <type>int</type>
+          <declname>langauge</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+<para>Gets the name of the month in the specified language. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the system language:<itemizedlist>
+<listitem><para>0: English</para>
+</listitem><listitem><para>1: Spanish</para>
+</listitem><listitem><para>2: Portuguese</para>
+</listitem><listitem><para>3: French</para>
+</listitem><listitem><para>4: German </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>month</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the month (1 = January, 12 = December). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to a string containing the name of the month in the specified language. </para>
+</simplesect>
+<simplesect kind="note"><para>The returned string is static and should not be modified or freed. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/lang_support.h" line="36" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/lang_support.c" bodystart="17" bodyend="27" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/lang_support.h" declline="36" declcolumn="12"/>
+        <referencedby refid="time__manager_8h_1a7adef7574674ceb8389ad51f9865a608" compoundref="time__manager_8c" startline="48" endline="80">format_current_date</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LANG_SUPPORT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LANG_SUPPORT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="lang__support_8h_1a326089ff74f824b77e9bf1274a74fa5f" kindref="member">get_day_of_week</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>language,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>day_of_week);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="lang__support_8h_1a2682334f405ae6d109b45818d1e61abf" kindref="member">get_month_name</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>langauge,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>month);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LANG_SUPPPORT_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/lang_support.h"/>
+  </compounddef>
+</doxygen>

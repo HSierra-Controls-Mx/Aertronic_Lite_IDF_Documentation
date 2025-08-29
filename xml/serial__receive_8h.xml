@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="serial__receive_8h" kind="file" language="C++">
+    <compoundname>serial_receive.h</compoundname>
+    <includedby refid="main_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</includedby>
+    <includedby refid="serial__receive_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</includedby>
+    <includedby refid="tasks_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/serial_receive.h</label>
+        <link refid="serial__receive_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</label>
+        <link refid="serial__receive_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</label>
+        <link refid="tasks_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="serial__receive_8h_1ac59bf1ef42c41a76073468fec8e82d74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void serial_read</definition>
+        <argsstring>(void)</argsstring>
+        <name>serial_read</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to read data coming from the serial port. This function is design to handle the data from the display and process it accordingly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The command received has the following format: code + data1 + data2.<itemizedlist>
+<listitem><para>The code is a single byte that identifies the command.</para>
+</listitem><listitem><para>The data1 is a single byte that contains the value associated with the command.</para>
+</listitem><listitem><para>The data2 is a single byte that contains additional information related to the command. Defaults to 0x00 if not used.</para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+This function does not return any value. <simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/serial_receive.h" line="16" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c" bodystart="20" bodyend="56" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/serial_receive.h" declline="16" declcolumn="6"/>
+        <references refid="serial__receive_8c_1a1683cf20cb6e91b381579ff93b309714" compoundref="serial__receive_8c" startline="14">DEFAULT_VALUE</references>
+        <references refid="serial__receive_8c_1afd92cf4977fa778fd1e64a31d4451988" compoundref="serial__receive_8c" startline="13">END_SEQUENCE_LEN</references>
+        <references refid="serial__receive_8c_1a09a926c2654b02052b2286a68b5ac51a" compoundref="serial__receive_8c" startline="58" endline="674">received_data</references>
+        <references refid="serial__receive_8c_1ab0249d81dd53336b7810ebcf29511210" compoundref="serial__receive_8c" startline="12">UART_BUF_SIZE</references>
+        <references refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" compoundref="setup_8h" startline="5">UART_PORT_NUM</references>
+        <references refid="serial__receive_8c_1a6bfddf84ea47d906536cc8ffcc9dd5cc" compoundref="serial__receive_8c" startline="15">UART_TIMEOUT_MS</references>
+        <referencedby refid="tasks_8h_1aad854cfa5843c0cce14548556d98ddad" compoundref="tasks_8c" startline="13" endline="18">serial_read_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void received_data</definition>
+        <argsstring>(uint8_t code, uint8_t data1, uint8_t data2)</argsstring>
+        <name>received_data</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data1</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data2</declname>
+        </param>
+        <briefdescription>
+<para>Function that handles the data received from the Nextion display over the serial port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The code that was received from the Nextion display, depends on the command sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data received from the Nextion display, depends on the page number received </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data received from the Nextion display, depends on the page number received. Defaults to 0x00 if not used.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This function does not return a value. <simplesect kind="note"><para>This function is used to handle the data received from the Nextion display and execute the corresponding features or commands based on the received data. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>March 5, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/serial_receive.h" line="29" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c" bodystart="58" bodyend="674" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/serial_receive.h" declline="29" declcolumn="6"/>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58aaef4dc1e4f450a4c9e61a3699d75af0a" compoundref="pages_8h" startline="17">ABOUT</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a09d06a1d7569f0d7df95702b87278489" compoundref="pages_8h" startline="12">CONFIG_MENU</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58af722a5faa36087c914da53ebe4711f08" compoundref="pages_8h" startline="13">CONTROL</references>
+        <references refid="pages_8h_1ad3dbd5a2ff3dafed0fcdb227d018e091" compoundref="serial__receive_8c" startline="17">current_page</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a495f3a2e1ce970ceba725978599c5b8a" compoundref="pages_8h" startline="7">EQUIPMENT_INFO</references>
+        <references refid="nvs__manager_8h_1a67c7496c74bd4666922f2dba06477fa9" compoundref="nvs__manager_8h" startline="15">KEY_SYS_COLOR</references>
+        <references refid="nvs__manager_8h_1a46fcc98b6ef274ff52db0243d4c85b83" compoundref="nvs__manager_8h" startline="14">KEY_SYS_LANGUAGE</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ab0814cb9deac69bea037955cecf9b2c4" compoundref="pages_8h" startline="11">LANGUAGE</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ae50ef0288ee11ef27d19d69fc8e2a121" compoundref="pages_8h" startline="9">LOG_IN</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58adf02ded475565758943c5d421224efec" compoundref="pages_8h" startline="15">MACHINE</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a41c6eb506ccf657cc7e958c8e8c769cd" compoundref="pages_8h" startline="5">MAIN</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ac22743f1fc74de09544ecc9bab74a17b" compoundref="pages_8h" startline="6">MAIN_MENU</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a6e79df44a2025f7b4a2822e608389c58" compoundref="pages_8h" startline="10">MAINTENANCE</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ad8b12610bd58f48af24ed720cb166805" compoundref="pages_8h" startline="8">MODULE_INFO</references>
+        <references refid="system_8h_1afefba2969f86ee117cf53a6709050a21" compoundref="system_8c" startline="16">operation_hours</references>
+        <references refid="system_8h_1a2ef5919214974cb155ce0f62aec2c46f" compoundref="system_8c" startline="15">operation_minutes</references>
+        <references refid="time__manager_8h_1ac1f62fd134f587b2f14e3fe565f84e11" compoundref="time__manager_8c" startline="82" endline="92">print_operation_time</references>
+        <references refid="nvs__manager_8h_1aaec9f002eed7b2794c9babcfa7d3f50b" compoundref="nvs__manager_8c" startline="84" endline="96">save_int_to_nvs</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a5f6d448017ecd0a56245e38b76596e07" compoundref="pages_8h" startline="14">SERVICE</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a57cc238145ec1361c72c327674c0d754" compoundref="pages_8h" startline="16">SYSTEM</references>
+        <references refid="system_8h_1a30436bd24c155c7ff8b58f89cc4907d9" compoundref="system_8c" startline="19">system_color</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a4d99d5a96cbadbc56944a179561deb74" compoundref="pages_8h" startline="18">SYSTEM_EVENTS</references>
+        <references refid="system_8h_1a10a3fa33bae024190264a8321128a41d" compoundref="system_8c" startline="18">system_language</references>
+        <referencedby refid="serial__receive_8h_1ac59bf1ef42c41a76073468fec8e82d74" compoundref="serial__receive_8c" startline="20" endline="56">serial_read</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERIAL_RECEIVE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_RECEIVE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="serial__receive_8h_1ac59bf1ef42c41a76073468fec8e82d74" kindref="member">serial_read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" kindref="member">received_data</ref>(uint8_t<sp/>code,<sp/>uint8_t<sp/>data1,<sp/>uint8_t<sp/>data2);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SERIAL_RECEIVE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/serial_receive.h"/>
+  </compounddef>
+</doxygen>

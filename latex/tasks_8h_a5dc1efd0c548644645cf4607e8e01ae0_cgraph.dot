@@ -1,0 +1,17 @@
+digraph "ethernet_monitor_task"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ethernet_monitor_task",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Wrapper function for the ethernet monitoring task."];
+  Node1 -> Node2 [id="edge5_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ethernet_get_ip",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ethernet_8c.html#afcdc1ac7a161416f9aa70c6802794598",tooltip="Get the IP address assigned to the Ethernet interface."];
+  Node1 -> Node3 [id="edge6_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ethernet_is_connected",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ethernet_8c.html#a413b14a7107939f76a186c5d459a4a84",tooltip="Check if Ethernet is connected."];
+  Node1 -> Node4 [id="edge7_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="send_global_object",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$serial__send_8c.html#a5054d67ac4b50fb8e90972bd55049e3f",tooltip="Sends a command to update a global object attribute on the Nextion display."];
+  Node4 -> Node5 [id="edge8_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="uart_send_command",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$serial__send_8c.html#a396d4a4f67f557de2870d2c47d9a7103",tooltip="Sends the termination command to the Nextion display."];
+}

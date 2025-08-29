@@ -1,0 +1,593 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="ethernet_8h" kind="file" language="C++">
+    <compoundname>ethernet.h</compoundname>
+    <includes local="yes">esp_eth.h</includes>
+    <includes local="yes">esp_netif.h</includes>
+    <includes local="yes">esp_event.h</includes>
+    <includedby refid="system_8h" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h</includedby>
+    <includedby refid="ethernet_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/ethernet.c</includedby>
+    <includedby refid="tasks_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h</label>
+        <link refid="ethernet_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>esp_eth.h</label>
+      </node>
+      <node id="4">
+        <label>esp_event.h</label>
+      </node>
+      <node id="3">
+        <label>esp_netif.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h</label>
+        <link refid="ethernet_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h</label>
+        <link refid="system_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/ethernet.c</label>
+        <link refid="ethernet_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/nvs_manager.c</label>
+        <link refid="nvs__manager_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/sensors.c</label>
+        <link refid="sensors_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</label>
+        <link refid="serial__receive_8c"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c</label>
+        <link refid="setup_8c"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</label>
+        <link refid="system_8c"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</label>
+        <link refid="tasks_8c"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c</label>
+        <link refid="time__manager_8c"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/utils.c</label>
+        <link refid="utils_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="ethernet_8h_1aa0aec6e526d34bcfe24f3358063215b9" prot="public" static="no">
+        <name>W5500_SPI_HOST</name>
+        <initializer>SPI2_HOST</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="17" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" compoundref="ethernet_8c" startline="63" endline="125">ethernet_init</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="ethernet_8h_1aa8798174188a78b90d0004bfbbdaf604" prot="public" static="no">
+        <name>W5500_SCLK_GPIO</name>
+        <initializer>18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="18" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" compoundref="ethernet_8c" startline="63" endline="125">ethernet_init</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="ethernet_8h_1aaf35269321cce9cde911ab13c5bf2f1a" prot="public" static="no">
+        <name>W5500_MOSI_GPIO</name>
+        <initializer>23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="19" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" compoundref="ethernet_8c" startline="63" endline="125">ethernet_init</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="ethernet_8h_1a495ea13f4aa3459d0c1dfb4d3083252b" prot="public" static="no">
+        <name>W5500_MISO_GPIO</name>
+        <initializer>19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="20" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" compoundref="ethernet_8c" startline="63" endline="125">ethernet_init</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="ethernet_8h_1aaca87d2e40f5e4f13e4d250f196a5fac" prot="public" static="no">
+        <name>W5500_CS_GPIO</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="21" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" compoundref="ethernet_8c" startline="63" endline="125">ethernet_init</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="ethernet_8h_1a0f0b99520b78fa99419437f9ecfeab34" prot="public" static="no">
+        <name>W5500_INT_GPIO</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="22" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ethernet_8h_1ac49ec3042b48b883e7900d9a234f207e" prot="public" static="no">
+        <name>W5500_RST_GPIO</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="23" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" compoundref="ethernet_8c" startline="63" endline="125">ethernet_init</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="ethernet_8h_1a5a1678cf71b992d4d8ebb10a25d323cd" prot="public" static="no">
+        <name>ETHERNET_TIMEOUT_MS</name>
+        <initializer>5000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="26" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ethernet_8h_1ab9283eb38c098765c10d2029af6f1f7b" prot="public" static="no">
+        <name>STATIC_IP_ADDR</name>
+        <initializer>&quot;192.168.1.100&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="29" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="ethernet_8h_1a864a2ddf998b216a85c97c640b841501" compoundref="ethernet_8c" startline="171" endline="203">ethernet_set_static_ip</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="ethernet_8h_1ae8d8c06f0e4668e677b3625c937744c5" prot="public" static="no">
+        <name>STATIC_GATEWAY_ADDR</name>
+        <initializer>&quot;192.168.1.1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="30" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="ethernet_8h_1a864a2ddf998b216a85c97c640b841501" compoundref="ethernet_8c" startline="171" endline="203">ethernet_set_static_ip</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="ethernet_8h_1a4db47e739ac129a07a381b875807af0c" prot="public" static="no">
+        <name>STATIC_NETMASK_ADDR</name>
+        <initializer>&quot;255.255.255.0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="31" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="ethernet_8h_1a864a2ddf998b216a85c97c640b841501" compoundref="ethernet_8c" startline="171" endline="203">ethernet_set_static_ip</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="ethernet_8h_1a437d5adf3828750386f66bc45b3e7e9c" prot="public" static="no">
+        <name>USE_STATIC_IP</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="34" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t ethernet_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>ethernet_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize the W5500 Ethernet module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets up SPI communication and initializes the W5500 chip <simplesect kind="return"><para>esp_err_t ESP_OK on success, error code otherwise </para>
+</simplesect>
+<simplesect kind="note"><para>This function must be called before starting the Ethernet connection </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>July 2, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="47" column="11" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/ethernet.c" bodystart="63" bodyend="125" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" declline="47" declcolumn="11"/>
+        <references refid="ethernet_8c_1a2de8665296107d26a2a527034e0bf2f9" compoundref="ethernet_8c" startline="19">eth_handle</references>
+        <references refid="ethernet_8c_1a9ea2954ad22025318d0d8e31236cc8b3" compoundref="ethernet_8c" startline="18">eth_netif</references>
+        <references refid="ethernet_8h_1a2ae9912b161cb0e12abb084e5d2756c2" compoundref="ethernet_8c" startline="22" endline="46">ethernet_event_handler</references>
+        <references refid="ethernet_8c_1a00e93e9c4cda2c8a6aac16b5bc195a09" compoundref="ethernet_8c" startline="48" endline="61">got_ip_event_handler</references>
+        <references refid="nvs__manager_8c_1afc3d101f633a076cc1ca84b85b6224b2" compoundref="nvs__manager_8c" startline="8">TAG</references>
+        <references refid="ethernet_8h_1aaca87d2e40f5e4f13e4d250f196a5fac" compoundref="ethernet_8h" startline="21">W5500_CS_GPIO</references>
+        <references refid="ethernet_8h_1a495ea13f4aa3459d0c1dfb4d3083252b" compoundref="ethernet_8h" startline="20">W5500_MISO_GPIO</references>
+        <references refid="ethernet_8h_1aaf35269321cce9cde911ab13c5bf2f1a" compoundref="ethernet_8h" startline="19">W5500_MOSI_GPIO</references>
+        <references refid="ethernet_8h_1ac49ec3042b48b883e7900d9a234f207e" compoundref="ethernet_8h" startline="23">W5500_RST_GPIO</references>
+        <references refid="ethernet_8h_1aa8798174188a78b90d0004bfbbdaf604" compoundref="ethernet_8h" startline="18">W5500_SCLK_GPIO</references>
+        <references refid="ethernet_8h_1aa0aec6e526d34bcfe24f3358063215b9" compoundref="ethernet_8h" startline="17">W5500_SPI_HOST</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="ethernet_8h_1a864a2ddf998b216a85c97c640b841501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t ethernet_set_static_ip</definition>
+        <argsstring>(void)</argsstring>
+        <name>ethernet_set_static_ip</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Configure static IP settings for the Ethernet interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets up static IP configuration instead of DHCP <simplesect kind="return"><para>esp_err_t ESP_OK on success, error code otherwise </para>
+</simplesect>
+<simplesect kind="note"><para>This function should be called after <ref refid="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" kindref="member">ethernet_init()</ref> but before <ref refid="ethernet_8h_1a4f763d2ae63ab35e404488c1add5c852" kindref="member">ethernet_start()</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>July 2, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="58" column="11" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/ethernet.c" bodystart="171" bodyend="203" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" declline="58" declcolumn="11"/>
+        <references refid="ethernet_8c_1a9ea2954ad22025318d0d8e31236cc8b3" compoundref="ethernet_8c" startline="18">eth_netif</references>
+        <references refid="ethernet_8h_1ae8d8c06f0e4668e677b3625c937744c5" compoundref="ethernet_8h" startline="30">STATIC_GATEWAY_ADDR</references>
+        <references refid="ethernet_8h_1ab9283eb38c098765c10d2029af6f1f7b" compoundref="ethernet_8h" startline="29">STATIC_IP_ADDR</references>
+        <references refid="ethernet_8h_1a4db47e739ac129a07a381b875807af0c" compoundref="ethernet_8h" startline="31">STATIC_NETMASK_ADDR</references>
+        <references refid="nvs__manager_8c_1afc3d101f633a076cc1ca84b85b6224b2" compoundref="nvs__manager_8c" startline="8">TAG</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="ethernet_8h_1a4f763d2ae63ab35e404488c1add5c852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t ethernet_start</definition>
+        <argsstring>(void)</argsstring>
+        <name>ethernet_start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Start the Ethernet connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts the Ethernet interface and begins network connectivity <simplesect kind="return"><para>esp_err_t ESP_OK on success, error code otherwise </para>
+</simplesect>
+<simplesect kind="note"><para>This function should be called after <ref refid="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" kindref="member">ethernet_init()</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>July 2, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="69" column="11" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/ethernet.c" bodystart="127" bodyend="136" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" declline="69" declcolumn="11"/>
+        <references refid="ethernet_8c_1a2de8665296107d26a2a527034e0bf2f9" compoundref="ethernet_8c" startline="19">eth_handle</references>
+        <references refid="nvs__manager_8c_1afc3d101f633a076cc1ca84b85b6224b2" compoundref="nvs__manager_8c" startline="8">TAG</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="ethernet_8h_1a4039eaf3762551e4c7b70c07a8abe1a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t ethernet_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>ethernet_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Stop the Ethernet connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stops the Ethernet interface <simplesect kind="return"><para>esp_err_t ESP_OK on success, error code otherwise </para>
+</simplesect>
+<simplesect kind="note"><para>This function should be called to cleanly stop the Ethernet connection </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>July 2, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="80" column="11" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/ethernet.c" bodystart="138" bodyend="148" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" declline="80" declcolumn="11"/>
+        <references refid="ethernet_8c_1a2de8665296107d26a2a527034e0bf2f9" compoundref="ethernet_8c" startline="19">eth_handle</references>
+        <references refid="ethernet_8c_1a7ca5d8cb100a666f2b459a70e2637554" compoundref="ethernet_8c" startline="20">ethernet_connected</references>
+        <references refid="nvs__manager_8c_1afc3d101f633a076cc1ca84b85b6224b2" compoundref="nvs__manager_8c" startline="8">TAG</references>
+      </memberdef>
+      <memberdef kind="function" id="ethernet_8h_1a413b14a7107939f76a186c5d459a4a84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ethernet_is_connected</definition>
+        <argsstring>(void)</argsstring>
+        <name>ethernet_is_connected</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check if Ethernet is connected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if connected, false otherwise</para>
+</simplesect>
+This function checks the current connection status of the Ethernet interface <simplesect kind="note"><para>This function can be used to determine if the Ethernet connection is active </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>July 2, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="91" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/ethernet.c" bodystart="150" bodyend="153" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" declline="91" declcolumn="6"/>
+        <references refid="ethernet_8c_1a7ca5d8cb100a666f2b459a70e2637554" compoundref="ethernet_8c" startline="20">ethernet_connected</references>
+        <referencedby refid="tasks_8h_1a5dc1efd0c548644645cf4607e8e01ae0" compoundref="tasks_8c" startline="128" endline="152">ethernet_monitor_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="ethernet_8h_1afcdc1ac7a161416f9aa70c6802794598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t ethernet_get_ip</definition>
+        <argsstring>(char *ip_str)</argsstring>
+        <name>ethernet_get_ip</name>
+        <param>
+          <type>char *</type>
+          <declname>ip_str</declname>
+        </param>
+        <briefdescription>
+<para>Get the IP address assigned to the Ethernet interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ip_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to store the IP address string (minimum 16 bytes) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>esp_err_t ESP_OK on success, error code otherwise</para>
+</simplesect>
+This function retrieves the current IP address of the Ethernet interface <simplesect kind="note"><para>The IP address is returned in standard dotted-decimal format </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>July 2, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="103" column="11" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/ethernet.c" bodystart="155" bodyend="169" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" declline="103" declcolumn="11"/>
+        <references refid="ethernet_8c_1a9ea2954ad22025318d0d8e31236cc8b3" compoundref="ethernet_8c" startline="18">eth_netif</references>
+        <referencedby refid="tasks_8h_1a5dc1efd0c548644645cf4607e8e01ae0" compoundref="tasks_8c" startline="128" endline="152">ethernet_monitor_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="ethernet_8h_1a2ae9912b161cb0e12abb084e5d2756c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ethernet_event_handler</definition>
+        <argsstring>(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data)</argsstring>
+        <name>ethernet_event_handler</name>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>esp_event_base_t</type>
+          <declname>event_base</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>event_id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>event_data</declname>
+        </param>
+        <briefdescription>
+<para>Event handler for Ethernet events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event handler argument </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event base </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This function handles Ethernet events such as connection status changes <simplesect kind="note"><para>It logs the events and updates the connection status </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>July 2, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" line="117" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/ethernet.c" bodystart="22" bodyend="46" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h" declline="117" declcolumn="6"/>
+        <references refid="ethernet_8c_1a2de8665296107d26a2a527034e0bf2f9" compoundref="ethernet_8c" startline="19">eth_handle</references>
+        <references refid="ethernet_8c_1a7ca5d8cb100a666f2b459a70e2637554" compoundref="ethernet_8c" startline="20">ethernet_connected</references>
+        <references refid="nvs__manager_8c_1afc3d101f633a076cc1ca84b85b6224b2" compoundref="nvs__manager_8c" startline="8">TAG</references>
+        <referencedby refid="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" compoundref="ethernet_8c" startline="63" endline="125">ethernet_init</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Project:<sp/>AERtronic<sp/>Lite<sp/>2.0</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Description:<sp/>Ethernet<sp/>W5500<sp/>module<sp/>support<sp/>for<sp/>ESP32</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Ernesto<sp/>Estrada</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Company:<sp/>Aerzener<sp/>Maschinenfabrik<sp/>GmbH</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Date:<sp/>July<sp/>2,<sp/>2025</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ETHERNET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETHERNET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp_eth.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp_netif.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp_event.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>W5500<sp/>SPI<sp/>pin<sp/>definitions<sp/>-<sp/>adjust<sp/>these<sp/>according<sp/>to<sp/>the<sp/>hardware<sp/>connections</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="ethernet_8h_1aa0aec6e526d34bcfe24f3358063215b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>W5500_SPI_HOST<sp/><sp/><sp/><sp/><sp/><sp/>SPI2_HOST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="ethernet_8h_1aa8798174188a78b90d0004bfbbdaf604" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>W5500_SCLK_GPIO<sp/><sp/><sp/><sp/><sp/>18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="ethernet_8h_1aaf35269321cce9cde911ab13c5bf2f1a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>W5500_MOSI_GPIO<sp/><sp/><sp/><sp/><sp/>23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="ethernet_8h_1a495ea13f4aa3459d0c1dfb4d3083252b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>W5500_MISO_GPIO<sp/><sp/><sp/><sp/><sp/>19</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="ethernet_8h_1aaca87d2e40f5e4f13e4d250f196a5fac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>W5500_CS_GPIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="ethernet_8h_1a0f0b99520b78fa99419437f9ecfeab34" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>W5500_INT_GPIO<sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="ethernet_8h_1ac49ec3042b48b883e7900d9a234f207e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>W5500_RST_GPIO<sp/><sp/><sp/><sp/><sp/><sp/>-1<sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>to<sp/>-1<sp/>if<sp/>not<sp/>connected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ethernet<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="ethernet_8h_1a5a1678cf71b992d4d8ebb10a25d323cd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETHERNET_TIMEOUT_MS<sp/>5000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Static<sp/>IP<sp/>Configuration<sp/>-<sp/>modify<sp/>these<sp/>values<sp/>as<sp/>needed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="ethernet_8h_1ab9283eb38c098765c10d2029af6f1f7b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATIC_IP_ADDR<sp/><sp/><sp/><sp/><sp/><sp/>&quot;192.168.1.100&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="ethernet_8h_1ae8d8c06f0e4668e677b3625c937744c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATIC_GATEWAY_ADDR<sp/>&quot;192.168.1.1&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="ethernet_8h_1a4db47e739ac129a07a381b875807af0c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATIC_NETMASK_ADDR<sp/>&quot;255.255.255.0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Set<sp/>to<sp/>1<sp/>for<sp/>static<sp/>IP,<sp/>0<sp/>for<sp/>DHCP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="ethernet_8h_1a437d5adf3828750386f66bc45b3e7e9c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USE_STATIC_IP<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>declarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">esp_err_t<sp/><ref refid="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" kindref="member">ethernet_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">esp_err_t<sp/><ref refid="ethernet_8h_1a864a2ddf998b216a85c97c640b841501" kindref="member">ethernet_set_static_ip</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">esp_err_t<sp/><ref refid="ethernet_8h_1a4f763d2ae63ab35e404488c1add5c852" kindref="member">ethernet_start</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">esp_err_t<sp/><ref refid="ethernet_8h_1a4039eaf3762551e4c7b70c07a8abe1a4" kindref="member">ethernet_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ethernet_8h_1a413b14a7107939f76a186c5d459a4a84" kindref="member">ethernet_is_connected</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">esp_err_t<sp/><ref refid="ethernet_8h_1afcdc1ac7a161416f9aa70c6802794598" kindref="member">ethernet_get_ip</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ip_str);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ethernet_8h_1a2ae9912b161cb0e12abb084e5d2756c2" kindref="member">ethernet_event_handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg,<sp/>esp_event_base_t<sp/>event_base,<sp/>int32_t<sp/>event_id,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*event_data);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>ETHERNET_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/ethernet.h"/>
+  </compounddef>
+</doxygen>

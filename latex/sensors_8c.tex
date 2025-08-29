@@ -1,0 +1,212 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/main/sensors.c File Reference}
+\hypertarget{sensors_8c}{}\label{sensors_8c}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/sensors.c@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/sensors.c}}
+{\ttfamily \#include "{}sensors.\+h"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}esp\+\_\+adc/adc\+\_\+oneshot.\+h"{}}\newline
+{\ttfamily \#include "{}esp\+\_\+log.\+h"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}freertos/\+Free\+RTOS.\+h"{}}\newline
+{\ttfamily \#include "{}freertos/semphr.\+h"{}}\newline
+{\ttfamily \#include "{}system.\+h"{}}\newline
+Include dependency graph for sensors.\+c\+:
+% FIG 0
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sensors_8c_ac62c80e871c8e752b7c75351ccb735c0}{PRESSURE1\+\_\+\+CH}}~ADC\+\_\+\+CHANNEL\+\_\+6
+\item 
+\#define \mbox{\hyperlink{sensors_8c_a58d51d66502351c02f095a960fff2169}{PRESSURE2\+\_\+\+CH}}~ADC\+\_\+\+CHANNEL\+\_\+7
+\item 
+\#define \mbox{\hyperlink{sensors_8c_a43e03865e90682051770d955bb29239a}{TEMP\+\_\+\+PT1000\+\_\+\+CH}}~ADC\+\_\+\+CHANNEL\+\_\+4
+\item 
+\#define \mbox{\hyperlink{sensors_8c_a9851d7403086e8d8ce491625b0f8863d}{ADC\+\_\+\+ATTEN}}~ADC\+\_\+\+ATTEN\+\_\+\+DB\+\_\+12
+\item 
+\#define \mbox{\hyperlink{sensors_8c_ae7be6136584e673152582baf499d6a6c}{ADC\+\_\+\+WIDTH}}~ADC\+\_\+\+BITWIDTH\+\_\+12
+\item 
+\#define \mbox{\hyperlink{sensors_8c_a9d3ea7ce740f91ace37ec28a85e74315}{ADC\+\_\+\+REF\+\_\+\+VOLTAGE}}~3.\+3
+\item 
+\#define \mbox{\hyperlink{sensors_8c_a8e965b09ba8c46425032e6dd576f9bce}{ADC\+\_\+\+MAX\+\_\+\+VALUE}}~4095
+\item 
+\#define \mbox{\hyperlink{sensors_8c_a93498e697343b0916cd3389d272530ef}{SHUNT\+\_\+\+RESISTOR\+\_\+\+OHMS}}~165.\+0
+\item 
+\#define \mbox{\hyperlink{sensors_8c_a9d12e835884dcd9daf501e1a6876bb7b}{R\+\_\+\+FIXED\+\_\+\+OHMS}}~1000.\+0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{sensors_8c_a7a541577440ac4cb1da9b8ef7261cfec}{sensors\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the sensors. This function sets up the ADC channels for reading pressure and temperature sensors. It should be called before any sensor readings are performed. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{sensors_8c_a9456bf17ccbaf37989d9a869c891a294}{sensors\+\_\+read}} (\mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Read sensor data. This function reads the current values from the pressure and temperature sensors. It populates the provided \doxylink{structsensor__data__t}{sensor\+\_\+data\+\_\+t} structure with the latest readings. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{sensors_8c_a4a239a8cec68742c37e150a05c836ecc}{sensors\+\_\+get\+\_\+latest}} (\mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} \mbox{\hyperlink{sensors_8c_a501e4a9279435c4c618e5b4e5438e76b}{latest\+\_\+sensor\+\_\+data}}
+\item 
+static Semaphore\+Handle\+\_\+t \mbox{\hyperlink{sensors_8c_a866a0d9d37fd0c9f40c72dd938aea77c}{sensor\+\_\+data\+\_\+mutex}} = NULL
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sensors_8c_a5a85b9c772bbeb480b209a3e6ea92b4c}{TAG}} = "{}SENSORS"{}
+\item 
+static adc\+\_\+oneshot\+\_\+unit\+\_\+handle\+\_\+t \mbox{\hyperlink{sensors_8c_a0b95b5937de8bdf11f73c2636d897c49}{adc1\+\_\+handle}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{sensors_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{sensors_8c_a9851d7403086e8d8ce491625b0f8863d}\index{sensors.c@{sensors.c}!ADC\_ATTEN@{ADC\_ATTEN}}
+\index{ADC\_ATTEN@{ADC\_ATTEN}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{ADC\_ATTEN}{ADC\_ATTEN}}
+{\footnotesize\ttfamily \label{sensors_8c_a9851d7403086e8d8ce491625b0f8863d} 
+\#define ADC\+\_\+\+ATTEN~ADC\+\_\+\+ATTEN\+\_\+\+DB\+\_\+12}
+
+\Hypertarget{sensors_8c_a8e965b09ba8c46425032e6dd576f9bce}\index{sensors.c@{sensors.c}!ADC\_MAX\_VALUE@{ADC\_MAX\_VALUE}}
+\index{ADC\_MAX\_VALUE@{ADC\_MAX\_VALUE}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{ADC\_MAX\_VALUE}{ADC\_MAX\_VALUE}}
+{\footnotesize\ttfamily \label{sensors_8c_a8e965b09ba8c46425032e6dd576f9bce} 
+\#define ADC\+\_\+\+MAX\+\_\+\+VALUE~4095}
+
+\Hypertarget{sensors_8c_a9d3ea7ce740f91ace37ec28a85e74315}\index{sensors.c@{sensors.c}!ADC\_REF\_VOLTAGE@{ADC\_REF\_VOLTAGE}}
+\index{ADC\_REF\_VOLTAGE@{ADC\_REF\_VOLTAGE}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{ADC\_REF\_VOLTAGE}{ADC\_REF\_VOLTAGE}}
+{\footnotesize\ttfamily \label{sensors_8c_a9d3ea7ce740f91ace37ec28a85e74315} 
+\#define ADC\+\_\+\+REF\+\_\+\+VOLTAGE~3.\+3}
+
+\Hypertarget{sensors_8c_ae7be6136584e673152582baf499d6a6c}\index{sensors.c@{sensors.c}!ADC\_WIDTH@{ADC\_WIDTH}}
+\index{ADC\_WIDTH@{ADC\_WIDTH}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{ADC\_WIDTH}{ADC\_WIDTH}}
+{\footnotesize\ttfamily \label{sensors_8c_ae7be6136584e673152582baf499d6a6c} 
+\#define ADC\+\_\+\+WIDTH~ADC\+\_\+\+BITWIDTH\+\_\+12}
+
+\Hypertarget{sensors_8c_ac62c80e871c8e752b7c75351ccb735c0}\index{sensors.c@{sensors.c}!PRESSURE1\_CH@{PRESSURE1\_CH}}
+\index{PRESSURE1\_CH@{PRESSURE1\_CH}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{PRESSURE1\_CH}{PRESSURE1\_CH}}
+{\footnotesize\ttfamily \label{sensors_8c_ac62c80e871c8e752b7c75351ccb735c0} 
+\#define PRESSURE1\+\_\+\+CH~ADC\+\_\+\+CHANNEL\+\_\+6}
+
+\Hypertarget{sensors_8c_a58d51d66502351c02f095a960fff2169}\index{sensors.c@{sensors.c}!PRESSURE2\_CH@{PRESSURE2\_CH}}
+\index{PRESSURE2\_CH@{PRESSURE2\_CH}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{PRESSURE2\_CH}{PRESSURE2\_CH}}
+{\footnotesize\ttfamily \label{sensors_8c_a58d51d66502351c02f095a960fff2169} 
+\#define PRESSURE2\+\_\+\+CH~ADC\+\_\+\+CHANNEL\+\_\+7}
+
+\Hypertarget{sensors_8c_a9d12e835884dcd9daf501e1a6876bb7b}\index{sensors.c@{sensors.c}!R\_FIXED\_OHMS@{R\_FIXED\_OHMS}}
+\index{R\_FIXED\_OHMS@{R\_FIXED\_OHMS}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{R\_FIXED\_OHMS}{R\_FIXED\_OHMS}}
+{\footnotesize\ttfamily \label{sensors_8c_a9d12e835884dcd9daf501e1a6876bb7b} 
+\#define R\+\_\+\+FIXED\+\_\+\+OHMS~1000.\+0}
+
+\Hypertarget{sensors_8c_a93498e697343b0916cd3389d272530ef}\index{sensors.c@{sensors.c}!SHUNT\_RESISTOR\_OHMS@{SHUNT\_RESISTOR\_OHMS}}
+\index{SHUNT\_RESISTOR\_OHMS@{SHUNT\_RESISTOR\_OHMS}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{SHUNT\_RESISTOR\_OHMS}{SHUNT\_RESISTOR\_OHMS}}
+{\footnotesize\ttfamily \label{sensors_8c_a93498e697343b0916cd3389d272530ef} 
+\#define SHUNT\+\_\+\+RESISTOR\+\_\+\+OHMS~165.\+0}
+
+\Hypertarget{sensors_8c_a43e03865e90682051770d955bb29239a}\index{sensors.c@{sensors.c}!TEMP\_PT1000\_CH@{TEMP\_PT1000\_CH}}
+\index{TEMP\_PT1000\_CH@{TEMP\_PT1000\_CH}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{TEMP\_PT1000\_CH}{TEMP\_PT1000\_CH}}
+{\footnotesize\ttfamily \label{sensors_8c_a43e03865e90682051770d955bb29239a} 
+\#define TEMP\+\_\+\+PT1000\+\_\+\+CH~ADC\+\_\+\+CHANNEL\+\_\+4}
+
+
+
+\label{doc-func-members}
+\Hypertarget{sensors_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{sensors_8c_a4a239a8cec68742c37e150a05c836ecc}\index{sensors.c@{sensors.c}!sensors\_get\_latest@{sensors\_get\_latest}}
+\index{sensors\_get\_latest@{sensors\_get\_latest}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{sensors\_get\_latest()}{sensors\_get\_latest()}}
+{\footnotesize\ttfamily \label{sensors_8c_a4a239a8cec68742c37e150a05c836ecc} 
+esp\+\_\+err\+\_\+t sensors\+\_\+get\+\_\+latest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{sensors_8c_a7a541577440ac4cb1da9b8ef7261cfec}\index{sensors.c@{sensors.c}!sensors\_init@{sensors\_init}}
+\index{sensors\_init@{sensors\_init}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{sensors\_init()}{sensors\_init()}}
+{\footnotesize\ttfamily \label{sensors_8c_a7a541577440ac4cb1da9b8ef7261cfec} 
+esp\+\_\+err\+\_\+t sensors\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the sensors. This function sets up the ADC channels for reading pressure and temperature sensors. It should be called before any sensor readings are performed. 
+
+\begin{DoxyReturn}{Returns}
+ESP\+\_\+\+OK on success, or an error code on failure. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 10, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{sensors_8c_a9456bf17ccbaf37989d9a869c891a294}\index{sensors.c@{sensors.c}!sensors\_read@{sensors\_read}}
+\index{sensors\_read@{sensors\_read}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{sensors\_read()}{sensors\_read()}}
+{\footnotesize\ttfamily \label{sensors_8c_a9456bf17ccbaf37989d9a869c891a294} 
+esp\+\_\+err\+\_\+t sensors\+\_\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Read sensor data. This function reads the current values from the pressure and temperature sensors. It populates the provided \doxylink{structsensor__data__t}{sensor\+\_\+data\+\_\+t} structure with the latest readings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to a \doxylink{structsensor__data__t}{sensor\+\_\+data\+\_\+t} structure where the sensor readings will be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ESP\+\_\+\+OK on success, or an error code on failure. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 10, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyNote}{Note}
+The function assumes that \doxylink{sensors_8h_a7a541577440ac4cb1da9b8ef7261cfec}{sensors\+\_\+init()} has been called successfully before this function. It will read the ADC values, convert them to pressure and temperature, and store them in the provided structure. 
+\end{DoxyNote}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\label{doc-var-members}
+\Hypertarget{sensors_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{sensors_8c_a0b95b5937de8bdf11f73c2636d897c49}\index{sensors.c@{sensors.c}!adc1\_handle@{adc1\_handle}}
+\index{adc1\_handle@{adc1\_handle}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{adc1\_handle}{adc1\_handle}}
+{\footnotesize\ttfamily \label{sensors_8c_a0b95b5937de8bdf11f73c2636d897c49} 
+adc\+\_\+oneshot\+\_\+unit\+\_\+handle\+\_\+t adc1\+\_\+handle\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{sensors_8c_a501e4a9279435c4c618e5b4e5438e76b}\index{sensors.c@{sensors.c}!latest\_sensor\_data@{latest\_sensor\_data}}
+\index{latest\_sensor\_data@{latest\_sensor\_data}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{latest\_sensor\_data}{latest\_sensor\_data}}
+{\footnotesize\ttfamily \label{sensors_8c_a501e4a9279435c4c618e5b4e5438e76b} 
+\mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} latest\+\_\+sensor\+\_\+data\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{sensors_8c_a866a0d9d37fd0c9f40c72dd938aea77c}\index{sensors.c@{sensors.c}!sensor\_data\_mutex@{sensor\_data\_mutex}}
+\index{sensor\_data\_mutex@{sensor\_data\_mutex}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{sensor\_data\_mutex}{sensor\_data\_mutex}}
+{\footnotesize\ttfamily \label{sensors_8c_a866a0d9d37fd0c9f40c72dd938aea77c} 
+Semaphore\+Handle\+\_\+t sensor\+\_\+data\+\_\+mutex = NULL\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{sensors_8c_a5a85b9c772bbeb480b209a3e6ea92b4c}\index{sensors.c@{sensors.c}!TAG@{TAG}}
+\index{TAG@{TAG}!sensors.c@{sensors.c}}
+\doxysubsubsection{\texorpdfstring{TAG}{TAG}}
+{\footnotesize\ttfamily \label{sensors_8c_a5a85b9c772bbeb480b209a3e6ea92b4c} 
+const char\texorpdfstring{$\ast$}{*} TAG = "{}SENSORS"{}\hspace{0.3cm}{\ttfamily [static]}}
+

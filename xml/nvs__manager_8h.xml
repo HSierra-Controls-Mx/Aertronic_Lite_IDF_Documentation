@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="nvs__manager_8h" kind="file" language="C++">
+    <compoundname>nvs_manager.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="main_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</includedby>
+    <includedby refid="nvs__manager_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/nvs_manager.c</includedby>
+    <includedby refid="serial__receive_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</includedby>
+    <includedby refid="setup_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c</includedby>
+    <includedby refid="system_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h</label>
+        <link refid="nvs__manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h</label>
+        <link refid="nvs__manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/nvs_manager.c</label>
+        <link refid="nvs__manager_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</label>
+        <link refid="serial__receive_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c</label>
+        <link refid="setup_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</label>
+        <link refid="system_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="nvs__manager_8h_1afa7779fe56b160955b535cd6a8aaf8f4" prot="public" static="no">
+        <name>NAMESPACE</name>
+        <initializer>&quot;memory&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="7" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="nvs__manager_8h_1aaec9f002eed7b2794c9babcfa7d3f50b" compoundref="nvs__manager_8c" startline="84" endline="96">save_int_to_nvs</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="nvs__manager_8h_1a1e101c783a22c7da1755d3150cbb793a" prot="public" static="no">
+        <name>KEY_NVS_INIT</name>
+        <initializer>&quot;nvs_init&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="10" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="nvs__manager_8h_1af7f392a5d16adbd68edd97898cb9d268" prot="public" static="no">
+        <name>KEY_OP_MIN</name>
+        <initializer>&quot;op_minutes&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="11" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="system_8h_1a3f45cb82b07f9844b825d73f091413a7" compoundref="system_8c" startline="56" endline="79">operation_time</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="nvs__manager_8h_1a865b7bdd57f5ed2e21d6db5fb2e807c5" prot="public" static="no">
+        <name>KEY_OP_HOURS</name>
+        <initializer>&quot;op_hours&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="12" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="system_8h_1a3f45cb82b07f9844b825d73f091413a7" compoundref="system_8c" startline="56" endline="79">operation_time</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="nvs__manager_8h_1a1f7972830cca2ec9a7d9c9b08c3f4e01" prot="public" static="no">
+        <name>KEY_BOOT_COUNTER</name>
+        <initializer>&quot;boot_count&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="13" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="nvs__manager_8h_1a46fcc98b6ef274ff52db0243d4c85b83" prot="public" static="no">
+        <name>KEY_SYS_LANGUAGE</name>
+        <initializer>&quot;language&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="14" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" compoundref="serial__receive_8c" startline="58" endline="674">received_data</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="nvs__manager_8h_1a67c7496c74bd4666922f2dba06477fa9" prot="public" static="no">
+        <name>KEY_SYS_COLOR</name>
+        <initializer>&quot;color&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="15" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" compoundref="serial__receive_8c" startline="58" endline="674">received_data</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="nvs__manager_8h_1a12e0ec2872971263a8238f0b699bc548" prot="public" static="no">
+        <name>KEY_MAINTENANCE_MIN</name>
+        <initializer>&quot;mnt_minutes&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="16" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="system_8h_1a3f45cb82b07f9844b825d73f091413a7" compoundref="system_8c" startline="56" endline="79">operation_time</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="nvs__manager_8h_1a4bda739bd43d6cbc49f5a4445bfab66b" prot="public" static="no">
+        <name>KEY_MAINTENANCE_HOURS</name>
+        <initializer>&quot;mnt_hours&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="17" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="system_8h_1a3f45cb82b07f9844b825d73f091413a7" compoundref="system_8c" startline="56" endline="79">operation_time</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="nvs__manager_8h_1aea21083fbc81f818313e73efcfb49a74" prot="public" static="no">
+        <name>KEY_NUMBER_OF_MAINTENANCES</name>
+        <initializer>&quot;mnt_count&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="18" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_nvs_manager</definition>
+        <argsstring>()</argsstring>
+        <name>init_nvs_manager</name>
+        <briefdescription>
+<para>Initializes the NVS (Non-Volatile Storage). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function initializes the NVS system, allowing for data storage and retrieval. <simplesect kind="note"><para>This function should be called before using any NVS functions. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>May 5, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="30" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/nvs_manager.c" bodystart="12" bodyend="82" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" declline="30" declcolumn="6"/>
+        <references refid="system_8h_1aae68550ad38d9fd2a74d96a4f6efdc54" compoundref="system_8c" startline="17">boot_count</references>
+        <references refid="nvs__manager_8h_1a1f7972830cca2ec9a7d9c9b08c3f4e01" compoundref="nvs__manager_8h" startline="13">KEY_BOOT_COUNTER</references>
+        <references refid="nvs__manager_8h_1a4bda739bd43d6cbc49f5a4445bfab66b" compoundref="nvs__manager_8h" startline="17">KEY_MAINTENANCE_HOURS</references>
+        <references refid="nvs__manager_8h_1a12e0ec2872971263a8238f0b699bc548" compoundref="nvs__manager_8h" startline="16">KEY_MAINTENANCE_MIN</references>
+        <references refid="nvs__manager_8h_1aea21083fbc81f818313e73efcfb49a74" compoundref="nvs__manager_8h" startline="18">KEY_NUMBER_OF_MAINTENANCES</references>
+        <references refid="nvs__manager_8h_1a1e101c783a22c7da1755d3150cbb793a" compoundref="nvs__manager_8h" startline="10">KEY_NVS_INIT</references>
+        <references refid="nvs__manager_8h_1a865b7bdd57f5ed2e21d6db5fb2e807c5" compoundref="nvs__manager_8h" startline="12">KEY_OP_HOURS</references>
+        <references refid="nvs__manager_8h_1af7f392a5d16adbd68edd97898cb9d268" compoundref="nvs__manager_8h" startline="11">KEY_OP_MIN</references>
+        <references refid="nvs__manager_8h_1a67c7496c74bd4666922f2dba06477fa9" compoundref="nvs__manager_8h" startline="15">KEY_SYS_COLOR</references>
+        <references refid="nvs__manager_8h_1a46fcc98b6ef274ff52db0243d4c85b83" compoundref="nvs__manager_8h" startline="14">KEY_SYS_LANGUAGE</references>
+        <references refid="system_8h_1a7935be2326bd362ec59592d133232a12" compoundref="system_8c" startline="21">maintenance_hours</references>
+        <references refid="system_8h_1a792282433d9feffdd90742acc4b7cf84" compoundref="system_8c" startline="20">maintenance_minutes</references>
+        <references refid="nvs__manager_8h_1afa7779fe56b160955b535cd6a8aaf8f4" compoundref="nvs__manager_8h" startline="7">NAMESPACE</references>
+        <references refid="system_8h_1aa828b108037b528aa15a5dc2bbf20195" compoundref="system_8c" startline="22">number_of_maintenances</references>
+        <references refid="system_8h_1afefba2969f86ee117cf53a6709050a21" compoundref="system_8c" startline="16">operation_hours</references>
+        <references refid="system_8h_1a2ef5919214974cb155ce0f62aec2c46f" compoundref="system_8c" startline="15">operation_minutes</references>
+        <references refid="system_8h_1a30436bd24c155c7ff8b58f89cc4907d9" compoundref="system_8c" startline="19">system_color</references>
+        <references refid="system_8h_1a10a3fa33bae024190264a8321128a41d" compoundref="system_8c" startline="18">system_language</references>
+        <references refid="nvs__manager_8c_1afc3d101f633a076cc1ca84b85b6224b2" compoundref="nvs__manager_8c" startline="8">TAG</references>
+        <referencedby refid="setup_8h_1aa2c353c6e3271404cdf45ce4601951c7" compoundref="setup_8c" startline="36" endline="44">init_nvs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="nvs__manager_8h_1aaec9f002eed7b2794c9babcfa7d3f50b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void save_int_to_nvs</definition>
+        <argsstring>(const char *key, int32_t value)</argsstring>
+        <name>save_int_to_nvs</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Loads an integer value from NVS using the specified key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key associated with the integer value in NVS. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int32_t variable to store the loaded value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This function does not return a value. Instead, it updates the global variable associated with the key. <simplesect kind="note"><para>Make sure that all keys used in this function are defined in the NVS namespace. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 16, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" line="42" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/nvs_manager.c" bodystart="84" bodyend="96" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h" declline="42" declcolumn="6"/>
+        <references refid="nvs__manager_8h_1afa7779fe56b160955b535cd6a8aaf8f4" compoundref="nvs__manager_8h" startline="7">NAMESPACE</references>
+        <referencedby refid="system_8h_1a3f45cb82b07f9844b825d73f091413a7" compoundref="system_8c" startline="56" endline="79">operation_time</referencedby>
+        <referencedby refid="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" compoundref="serial__receive_8c" startline="58" endline="674">received_data</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NVS_MANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NVS_MANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Define<sp/>the<sp/>namespace<sp/>used<sp/>in<sp/>NVS<sp/>for<sp/>storing<sp/>our<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="nvs__manager_8h_1afa7779fe56b160955b535cd6a8aaf8f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NAMESPACE<sp/>&quot;memory&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Define<sp/>KEYS<sp/>for<sp/>storing<sp/>data<sp/>in<sp/>NVS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="nvs__manager_8h_1a1e101c783a22c7da1755d3150cbb793a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_NVS_INIT<sp/>&quot;nvs_init&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="nvs__manager_8h_1af7f392a5d16adbd68edd97898cb9d268" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_OP_MIN<sp/>&quot;op_minutes&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="nvs__manager_8h_1a865b7bdd57f5ed2e21d6db5fb2e807c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_OP_HOURS<sp/>&quot;op_hours&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="nvs__manager_8h_1a1f7972830cca2ec9a7d9c9b08c3f4e01" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_BOOT_COUNTER<sp/>&quot;boot_count&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="nvs__manager_8h_1a46fcc98b6ef274ff52db0243d4c85b83" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_SYS_LANGUAGE<sp/>&quot;language&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="nvs__manager_8h_1a67c7496c74bd4666922f2dba06477fa9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_SYS_COLOR<sp/>&quot;color&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="nvs__manager_8h_1a12e0ec2872971263a8238f0b699bc548" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_MAINTENANCE_MIN<sp/>&quot;mnt_minutes&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="nvs__manager_8h_1a4bda739bd43d6cbc49f5a4445bfab66b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_MAINTENANCE_HOURS<sp/>&quot;mnt_hours&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="nvs__manager_8h_1aea21083fbc81f818313e73efcfb49a74" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_NUMBER_OF_MAINTENANCES<sp/>&quot;mnt_count&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>declarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" kindref="member">init_nvs_manager</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nvs__manager_8h_1aaec9f002eed7b2794c9babcfa7d3f50b" kindref="member">save_int_to_nvs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key,<sp/>int32_t<sp/>value);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>NVS_MANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/nvs_manager.h"/>
+  </compounddef>
+</doxygen>

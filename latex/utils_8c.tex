@@ -1,0 +1,106 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/main/utils.c File Reference}
+\hypertarget{utils_8c}{}\label{utils_8c}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/utils.c@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/utils.c}}
+{\ttfamily \#include "{}utils.\+h"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}serial\+\_\+send.\+h"{}}\newline
+{\ttfamily \#include "{}sensors.\+h"{}}\newline
+{\ttfamily \#include "{}system.\+h"{}}\newline
+Include dependency graph for utils.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{utils_8c_a4bc9bfc0677667a966d7ab73efafa4d1}{print\+\_\+sensor\+\_\+data}} (void)
+\begin{DoxyCompactList}\small\item\em Prints the data from the sensors. This function retrieves the latest sensor data and prints it to the console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8c_ab430aab7d7c17ab2aba9374eed7d1bd8}{get\+\_\+status\+\_\+attributes}} (int32\+\_\+t state, int status\+\_\+attributes\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Updates the header to reflect the current system state. This function updates the header on the Nextion display to show the current system state. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{utils_8c_af273a5ebcae2631c89cbee7c2bb96e9b}{get\+\_\+status\+\_\+text}} (int32\+\_\+t state, int32\+\_\+t language)
+\begin{DoxyCompactList}\small\item\em Retrieves the status text based on the current system state and language. This function returns a string representing the status text for the given state and language. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{utils_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{utils_8c_ab430aab7d7c17ab2aba9374eed7d1bd8}\index{utils.c@{utils.c}!get\_status\_attributes@{get\_status\_attributes}}
+\index{get\_status\_attributes@{get\_status\_attributes}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{get\_status\_attributes()}{get\_status\_attributes()}}
+{\footnotesize\ttfamily \label{utils_8c_ab430aab7d7c17ab2aba9374eed7d1bd8} 
+void get\+\_\+status\+\_\+attributes (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{state}{, }\item[{int}]{status\+\_\+attributes}{\mbox{[}4\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Updates the header to reflect the current system state. This function updates the header on the Nextion display to show the current system state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system\+\_\+state} & The current state of the system (0 = Normal, 1 = Warning, 2 = Alarm). \\
+\hline
+{\em status\+\_\+attributes} & An array containing status attributes to be displayed in the header. The array should contain 6 elements representing different status indicators.\\
+\hline
+\end{DoxyParams}
+This function does not return any value. \begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 17, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{utils_8c_af273a5ebcae2631c89cbee7c2bb96e9b}\index{utils.c@{utils.c}!get\_status\_text@{get\_status\_text}}
+\index{get\_status\_text@{get\_status\_text}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{get\_status\_text()}{get\_status\_text()}}
+{\footnotesize\ttfamily \label{utils_8c_af273a5ebcae2631c89cbee7c2bb96e9b} 
+const char \texorpdfstring{$\ast$}{*} get\+\_\+status\+\_\+text (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{state}{, }\item[{int32\+\_\+t}]{language}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the status text based on the current system state and language. This function returns a string representing the status text for the given state and language. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The current state of the system (0 = Normal, 1 = Warning, 2 = Alarm). \\
+\hline
+{\em language} & The language code (0 = English, 1 = Spanish, 2 = Portuguese, 3 = French, 4 = German). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the status text in the specified language.
+\end{DoxyReturn}
+The function uses a switch-\/case structure to determine the appropriate status text based on the state and language. \begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 18, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{utils_8c_a4bc9bfc0677667a966d7ab73efafa4d1}\index{utils.c@{utils.c}!print\_sensor\_data@{print\_sensor\_data}}
+\index{print\_sensor\_data@{print\_sensor\_data}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{print\_sensor\_data()}{print\_sensor\_data()}}
+{\footnotesize\ttfamily \label{utils_8c_a4bc9bfc0677667a966d7ab73efafa4d1} 
+void print\+\_\+sensor\+\_\+data (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Prints the data from the sensors. This function retrieves the latest sensor data and prints it to the console. 
+
+This function does not return any value. \begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 16, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4

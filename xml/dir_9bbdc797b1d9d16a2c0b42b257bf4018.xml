@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_9bbdc797b1d9d16a2c0b42b257bf4018" kind="dir">
+    <compoundname>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include</compoundname>
+    <innerfile refid="ethernet_8h">ethernet.h</innerfile>
+    <innerfile refid="lang__support_8h">lang_support.h</innerfile>
+    <innerfile refid="nvs__manager_8h">nvs_manager.h</innerfile>
+    <innerfile refid="pages_8h">pages.h</innerfile>
+    <innerfile refid="sensors_8h">sensors.h</innerfile>
+    <innerfile refid="serial__receive_8h">serial_receive.h</innerfile>
+    <innerfile refid="serial__send_8h">serial_send.h</innerfile>
+    <innerfile refid="setup_8h">setup.h</innerfile>
+    <innerfile refid="system_8h">system.h</innerfile>
+    <innerfile refid="tasks_8h">tasks.h</innerfile>
+    <innerfile refid="time__manager_8h">time_manager.h</innerfile>
+    <innerfile refid="utils_8h">utils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/"/>
+  </compounddef>
+</doxygen>

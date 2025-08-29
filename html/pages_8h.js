@@ -1,0 +1,36 @@
+var pages_8h =
+[
+    [ "Pages", "pages_8h.html#a65c296e040e660e12495c13450d8dc58", [
+      [ "MAIN", "pages_8h.html#a65c296e040e660e12495c13450d8dc58a41c6eb506ccf657cc7e958c8e8c769cd", null ],
+      [ "MAIN_MENU", "pages_8h.html#a65c296e040e660e12495c13450d8dc58ac22743f1fc74de09544ecc9bab74a17b", null ],
+      [ "EQUIPMENT_INFO", "pages_8h.html#a65c296e040e660e12495c13450d8dc58a495f3a2e1ce970ceba725978599c5b8a", null ],
+      [ "MODULE_INFO", "pages_8h.html#a65c296e040e660e12495c13450d8dc58ad8b12610bd58f48af24ed720cb166805", null ],
+      [ "LOG_IN", "pages_8h.html#a65c296e040e660e12495c13450d8dc58ae50ef0288ee11ef27d19d69fc8e2a121", null ],
+      [ "MAINTENANCE", "pages_8h.html#a65c296e040e660e12495c13450d8dc58a6e79df44a2025f7b4a2822e608389c58", null ],
+      [ "LANGUAGE", "pages_8h.html#a65c296e040e660e12495c13450d8dc58ab0814cb9deac69bea037955cecf9b2c4", null ],
+      [ "CONFIG_MENU", "pages_8h.html#a65c296e040e660e12495c13450d8dc58a09d06a1d7569f0d7df95702b87278489", null ],
+      [ "CONTROL", "pages_8h.html#a65c296e040e660e12495c13450d8dc58af722a5faa36087c914da53ebe4711f08", null ],
+      [ "SERVICE", "pages_8h.html#a65c296e040e660e12495c13450d8dc58a5f6d448017ecd0a56245e38b76596e07", null ],
+      [ "MACHINE", "pages_8h.html#a65c296e040e660e12495c13450d8dc58adf02ded475565758943c5d421224efec", null ],
+      [ "SYSTEM", "pages_8h.html#a65c296e040e660e12495c13450d8dc58a57cc238145ec1361c72c327674c0d754", null ],
+      [ "ABOUT", "pages_8h.html#a65c296e040e660e12495c13450d8dc58aaef4dc1e4f450a4c9e61a3699d75af0a", null ],
+      [ "SYSTEM_EVENTS", "pages_8h.html#a65c296e040e660e12495c13450d8dc58a4d99d5a96cbadbc56944a179561deb74", null ],
+      [ "NO_PAGE", "pages_8h.html#a65c296e040e660e12495c13450d8dc58ad6a3d48ea292eaa3be05d8aa02248153", null ]
+    ] ],
+    [ "about_page", "pages_8h.html#a89fee45a3872eb376b252b861ab8c07e", null ],
+    [ "config_menu_page", "pages_8h.html#a96592eefdfdf59eb98544da393fe2c8f", null ],
+    [ "control_page", "pages_8h.html#abc67177785d78d87195c128dae5c71e1", null ],
+    [ "equipment_page", "pages_8h.html#adb7e72ea57300775da4604fc0beb6ced", null ],
+    [ "language_page", "pages_8h.html#a6d91875cb7f48bd2dab021a271b8569e", null ],
+    [ "login_page", "pages_8h.html#ad114f02439a8b6bac8809faab054722e", null ],
+    [ "machine_page", "pages_8h.html#a828e576a7d6d5cddff3ebd05ddc6685a", null ],
+    [ "main_menu_page", "pages_8h.html#a222f933f83745f908d2be52694fec0f0", null ],
+    [ "main_page", "pages_8h.html#a97b680dc869c646b03f34ad2a3260a6b", null ],
+    [ "maintenance_page", "pages_8h.html#a7f50faf504e3d70c18cca6de2309ae9f", null ],
+    [ "module_page", "pages_8h.html#ab7c27bc6f6c1a38a98f6ae4f21109bae", null ],
+    [ "no_page", "pages_8h.html#af2b584d19263555cfcf864b3bc9d0369", null ],
+    [ "service_page", "pages_8h.html#a5a1c65a52fcb4b65ae9b394a013e0dbd", null ],
+    [ "system_events_page", "pages_8h.html#a80034c559e6388a025a88d0959456792", null ],
+    [ "system_page", "pages_8h.html#a6dbb6384cdbff807810e3808aa4892b4", null ],
+    [ "current_page", "pages_8h.html#ad3dbd5a2ff3dafed0fcdb227d018e091", null ]
+];

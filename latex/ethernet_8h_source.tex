@@ -1,0 +1,58 @@
+\doxysection{ethernet.\+h}
+\hypertarget{ethernet_8h_source}{}\label{ethernet_8h_source}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/ethernet.h@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/ethernet.h}}
+\mbox{\hyperlink{ethernet_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Project:\ AERtronic\ Lite\ 2.0}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Description:\ Ethernet\ W5500\ module\ support\ for\ ESP32}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Author:\ Ernesto\ Estrada}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Company:\ Aerzener\ Maschinenfabrik\ GmbH}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Date:\ July\ 2,\ 2025}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ ETHERNET\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ ETHERNET\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}esp\_eth.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}esp\_netif.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}esp\_event.h"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ W5500\ SPI\ pin\ definitions\ -\/\ adjust\ these\ according\ to\ the\ hardware\ connections}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ W5500\_SPI\_HOST\ \ \ \ \ \ SPI2\_HOST}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ W5500\_SCLK\_GPIO\ \ \ \ \ 18}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ W5500\_MOSI\_GPIO\ \ \ \ \ 23}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ W5500\_MISO\_GPIO\ \ \ \ \ 19}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ W5500\_CS\_GPIO\ \ \ \ \ \ \ 5}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ W5500\_INT\_GPIO\ \ \ \ \ \ 4}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ W5500\_RST\_GPIO\ \ \ \ \ \ -\/1\ \ }\textcolor{comment}{//\ Set\ to\ -\/1\ if\ not\ connected}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ Ethernet\ configuration}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ ETHERNET\_TIMEOUT\_MS\ 5000}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ Static\ IP\ Configuration\ -\/\ modify\ these\ values\ as\ needed}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ STATIC\_IP\_ADDR\ \ \ \ \ \ "{}192.168.1.100"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ STATIC\_GATEWAY\_ADDR\ "{}192.168.1.1"{}}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ STATIC\_NETMASK\_ADDR\ "{}255.255.255.0"{}}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{comment}{//\ Set\ to\ 1\ for\ static\ IP,\ 0\ for\ DHCP}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ USE\_STATIC\_IP\ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{comment}{//\ Function\ declarations}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00047\ esp\_err\_t\ \mbox{\hyperlink{ethernet_8h_ac5a294a0efbd42bd9671903a60e4f52b}{ethernet\_init}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00058\ esp\_err\_t\ \mbox{\hyperlink{ethernet_8h_a864a2ddf998b216a85c97c640b841501}{ethernet\_set\_static\_ip}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00069\ esp\_err\_t\ \mbox{\hyperlink{ethernet_8h_a4f763d2ae63ab35e404488c1add5c852}{ethernet\_start}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00080\ esp\_err\_t\ \mbox{\hyperlink{ethernet_8h_a4039eaf3762551e4c7b70c07a8abe1a4}{ethernet\_stop}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00091\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{ethernet_8h_a413b14a7107939f76a186c5d459a4a84}{ethernet\_is\_connected}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00103\ esp\_err\_t\ \mbox{\hyperlink{ethernet_8h_afcdc1ac7a161416f9aa70c6802794598}{ethernet\_get\_ip}}(\textcolor{keywordtype}{char}\ *ip\_str);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00117\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ethernet_8h_a2ae9912b161cb0e12abb084e5d2756c2}{ethernet\_event\_handler}}(\textcolor{keywordtype}{void}\ *arg,\ esp\_event\_base\_t\ event\_base,\ int32\_t\ event\_id,\ \textcolor{keywordtype}{void}\ *event\_data);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ETHERNET\_H}}
+
+\end{DoxyCode}

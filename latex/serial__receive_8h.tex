@@ -1,0 +1,82 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/include/serial\+\_\+receive.h File Reference}
+\hypertarget{serial__receive_8h}{}\label{serial__receive_8h}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/serial\_receive.h@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/serial\_receive.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{serial__receive_8h_ac59bf1ef42c41a76073468fec8e82d74}{serial\+\_\+read}} (void)
+\begin{DoxyCompactList}\small\item\em Function to read data coming from the serial port. This function is design to handle the data from the display and process it accordingly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__receive_8h_a09a926c2654b02052b2286a68b5ac51a}{received\+\_\+data}} (uint8\+\_\+t code, uint8\+\_\+t data1, uint8\+\_\+t data2)
+\begin{DoxyCompactList}\small\item\em Function that handles the data received from the Nextion display over the serial port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{serial__receive_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{serial__receive_8h_a09a926c2654b02052b2286a68b5ac51a}\index{serial\_receive.h@{serial\_receive.h}!received\_data@{received\_data}}
+\index{received\_data@{received\_data}!serial\_receive.h@{serial\_receive.h}}
+\doxysubsubsection{\texorpdfstring{received\_data()}{received\_data()}}
+{\footnotesize\ttfamily \label{serial__receive_8h_a09a926c2654b02052b2286a68b5ac51a} 
+void received\+\_\+data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{code}{, }\item[{uint8\+\_\+t}]{data1}{, }\item[{uint8\+\_\+t}]{data2}{}\end{DoxyParamCaption})}
+
+
+
+Function that handles the data received from the Nextion display over the serial port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The code that was received from the Nextion display, depends on the command sent \\
+\hline
+{\em data1} & The data received from the Nextion display, depends on the page number received \\
+\hline
+{\em data2} & The data received from the Nextion display, depends on the page number received. Defaults to 0x00 if not used.\\
+\hline
+\end{DoxyParams}
+This function does not return a value. \begin{DoxyNote}{Note}
+This function is used to handle the data received from the Nextion display and execute the corresponding features or commands based on the received data. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 5, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{serial__receive_8h_ac59bf1ef42c41a76073468fec8e82d74}\index{serial\_receive.h@{serial\_receive.h}!serial\_read@{serial\_read}}
+\index{serial\_read@{serial\_read}!serial\_receive.h@{serial\_receive.h}}
+\doxysubsubsection{\texorpdfstring{serial\_read()}{serial\_read()}}
+{\footnotesize\ttfamily \label{serial__receive_8h_ac59bf1ef42c41a76073468fec8e82d74} 
+void serial\+\_\+read (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to read data coming from the serial port. This function is design to handle the data from the display and process it accordingly. 
+
+\begin{DoxyNote}{Note}
+The command received has the following format\+: code + data1 + data2.
+\begin{DoxyItemize}
+\item The code is a single byte that identifies the command.
+\item The data1 is a single byte that contains the value associated with the command.
+\item The data2 is a single byte that contains additional information related to the command. Defaults to 0x00 if not used.
+\end{DoxyItemize}
+\end{DoxyNote}
+This function does not return any value. \begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4

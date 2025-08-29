@@ -1,0 +1,621 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="system_8h" kind="file" language="C++">
+    <compoundname>system.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="sensors_8h" local="yes">sensors.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="ethernet_8h" local="yes">ethernet.h</includes>
+    <includedby refid="main_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</includedby>
+    <includedby refid="nvs__manager_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/nvs_manager.c</includedby>
+    <includedby refid="sensors_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/sensors.c</includedby>
+    <includedby refid="serial__receive_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</includedby>
+    <includedby refid="setup_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c</includedby>
+    <includedby refid="system_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</includedby>
+    <includedby refid="tasks_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</includedby>
+    <includedby refid="time__manager_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c</includedby>
+    <includedby refid="utils_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/utils.c</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>ethernet.h</label>
+        <link refid="ethernet_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sensors.h</label>
+        <link refid="sensors_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h</label>
+        <link refid="system_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>esp_err.h</label>
+      </node>
+      <node id="7">
+        <label>esp_eth.h</label>
+      </node>
+      <node id="9">
+        <label>esp_event.h</label>
+      </node>
+      <node id="8">
+        <label>esp_netif.h</label>
+      </node>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h</label>
+        <link refid="system_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/nvs_manager.c</label>
+        <link refid="nvs__manager_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/sensors.c</label>
+        <link refid="sensors_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</label>
+        <link refid="serial__receive_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c</label>
+        <link refid="setup_8c"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</label>
+        <link refid="system_8c"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</label>
+        <link refid="tasks_8c"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c</label>
+        <link refid="time__manager_8c"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/utils.c</label>
+        <link refid="utils_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="system_8h_1a8a41b8d5ae95b81f5b1ff677783a40dc" prot="public" static="no" extern="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t system_state</definition>
+        <argsstring></argsstring>
+        <name>system_state</name>
+        <briefdescription>
+<para>Integer to store the system&apos;s state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0 = Normal, 1 = Warning, 2 = Alarm. This variable is used to track the current state of the system based on sensor readings and operational conditions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="14" column="16" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="12" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="14" declcolumn="16"/>
+        <referencedby refid="sensors_8h_1a9456bf17ccbaf37989d9a869c891a294" compoundref="sensors_8c" startline="61" endline="122">sensors_read</referencedby>
+        <referencedby refid="system_8h_1a97ec9415a474734bbfe4819763f72c3f" compoundref="system_8c" startline="190" endline="208">update_header</referencedby>
+        <referencedby refid="system_8h_1a012f23b509b22ea369b2f708e3d15330" compoundref="system_8c" startline="125" endline="188">update_system_status</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1a2ef5919214974cb155ce0f62aec2c46f" prot="public" static="no" extern="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t operation_minutes</definition>
+        <argsstring></argsstring>
+        <name>operation_minutes</name>
+        <briefdescription>
+<para>Integer to store the system&apos;s operation time in minutes since the last reboot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="17" column="16" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="15" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="17" declcolumn="16"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="system_8h_1a3f45cb82b07f9844b825d73f091413a7" compoundref="system_8c" startline="56" endline="79">operation_time</referencedby>
+        <referencedby refid="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" compoundref="serial__receive_8c" startline="58" endline="674">received_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1afefba2969f86ee117cf53a6709050a21" prot="public" static="no" extern="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t operation_hours</definition>
+        <argsstring></argsstring>
+        <name>operation_hours</name>
+        <briefdescription>
+<para>Integer to store the system&apos;s operation time in hours since the last reboot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="20" column="16" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="16" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="20" declcolumn="16"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="system_8h_1a3f45cb82b07f9844b825d73f091413a7" compoundref="system_8c" startline="56" endline="79">operation_time</referencedby>
+        <referencedby refid="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" compoundref="serial__receive_8c" startline="58" endline="674">received_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1aae68550ad38d9fd2a74d96a4f6efdc54" prot="public" static="no" extern="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t boot_count</definition>
+        <argsstring></argsstring>
+        <name>boot_count</name>
+        <briefdescription>
+<para>Integer to keep track of the number of system reboots. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="23" column="16" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="17" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="23" declcolumn="16"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1a10a3fa33bae024190264a8321128a41d" prot="public" static="no" extern="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t system_language</definition>
+        <argsstring></argsstring>
+        <name>system_language</name>
+        <briefdescription>
+<para>Integer to store the system&apos;s language. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0 = English, 1 = Spanish, 2 = Portuguese, 3 = French, 4 = German. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="27" column="16" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="18" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="27" declcolumn="16"/>
+        <referencedby refid="setup_8h_1abf1f7169537cbd8629caa4345fe28394" compoundref="setup_8c" startline="46" endline="76">display_ready</referencedby>
+        <referencedby refid="time__manager_8h_1a7adef7574674ceb8389ad51f9865a608" compoundref="time__manager_8c" startline="48" endline="80">format_current_date</referencedby>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" compoundref="serial__receive_8c" startline="58" endline="674">received_data</referencedby>
+        <referencedby refid="tasks_8h_1af6775fd71f463f5b4bd0281831adf189" compoundref="tasks_8c" startline="27" endline="34">update_date_task</referencedby>
+        <referencedby refid="system_8h_1a97ec9415a474734bbfe4819763f72c3f" compoundref="system_8c" startline="190" endline="208">update_header</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1a30436bd24c155c7ff8b58f89cc4907d9" prot="public" static="no" extern="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t system_color</definition>
+        <argsstring></argsstring>
+        <name>system_color</name>
+        <briefdescription>
+<para>Integer to store the system&apos;s color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0 = Light mode, 1 = Dark mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="31" column="16" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="19" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="31" declcolumn="16"/>
+        <referencedby refid="setup_8h_1abf1f7169537cbd8629caa4345fe28394" compoundref="setup_8c" startline="46" endline="76">display_ready</referencedby>
+        <referencedby refid="utils_8h_1ab430aab7d7c17ab2aba9374eed7d1bd8" compoundref="utils_8c" startline="49" endline="86">get_status_attributes</referencedby>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" compoundref="serial__receive_8c" startline="58" endline="674">received_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1a792282433d9feffdd90742acc4b7cf84" prot="public" static="no" extern="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t maintenance_minutes</definition>
+        <argsstring></argsstring>
+        <name>maintenance_minutes</name>
+        <briefdescription>
+<para>Integer to store the minutes the system has been in operation since commissioning. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This variable is used to track the minutes of operation for maintenance purposes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="35" column="16" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="20" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="35" declcolumn="16"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="system_8h_1a3f45cb82b07f9844b825d73f091413a7" compoundref="system_8c" startline="56" endline="79">operation_time</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1a7935be2326bd362ec59592d133232a12" prot="public" static="no" extern="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t maintenance_hours</definition>
+        <argsstring></argsstring>
+        <name>maintenance_hours</name>
+        <briefdescription>
+<para>Integer to store the hours the system has been in operation since commissioning. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This variable is used to track the hours of operation for maintenance purposes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="39" column="16" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="21" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="39" declcolumn="16"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+        <referencedby refid="system_8h_1a3f45cb82b07f9844b825d73f091413a7" compoundref="system_8c" startline="56" endline="79">operation_time</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1aa828b108037b528aa15a5dc2bbf20195" prot="public" static="no" extern="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t number_of_maintenances</definition>
+        <argsstring></argsstring>
+        <name>number_of_maintenances</name>
+        <briefdescription>
+<para>Integer to store the number of maintenances performed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="42" column="16" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="22" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="42" declcolumn="16"/>
+        <referencedby refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1a059052b01f9d0d07827ac4a6829daff9" prot="public" static="no" extern="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool acknowledged</definition>
+        <argsstring></argsstring>
+        <name>acknowledged</name>
+        <briefdescription>
+<para>Boolean to indicate if the user has acknowledged a warning or alarm. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This variable is used to track if the user has acknowledged a warning or alarm in the system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="46" column="13" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="23" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="46" declcolumn="13"/>
+        <referencedby refid="system_8h_1a012f23b509b22ea369b2f708e3d15330" compoundref="system_8c" startline="125" endline="188">update_system_status</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1aa6e9c9788e43b630369a07406e64b47e" prot="public" static="no" extern="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool warning_or_alarm_occurred</definition>
+        <argsstring></argsstring>
+        <name>warning_or_alarm_occurred</name>
+        <briefdescription>
+<para>Boolean to indicate if a warning or alarm has occurred. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This variable is used to track if any warning or alarm has occurred in the system. It is set to true when a warning or alarm is triggered and can be used to display notifications or alerts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="51" column="13" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="24" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="51" declcolumn="13"/>
+        <referencedby refid="system_8h_1a012f23b509b22ea369b2f708e3d15330" compoundref="system_8c" startline="125" endline="188">update_system_status</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1a0aa958ac5a7c712b3ea2f61fd27268be" prot="public" static="no" extern="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool warning_or_alarm_active</definition>
+        <argsstring></argsstring>
+        <name>warning_or_alarm_active</name>
+        <briefdescription>
+<para>Boolean to indicate if a warning or alarm is currently active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This variable is used to track if a warning or alarm is currently active in the system. It is set to true when a warning or alarm is acknowledged and can be used to control the display of notifications or alerts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="56" column="13" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="25" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="56" declcolumn="13"/>
+        <referencedby refid="system_8h_1a012f23b509b22ea369b2f708e3d15330" compoundref="system_8c" startline="125" endline="188">update_system_status</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="system_8h_1a9b9864a018686c986b17d57495766f24" prot="public" static="no" extern="yes" mutable="no">
+        <type>int</type>
+        <definition>int attributes[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>attributes</name>
+        <briefdescription>
+<para>Array of integers to store the values of the header components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This array is used to store the values of the header components such as title color, status color, slider picture, and icon state. It is used to update the header display on the Nextion screen based on the current system state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="61" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="26" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="61" declcolumn="12"/>
+        <referencedby refid="system_8h_1a97ec9415a474734bbfe4819763f72c3f" compoundref="system_8c" startline="190" endline="208">update_header</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void system_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>system_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initializes the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function initializes the system by setting up the necessary components such as UART, NVS, and display. It also waits for the Nextion display to be ready and for a valid date/time string to be received. <simplesect kind="note"><para>This function should be called at the beginning of the main application to ensure all components are ready for use. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 16, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="72" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="30" bodyend="54" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="72" declcolumn="6"/>
+        <references refid="setup_8h_1abf1f7169537cbd8629caa4345fe28394" compoundref="setup_8c" startline="46" endline="76">display_ready</references>
+        <references refid="ethernet_8h_1ac5a294a0efbd42bd9671903a60e4f52b" compoundref="ethernet_8c" startline="63" endline="125">ethernet_init</references>
+        <references refid="ethernet_8h_1a864a2ddf998b216a85c97c640b841501" compoundref="ethernet_8c" startline="171" endline="203">ethernet_set_static_ip</references>
+        <references refid="ethernet_8h_1a4f763d2ae63ab35e404488c1add5c852" compoundref="ethernet_8c" startline="127" endline="136">ethernet_start</references>
+        <references refid="setup_8h_1aa2c353c6e3271404cdf45ce4601951c7" compoundref="setup_8c" startline="36" endline="44">init_nvs</references>
+        <references refid="setup_8h_1a7c8ab9435f095e55019fe880192c3537" compoundref="setup_8c" startline="16" endline="34">init_uart</references>
+        <references refid="sensors_8h_1a7a541577440ac4cb1da9b8ef7261cfec" compoundref="sensors_8c" startline="34" endline="59">sensors_init</references>
+        <references refid="serial__send_8h_1aa0463ce777016c795ce8597f2e04bf79" compoundref="serial__send_8c" startline="9" endline="14">uart_send_init</references>
+        <references refid="setup_8h_1a409b2f4c4106092dafb1db940c5f85d4" compoundref="setup_8c" startline="78" endline="119">wait_for_datetime</references>
+        <referencedby refid="main_8c_1a630544a7f0a2cc40d8a7fefab7e2fe70" compoundref="main_8c" startline="28" endline="47">app_main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="system_8h_1a3f45cb82b07f9844b825d73f091413a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operation_time</definition>
+        <argsstring>(void)</argsstring>
+        <name>operation_time</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Updates the operation time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function updates the operation time by incrementing the seconds, minutes, and hours based on the system&apos;s uptime. It also handles the rollover of seconds to minutes and minutes to hours. This function does not return any value. <simplesect kind="note"><para>This function should be called periodically to keep track of the system&apos;s operation time. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 16, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="84" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="56" bodyend="79" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="84" declcolumn="6"/>
+        <references refid="nvs__manager_8h_1a4bda739bd43d6cbc49f5a4445bfab66b" compoundref="nvs__manager_8h" startline="17">KEY_MAINTENANCE_HOURS</references>
+        <references refid="nvs__manager_8h_1a12e0ec2872971263a8238f0b699bc548" compoundref="nvs__manager_8h" startline="16">KEY_MAINTENANCE_MIN</references>
+        <references refid="nvs__manager_8h_1a865b7bdd57f5ed2e21d6db5fb2e807c5" compoundref="nvs__manager_8h" startline="12">KEY_OP_HOURS</references>
+        <references refid="nvs__manager_8h_1af7f392a5d16adbd68edd97898cb9d268" compoundref="nvs__manager_8h" startline="11">KEY_OP_MIN</references>
+        <references refid="system_8h_1a7935be2326bd362ec59592d133232a12" compoundref="system_8c" startline="21">maintenance_hours</references>
+        <references refid="system_8h_1a792282433d9feffdd90742acc4b7cf84" compoundref="system_8c" startline="20">maintenance_minutes</references>
+        <references refid="system_8h_1afefba2969f86ee117cf53a6709050a21" compoundref="system_8c" startline="16">operation_hours</references>
+        <references refid="system_8h_1a2ef5919214974cb155ce0f62aec2c46f" compoundref="system_8c" startline="15">operation_minutes</references>
+        <references refid="system_8c_1aa96758e46e482f01d8cc7baf87a6ee8b" compoundref="system_8c" startline="28">operation_seconds</references>
+        <references refid="nvs__manager_8h_1aaec9f002eed7b2794c9babcfa7d3f50b" compoundref="nvs__manager_8c" startline="84" endline="96">save_int_to_nvs</references>
+        <referencedby refid="tasks_8h_1a38055df7c19e6b62d4d08d631dace3bb" compoundref="tasks_8c" startline="20" endline="25">operation_time_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="system_8h_1add779b9d830853ab883651b998ad43d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void store_system_event</definition>
+        <argsstring>(int type, int sensor_index)</argsstring>
+        <name>store_system_event</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sensor_index</declname>
+        </param>
+        <briefdescription>
+<para>Stores a system event in the event log. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of event to store (e.g., 0 for normal, 1 for warning, 2 for alarm). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sensor_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the sensor that triggered the event (0 for pressure sensor 1, 1 for pressure sensor 2, 2 for temperature sensor).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This function logs the event type and the sensor index that triggered the event. It is used to keep track of system events for diagnostics and monitoring purposes. <simplesect kind="note"><para>This function should be called whenever a significant event occurs in the system, such as a warning or alarm condition. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 19, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the sensor_index is valid (0, 1, or 2) to avoid out-of-bounds access. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="98" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="81" bodyend="123" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="98" declcolumn="6"/>
+        <references refid="time__manager_8h_1a7219d3bd77a4384411b452afbe1874ac" compoundref="time__manager_8c" startline="94" endline="110">get_event_timestamp</references>
+        <references refid="serial__send_8h_1ab370b65d42bfe89671d6895bd06849a0" compoundref="serial__send_8c" startline="46" endline="50">send_method_to_display</references>
+        <referencedby refid="system_8h_1a012f23b509b22ea369b2f708e3d15330" compoundref="system_8c" startline="125" endline="188">update_system_status</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="system_8h_1a012f23b509b22ea369b2f708e3d15330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t update_system_status</definition>
+        <argsstring>(sensor_data_t *data)</argsstring>
+        <name>update_system_status</name>
+        <param>
+          <type><ref refid="structsensor__data__t" kindref="compound">sensor_data_t</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Updates the system status based on sensor data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="structsensor__data__t" kindref="compound">sensor_data_t</ref> structure containing the latest sensor readings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This function updates the global system state based on the provided sensor data. It checks the pressure and temperature readings to determine if the system is in a normal, warning, or alarm state. It also updates the acknowledged status and warning/alarm flags based on the sensor readings. <simplesect kind="return"><para>Returns an integer indicating the system state:<itemizedlist>
+<listitem><para>0: Normal</para>
+</listitem><listitem><para>1: Warning</para>
+</listitem><listitem><para>2: Alarm </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="note"><para>This function should be called whenever new sensor data is available to keep the system status updated. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 17, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="115" column="9" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="125" bodyend="188" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="115" declcolumn="9"/>
+        <references refid="system_8h_1a059052b01f9d0d07827ac4a6829daff9" compoundref="system_8c" startline="23">acknowledged</references>
+        <references refid="structsensor__data__t_1abeb0981b3499f2cac4214bca0957547b" compoundref="sensors_8h" startline="7">sensor_data_t::pressure1_mbar</references>
+        <references refid="structsensor__data__t_1acb01d4352323d49e7f841008907749b0" compoundref="sensors_8h" startline="8">sensor_data_t::pressure2_mbar</references>
+        <references refid="system_8c_1add779b9d830853ab883651b998ad43d8" compoundref="system_8c" startline="81" endline="123">store_system_event</references>
+        <references refid="system_8h_1a8a41b8d5ae95b81f5b1ff677783a40dc" compoundref="system_8c" startline="12">system_state</references>
+        <references refid="structsensor__data__t_1aac77aba79f4cf41c6bc0d149096d5e69" compoundref="sensors_8h" startline="9">sensor_data_t::temperature_C</references>
+        <references refid="system_8h_1a0aa958ac5a7c712b3ea2f61fd27268be" compoundref="system_8c" startline="25">warning_or_alarm_active</references>
+        <references refid="system_8h_1aa6e9c9788e43b630369a07406e64b47e" compoundref="system_8c" startline="24">warning_or_alarm_occurred</references>
+        <referencedby refid="sensors_8h_1a9456bf17ccbaf37989d9a869c891a294" compoundref="sensors_8c" startline="61" endline="122">sensors_read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="system_8h_1a97ec9415a474734bbfe4819763f72c3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void update_header</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_header</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Updates the header on the Nextion display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function updates the header on the Nextion display to reflect the current system state. It updates the title color, status color, slider picture, and icon state based on the system state. <simplesect kind="note"><para>This function should be called whenever the system state changes or periodically to keep the display updated. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 18, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly; it is intended to be used as a FreeRTOS task or called from the main application loop. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" line="127" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c" bodystart="190" bodyend="208" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h" declline="127" declcolumn="6"/>
+        <references refid="system_8h_1a9b9864a018686c986b17d57495766f24" compoundref="system_8c" startline="26">attributes</references>
+        <references refid="pages_8h_1ad3dbd5a2ff3dafed0fcdb227d018e091" compoundref="serial__receive_8c" startline="17">current_page</references>
+        <references refid="utils_8h_1ab430aab7d7c17ab2aba9374eed7d1bd8" compoundref="utils_8c" startline="49" endline="86">get_status_attributes</references>
+        <references refid="utils_8h_1af273a5ebcae2631c89cbee7c2bb96e9b" compoundref="utils_8c" startline="88" endline="113">get_status_text</references>
+        <references refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a41c6eb506ccf657cc7e958c8e8c769cd" compoundref="pages_8h" startline="5">MAIN</references>
+        <references refid="serial__send_8h_1a5054d67ac4b50fb8e90972bd55049e3f" compoundref="serial__send_8c" startline="52" endline="56">send_global_object</references>
+        <references refid="serial__send_8h_1a79b60688c065ea5ed16bfc43a0b82c9b" compoundref="serial__send_8c" startline="28" endline="32">send_int_to_display</references>
+        <references refid="system_8h_1a10a3fa33bae024190264a8321128a41d" compoundref="system_8c" startline="18">system_language</references>
+        <references refid="system_8h_1a8a41b8d5ae95b81f5b1ff677783a40dc" compoundref="system_8c" startline="12">system_state</references>
+        <referencedby refid="tasks_8h_1aca31737b112ac097a245cc89d88a7f06" compoundref="tasks_8c" startline="61" endline="67">status_update_task</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SYSTEM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYSTEM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sensors_8h" kindref="compound">sensors.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ethernet_8h" kindref="compound">ethernet.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Global<sp/>variables<sp/>to<sp/>stored<sp/>in<sp/>NVS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="system_8h_1a8a41b8d5ae95b81f5b1ff677783a40dc" kindref="member">system_state</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="system_8h_1a2ef5919214974cb155ce0f62aec2c46f" kindref="member">operation_minutes</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="system_8h_1afefba2969f86ee117cf53a6709050a21" kindref="member">operation_hours</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="system_8h_1aae68550ad38d9fd2a74d96a4f6efdc54" kindref="member">boot_count</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="system_8h_1a10a3fa33bae024190264a8321128a41d" kindref="member">system_language</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="system_8h_1a30436bd24c155c7ff8b58f89cc4907d9" kindref="member">system_color</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="system_8h_1a792282433d9feffdd90742acc4b7cf84" kindref="member">maintenance_minutes</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="system_8h_1a7935be2326bd362ec59592d133232a12" kindref="member">maintenance_hours</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="system_8h_1aa828b108037b528aa15a5dc2bbf20195" kindref="member">number_of_maintenances</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="system_8h_1a059052b01f9d0d07827ac4a6829daff9" kindref="member">acknowledged</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="system_8h_1aa6e9c9788e43b630369a07406e64b47e" kindref="member">warning_or_alarm_occurred</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="system_8h_1a0aa958ac5a7c712b3ea2f61fd27268be" kindref="member">warning_or_alarm_active</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="system_8h_1a9b9864a018686c986b17d57495766f24" kindref="member">attributes</ref>[4];<sp/></highlight><highlight class="comment">//<sp/>Array<sp/>to<sp/>store<sp/>status<sp/>attributes<sp/>for<sp/>the<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" kindref="member">system_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="system_8h_1a3f45cb82b07f9844b825d73f091413a7" kindref="member">operation_time</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="system_8h_1add779b9d830853ab883651b998ad43d8" kindref="member">store_system_event</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sensor_index);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">int32_t<sp/><ref refid="system_8h_1a012f23b509b22ea369b2f708e3d15330" kindref="member">update_system_status</ref>(<ref refid="structsensor__data__t" kindref="compound">sensor_data_t</ref><sp/>*data);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="system_8h_1a97ec9415a474734bbfe4819763f72c3f" kindref="member">update_header</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SYSTEM_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h"/>
+  </compounddef>
+</doxygen>

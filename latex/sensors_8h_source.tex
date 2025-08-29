@@ -1,0 +1,24 @@
+\doxysection{sensors.\+h}
+\hypertarget{sensors_8h_source}{}\label{sensors_8h_source}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/sensors.h@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/sensors.h}}
+\mbox{\hyperlink{sensors_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SENSORS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SENSORS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}esp\_err.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structsensor__data__t_abeb0981b3499f2cac4214bca0957547b}{pressure1\_mbar}};\ \ \ \ \textcolor{comment}{//\ Inlet\ pressure\ in\ bar}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structsensor__data__t_acb01d4352323d49e7f841008907749b0}{pressure2\_mbar}};\ \ \ \ \textcolor{comment}{//\ Outlet\ pressure\ in\ bar}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structsensor__data__t_aac77aba79f4cf41c6bc0d149096d5e69}{temperature\_C}};\ \ \ \ \textcolor{comment}{//\ PT1000\ temperature\ in\ Celsius}}
+\DoxyCodeLine{00010\ \}\ \mbox{\hyperlink{structsensor__data__t}{sensor\_data\_t}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00021\ esp\_err\_t\ \mbox{\hyperlink{sensors_8h_a7a541577440ac4cb1da9b8ef7261cfec}{sensors\_init}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00036\ esp\_err\_t\ \mbox{\hyperlink{sensors_8h_a9456bf17ccbaf37989d9a869c891a294}{sensors\_read}}(\mbox{\hyperlink{structsensor__data__t}{sensor\_data\_t}}\ *data);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ esp\_err\_t\ \mbox{\hyperlink{sensors_8h_a4a239a8cec68742c37e150a05c836ecc}{sensors\_get\_latest}}(\mbox{\hyperlink{structsensor__data__t}{sensor\_data\_t}}\ *data);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SENSORS\_H}}
+
+\end{DoxyCode}

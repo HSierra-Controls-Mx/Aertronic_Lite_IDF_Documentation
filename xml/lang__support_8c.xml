@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="lang__support_8c" kind="file" language="C++">
+    <compoundname>lang_support.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="lang__support_8h" local="yes">lang_support.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>lang_support.h</label>
+        <link refid="lang__support_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/lang_support.c</label>
+        <link refid="lang__support_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="lang__support_8c_1a326089ff74f824b77e9bf1274a74fa5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * get_day_of_week</definition>
+        <argsstring>(int language, int day_of_week)</argsstring>
+        <name>get_day_of_week</name>
+        <param>
+          <type>int</type>
+          <declname>language</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>day_of_week</declname>
+        </param>
+        <briefdescription>
+<para>Gets the name of the day of the week in the specified language. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lanaguage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the system langauge:<itemizedlist>
+<listitem><para>0: English</para>
+</listitem><listitem><para>1: Spanish</para>
+</listitem><listitem><para>2: Portuguese</para>
+</listitem><listitem><para>3: French</para>
+</listitem><listitem><para>4: German </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>day_of_week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the day of the week (0 = Sunday, 6 = Saturday). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to a string containing the name of the day of the week in the specified language. </para>
+</simplesect>
+<simplesect kind="note"><para>The returned string is static and should not be modified or freed. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/lang_support.c" line="5" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/lang_support.c" bodystart="5" bodyend="15"/>
+        <referencedby refid="time__manager_8h_1a7adef7574674ceb8389ad51f9865a608" compoundref="time__manager_8c" startline="48" endline="80">format_current_date</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="lang__support_8c_1a0f54323b82eeb8585acd573761151264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * get_month_name</definition>
+        <argsstring>(int language, int month)</argsstring>
+        <name>get_month_name</name>
+        <param>
+          <type>int</type>
+          <declname>langauge</declname>
+          <defname>language</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+<para>Gets the name of the month in the specified language. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the system language:<itemizedlist>
+<listitem><para>0: English</para>
+</listitem><listitem><para>1: Spanish</para>
+</listitem><listitem><para>2: Portuguese</para>
+</listitem><listitem><para>3: French</para>
+</listitem><listitem><para>4: German </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>month</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the month (1 = January, 12 = December). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to a string containing the name of the month in the specified language. </para>
+</simplesect>
+<simplesect kind="note"><para>The returned string is static and should not be modified or freed. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/lang_support.c" line="17" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/lang_support.c" bodystart="17" bodyend="27"/>
+        <referencedby refid="time__manager_8h_1a7adef7574674ceb8389ad51f9865a608" compoundref="time__manager_8c" startline="48" endline="80">format_current_date</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lang__support_8h" kindref="compound">lang_support.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="lang__support_8h_1a326089ff74f824b77e9bf1274a74fa5f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="lang__support_8c_1a326089ff74f824b77e9bf1274a74fa5f" kindref="member">get_day_of_week</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>language,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>day_of_week)<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>ddays_of_week[5][7]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;Sunday&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Monday&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Tuesday&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Wednesday&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Thursday&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Friday&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Saturday&quot;</highlight><highlight class="normal">},<sp/></highlight><highlight class="comment">//<sp/>English</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;Domingo&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Lunes&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Martes&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Miércoles&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Jueves&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Viernes&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Sábado&quot;</highlight><highlight class="normal">},<sp/></highlight><highlight class="comment">//<sp/>Spanish</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;Domingo&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Segunda-feira&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Terça-feira&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Quarta-feira&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Quinta-feira&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Sexta-feira&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Sábado&quot;</highlight><highlight class="normal">},<sp/></highlight><highlight class="comment">//<sp/>Portuguese</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;Dimanche&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Lundi&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mardi&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mercredi&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Jeudi&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Vendredi&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Samedi&quot;</highlight><highlight class="normal">},<sp/></highlight><highlight class="comment">//<sp/>French</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;Sonntag&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Montag&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Dienstag&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mittwoch&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Donnerstag&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Freitag&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Samstag&quot;</highlight><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>German</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(language<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>language<sp/>&lt;<sp/>5<sp/>&amp;&amp;<sp/>day_of_week<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>day_of_week<sp/>&lt;<sp/>7)<sp/>?<sp/>ddays_of_week[language][day_of_week]<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;Invalid&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>Return<sp/>&quot;Invalid&quot;<sp/>if<sp/>the<sp/>language<sp/>or<sp/>day_of_week<sp/>is<sp/>out<sp/>of<sp/>bounds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="lang__support_8h_1a2682334f405ae6d109b45818d1e61abf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="lang__support_8c_1a0f54323b82eeb8585acd573761151264" kindref="member">get_month_name</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>language,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>month)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>months[5][12]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;January&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;February&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;March&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;April&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;May&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;June&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;July&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;August&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;September&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;October&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;November&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;December&quot;</highlight><highlight class="normal">},<sp/></highlight><highlight class="comment">//<sp/>English</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;Enero&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Febrero&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Marzo&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Abril&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mayo&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Junio&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Julio&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Agosto&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Septiembre&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Octubre&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Noviembre&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Diciembre&quot;</highlight><highlight class="normal">},<sp/></highlight><highlight class="comment">//<sp/>Spanish</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;Janeiro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Fevereiro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Março&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Abril&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Maio&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Junho&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Julho&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Agosto&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Setembro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Outubro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Novembro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Dezembro&quot;</highlight><highlight class="normal">},<sp/></highlight><highlight class="comment">//<sp/>Portuguese</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;Janvier&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Février&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mars&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Avril&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mai&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Juin&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Juillet&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Août&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Septembre&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Octobre&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Novembre&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Décembre&quot;</highlight><highlight class="normal">},<sp/></highlight><highlight class="comment">//<sp/>French</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;Januar&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Februar&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;März&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;April&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mai&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Juni&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Juli&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;August&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;September&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Oktober&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;November&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Dezember&quot;</highlight><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>German</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(language<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>language<sp/>&lt;<sp/>5<sp/>&amp;&amp;<sp/>month<sp/>&gt;=<sp/>1<sp/>&amp;&amp;<sp/>month<sp/>&lt;=<sp/>12)<sp/>?<sp/>months[language][month<sp/>-<sp/>1]<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;Invalid&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>Return<sp/>&quot;Invalid&quot;<sp/>if<sp/>the<sp/>language<sp/>or<sp/>month<sp/>is<sp/>out<sp/>of<sp/>bounds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/lang_support.c"/>
+  </compounddef>
+</doxygen>

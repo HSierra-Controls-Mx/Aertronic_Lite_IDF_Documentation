@@ -1,0 +1,215 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/main/time\+\_\+manager.c File Reference}
+\hypertarget{time__manager_8c}{}\label{time__manager_8c}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/time\_manager.c@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/time\_manager.c}}
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}time\+\_\+manager.\+h"{}}\newline
+{\ttfamily \#include "{}lang\+\_\+support.\+h"{}}\newline
+{\ttfamily \#include "{}system.\+h"{}}\newline
+{\ttfamily \#include "{}serial\+\_\+send.\+h"{}}\newline
+Include dependency graph for time\+\_\+manager.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{time__manager_8c_a94c1c4594f51852e46a30e2f025ebc16}{set\+\_\+system\+\_\+time}} (int year, int month, int day, int hour, int min, int sec)
+\begin{DoxyCompactList}\small\item\em Initializes the time manager. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{time__manager_8c_aa10b7c32c7bb9654c6d13256ba88e217}{format\+\_\+current\+\_\+time}} (void)
+\begin{DoxyCompactList}\small\item\em Formats the current time as a string in 12-\/hour format with AM/\+PM. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{time__manager_8c_a7adef7574674ceb8389ad51f9865a608}{format\+\_\+current\+\_\+date}} (int language)
+\begin{DoxyCompactList}\small\item\em Formats the current date as a string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{time__manager_8c_ac1f62fd134f587b2f14e3fe565f84e11}{print\+\_\+operation\+\_\+time}} (int hours, int minutes, int32\+\_\+t language)
+\begin{DoxyCompactList}\small\item\em Prints the current operation time to the console. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{time__manager_8c_a7219d3bd77a4384411b452afbe1874ac}{get\+\_\+event\+\_\+timestamp}} (void)
+\begin{DoxyCompactList}\small\item\em Gets the current event timestamp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{time__manager_8c_a44d7af51d64492c3d6fd86681425a202}{hours\+\_\+text}} \mbox{[}$\,$\mbox{]} = \{"{}hours"{}, "{}horas"{}, "{}horas"{}, "{}heures"{}, "{}Stunden"{}\}
+\begin{DoxyCompactList}\small\item\em Array containing the words for "{}hours"{} in different languages. \end{DoxyCompactList}\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{time__manager_8c_a6d06573199e575fdcb4325e592e21832}{minutes\+\_\+text}} \mbox{[}$\,$\mbox{]} = \{"{}minutes"{}, "{}minutos"{}, "{}minutos"{}, "{}minutes"{}, "{}Minuten"{}\}
+\begin{DoxyCompactList}\small\item\em Array containing the words for "{}minutes"{} in different languages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{time__manager_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{time__manager_8c_a7adef7574674ceb8389ad51f9865a608}\index{time\_manager.c@{time\_manager.c}!format\_current\_date@{format\_current\_date}}
+\index{format\_current\_date@{format\_current\_date}!time\_manager.c@{time\_manager.c}}
+\doxysubsubsection{\texorpdfstring{format\_current\_date()}{format\_current\_date()}}
+{\footnotesize\ttfamily \label{time__manager_8c_a7adef7574674ceb8389ad51f9865a608} 
+const char \texorpdfstring{$\ast$}{*} format\+\_\+current\+\_\+date (\begin{DoxyParamCaption}\item[{int}]{language}{}\end{DoxyParamCaption})}
+
+
+
+Formats the current date as a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em language} & Integer representing the system language\+:
+\begin{DoxyItemize}
+\item 0\+: English -\/1\+: Spanish -\/2\+: Portuguese -\/3\+: French -\/4\+: German 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function returns a pointer to a static string, so it should not be modified or freed. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+A pointer to a static string containing the formatted date according to the system language selected. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{time__manager_8c_aa10b7c32c7bb9654c6d13256ba88e217}\index{time\_manager.c@{time\_manager.c}!format\_current\_time@{format\_current\_time}}
+\index{format\_current\_time@{format\_current\_time}!time\_manager.c@{time\_manager.c}}
+\doxysubsubsection{\texorpdfstring{format\_current\_time()}{format\_current\_time()}}
+{\footnotesize\ttfamily \label{time__manager_8c_aa10b7c32c7bb9654c6d13256ba88e217} 
+const char \texorpdfstring{$\ast$}{*} format\+\_\+current\+\_\+time (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Formats the current time as a string in 12-\/hour format with AM/\+PM. 
+
+\begin{DoxyNote}{Note}
+This function returns a pointer to a static string, so it should not be modified or freed. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+A pointer to a static string containing the formatted time (e.\+g., "{}02\+:30pm"{}). 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{time__manager_8c_a7219d3bd77a4384411b452afbe1874ac}\index{time\_manager.c@{time\_manager.c}!get\_event\_timestamp@{get\_event\_timestamp}}
+\index{get\_event\_timestamp@{get\_event\_timestamp}!time\_manager.c@{time\_manager.c}}
+\doxysubsubsection{\texorpdfstring{get\_event\_timestamp()}{get\_event\_timestamp()}}
+{\footnotesize\ttfamily \label{time__manager_8c_a7219d3bd77a4384411b452afbe1874ac} 
+const char \texorpdfstring{$\ast$}{*} get\+\_\+event\+\_\+timestamp (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the current event timestamp. 
+
+This function returns a pointer to a static string containing the current event timestamp. The timestamp is formatted as "{}\+YYYY-\/\+MM-\/\+DD HH\+:\+MM\+:\+SS"{}. \begin{DoxyNote}{Note}
+The returned string is static and should not be modified or freed. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+A pointer to a static string containing the current event timestamp. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 19, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{time__manager_8c_ac1f62fd134f587b2f14e3fe565f84e11}\index{time\_manager.c@{time\_manager.c}!print\_operation\_time@{print\_operation\_time}}
+\index{print\_operation\_time@{print\_operation\_time}!time\_manager.c@{time\_manager.c}}
+\doxysubsubsection{\texorpdfstring{print\_operation\_time()}{print\_operation\_time()}}
+{\footnotesize\ttfamily \label{time__manager_8c_ac1f62fd134f587b2f14e3fe565f84e11} 
+void print\+\_\+operation\+\_\+time (\begin{DoxyParamCaption}\item[{int}]{hours}{, }\item[{int}]{minutes}{, }\item[{int32\+\_\+t}]{language}{}\end{DoxyParamCaption})}
+
+
+
+Prints the current operation time to the console. 
+
+This function does not return any value. \begin{DoxyNote}{Note}
+This function prints the operation time in the format "{}\+HH\+:\+MM"{} to the console. It is useful for debugging and monitoring the system\textquotesingle{}s operation time. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 19, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\Hypertarget{time__manager_8c_a94c1c4594f51852e46a30e2f025ebc16}\index{time\_manager.c@{time\_manager.c}!set\_system\_time@{set\_system\_time}}
+\index{set\_system\_time@{set\_system\_time}!time\_manager.c@{time\_manager.c}}
+\doxysubsubsection{\texorpdfstring{set\_system\_time()}{set\_system\_time()}}
+{\footnotesize\ttfamily \label{time__manager_8c_a94c1c4594f51852e46a30e2f025ebc16} 
+void set\+\_\+system\+\_\+time (\begin{DoxyParamCaption}\item[{int}]{year}{, }\item[{int}]{month}{, }\item[{int}]{day}{, }\item[{int}]{hour}{, }\item[{int}]{min}{, }\item[{int}]{sec}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the time manager. 
+
+\begin{DoxyNote}{Note}
+This function should be called inside the \doxylink{setup_8h_a409b2f4c4106092dafb1db940c5f85d4}{wait\+\_\+for\+\_\+datetime()} function. This function sets up the system time based on the provided date and time from the Nextion display. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em year} & Full year (e.\+g., 2025) \\
+\hline
+{\em month} & Month (1-\/12) \\
+\hline
+{\em day} & Day of the month (1-\/31) \\
+\hline
+{\em hour} & Hour of the day (0-\/23) \\
+\hline
+{\em min} & Minute of the hour (0-\/59) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 7
+
+
+\label{doc-var-members}
+\Hypertarget{time__manager_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{time__manager_8c_a44d7af51d64492c3d6fd86681425a202}\index{time\_manager.c@{time\_manager.c}!hours\_text@{hours\_text}}
+\index{hours\_text@{hours\_text}!time\_manager.c@{time\_manager.c}}
+\doxysubsubsection{\texorpdfstring{hours\_text}{hours\_text}}
+{\footnotesize\ttfamily \label{time__manager_8c_a44d7af51d64492c3d6fd86681425a202} 
+const char\texorpdfstring{$\ast$}{*} hours\+\_\+text\mbox{[}$\,$\mbox{]} = \{"{}hours"{}, "{}horas"{}, "{}horas"{}, "{}heures"{}, "{}Stunden"{}\}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Array containing the words for "{}hours"{} in different languages. 
+
+\Hypertarget{time__manager_8c_a6d06573199e575fdcb4325e592e21832}\index{time\_manager.c@{time\_manager.c}!minutes\_text@{minutes\_text}}
+\index{minutes\_text@{minutes\_text}!time\_manager.c@{time\_manager.c}}
+\doxysubsubsection{\texorpdfstring{minutes\_text}{minutes\_text}}
+{\footnotesize\ttfamily \label{time__manager_8c_a6d06573199e575fdcb4325e592e21832} 
+const char\texorpdfstring{$\ast$}{*} minutes\+\_\+text\mbox{[}$\,$\mbox{]} = \{"{}minutes"{}, "{}minutos"{}, "{}minutos"{}, "{}minutes"{}, "{}Minuten"{}\}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Array containing the words for "{}minutes"{} in different languages. 
+

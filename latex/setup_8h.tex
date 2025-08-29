@@ -1,0 +1,168 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/include/setup.h File Reference}
+\hypertarget{setup_8h}{}\label{setup_8h}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/setup.h@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/setup.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{setup_8h_ab74ec82c9f5211b716c017e6f4b26c4d}{UART\+\_\+\+PORT\+\_\+\+NUM}}~UART\+\_\+\+NUM\+\_\+0
+\item 
+\#define \mbox{\hyperlink{setup_8h_a615aed21aa6825462b7c17b0c238ffe2}{UART\+\_\+\+BAUD\+\_\+\+RATE}}~115200
+\item 
+\#define \mbox{\hyperlink{setup_8h_a6c82a6844388a551e8f06d249598989e}{UART\+\_\+\+TX\+\_\+\+PIN}}~UART\+\_\+\+PIN\+\_\+\+NO\+\_\+\+CHANGE
+\item 
+\#define \mbox{\hyperlink{setup_8h_aa37eca6fe61f6938d925975dff27c8fd}{UART\+\_\+\+RX\+\_\+\+PIN}}~UART\+\_\+\+PIN\+\_\+\+NO\+\_\+\+CHANGE
+\item 
+\#define \mbox{\hyperlink{setup_8h_a3c64efae8dadfdf4bad585cad0f02ccf}{END\+\_\+\+COMMAND}}~"{}\textbackslash{}x\+FF\textbackslash{}x\+FF\textbackslash{}x\+FF"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{setup_8h_a7c8ab9435f095e55019fe880192c3537}{init\+\_\+uart}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the serial communication. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{setup_8h_aa2c353c6e3271404cdf45ce4601951c7}{init\+\_\+nvs}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the NVS (Non-\/\+Volatile Storage). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{setup_8h_abf1f7169537cbd8629caa4345fe28394}{display\+\_\+ready}} (void)
+\begin{DoxyCompactList}\small\item\em Waits for the Nextion display to send the command indicating that it is ready. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{setup_8h_a409b2f4c4106092dafb1db940c5f85d4}{wait\+\_\+for\+\_\+datetime}} (void)
+\begin{DoxyCompactList}\small\item\em Blocks until a valid date/time string is received via UART. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{setup_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{setup_8h_a3c64efae8dadfdf4bad585cad0f02ccf}\index{setup.h@{setup.h}!END\_COMMAND@{END\_COMMAND}}
+\index{END\_COMMAND@{END\_COMMAND}!setup.h@{setup.h}}
+\doxysubsubsection{\texorpdfstring{END\_COMMAND}{END\_COMMAND}}
+{\footnotesize\ttfamily \label{setup_8h_a3c64efae8dadfdf4bad585cad0f02ccf} 
+\#define END\+\_\+\+COMMAND~"{}\textbackslash{}x\+FF\textbackslash{}x\+FF\textbackslash{}x\+FF"{}}
+
+\Hypertarget{setup_8h_a615aed21aa6825462b7c17b0c238ffe2}\index{setup.h@{setup.h}!UART\_BAUD\_RATE@{UART\_BAUD\_RATE}}
+\index{UART\_BAUD\_RATE@{UART\_BAUD\_RATE}!setup.h@{setup.h}}
+\doxysubsubsection{\texorpdfstring{UART\_BAUD\_RATE}{UART\_BAUD\_RATE}}
+{\footnotesize\ttfamily \label{setup_8h_a615aed21aa6825462b7c17b0c238ffe2} 
+\#define UART\+\_\+\+BAUD\+\_\+\+RATE~115200}
+
+\Hypertarget{setup_8h_ab74ec82c9f5211b716c017e6f4b26c4d}\index{setup.h@{setup.h}!UART\_PORT\_NUM@{UART\_PORT\_NUM}}
+\index{UART\_PORT\_NUM@{UART\_PORT\_NUM}!setup.h@{setup.h}}
+\doxysubsubsection{\texorpdfstring{UART\_PORT\_NUM}{UART\_PORT\_NUM}}
+{\footnotesize\ttfamily \label{setup_8h_ab74ec82c9f5211b716c017e6f4b26c4d} 
+\#define UART\+\_\+\+PORT\+\_\+\+NUM~UART\+\_\+\+NUM\+\_\+0}
+
+\Hypertarget{setup_8h_aa37eca6fe61f6938d925975dff27c8fd}\index{setup.h@{setup.h}!UART\_RX\_PIN@{UART\_RX\_PIN}}
+\index{UART\_RX\_PIN@{UART\_RX\_PIN}!setup.h@{setup.h}}
+\doxysubsubsection{\texorpdfstring{UART\_RX\_PIN}{UART\_RX\_PIN}}
+{\footnotesize\ttfamily \label{setup_8h_aa37eca6fe61f6938d925975dff27c8fd} 
+\#define UART\+\_\+\+RX\+\_\+\+PIN~UART\+\_\+\+PIN\+\_\+\+NO\+\_\+\+CHANGE}
+
+\Hypertarget{setup_8h_a6c82a6844388a551e8f06d249598989e}\index{setup.h@{setup.h}!UART\_TX\_PIN@{UART\_TX\_PIN}}
+\index{UART\_TX\_PIN@{UART\_TX\_PIN}!setup.h@{setup.h}}
+\doxysubsubsection{\texorpdfstring{UART\_TX\_PIN}{UART\_TX\_PIN}}
+{\footnotesize\ttfamily \label{setup_8h_a6c82a6844388a551e8f06d249598989e} 
+\#define UART\+\_\+\+TX\+\_\+\+PIN~UART\+\_\+\+PIN\+\_\+\+NO\+\_\+\+CHANGE}
+
+
+
+\label{doc-func-members}
+\Hypertarget{setup_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{setup_8h_abf1f7169537cbd8629caa4345fe28394}\index{setup.h@{setup.h}!display\_ready@{display\_ready}}
+\index{display\_ready@{display\_ready}!setup.h@{setup.h}}
+\doxysubsubsection{\texorpdfstring{display\_ready()}{display\_ready()}}
+{\footnotesize\ttfamily \label{setup_8h_abf1f7169537cbd8629caa4345fe28394} 
+void display\+\_\+ready (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Waits for the Nextion display to send the command indicating that it is ready. 
+
+This function blocks until the display sends the command\+: 0x88, 0x\+FF, 0x\+FF, 0x\+FF \begin{DoxyNote}{Note}
+This function should be called right after the initialization of the UART and NVS. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025. 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{setup_8h_aa2c353c6e3271404cdf45ce4601951c7}\index{setup.h@{setup.h}!init\_nvs@{init\_nvs}}
+\index{init\_nvs@{init\_nvs}!setup.h@{setup.h}}
+\doxysubsubsection{\texorpdfstring{init\_nvs()}{init\_nvs()}}
+{\footnotesize\ttfamily \label{setup_8h_aa2c353c6e3271404cdf45ce4601951c7} 
+void init\+\_\+nvs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the NVS (Non-\/\+Volatile Storage). 
+
+This function initializes the NVS system, allowing for data storage and retrieval. This function does not return any value. \begin{DoxyNote}{Note}
+This function should be called before attempting to read or write any data to NVS. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 6, 2025 
+\end{DoxyDate}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{setup_8h_a7c8ab9435f095e55019fe880192c3537}\index{setup.h@{setup.h}!init\_uart@{init\_uart}}
+\index{init\_uart@{init\_uart}!setup.h@{setup.h}}
+\doxysubsubsection{\texorpdfstring{init\_uart()}{init\_uart()}}
+{\footnotesize\ttfamily \label{setup_8h_a7c8ab9435f095e55019fe880192c3537} 
+void init\+\_\+uart (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the serial communication. 
+
+This function sets up the UART(Universal Asynchronous Receiver-\/\+Transmitter). \begin{DoxyNote}{Note}
+This function should be called before using any serial communication functions. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 5, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{setup_8h_a409b2f4c4106092dafb1db940c5f85d4}\index{setup.h@{setup.h}!wait\_for\_datetime@{wait\_for\_datetime}}
+\index{wait\_for\_datetime@{wait\_for\_datetime}!setup.h@{setup.h}}
+\doxysubsubsection{\texorpdfstring{wait\_for\_datetime()}{wait\_for\_datetime()}}
+{\footnotesize\ttfamily \label{setup_8h_a409b2f4c4106092dafb1db940c5f85d4} 
+void wait\+\_\+for\+\_\+datetime (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Blocks until a valid date/time string is received via UART. 
+
+The expected string format is p00,MM,HH,DD,MM,YYYY followed by three 0x\+FF bytes. \begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is properly configured to send the date and time in the expected format. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+This function should be called before starting any Free\+RTOS tasks. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 5, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6

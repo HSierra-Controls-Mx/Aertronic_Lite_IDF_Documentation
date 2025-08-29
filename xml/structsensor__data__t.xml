@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structsensor__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>sensor_data_t</compoundname>
+    <includes refid="sensors_8h" local="no">sensors.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsensor__data__t_1abeb0981b3499f2cac4214bca0957547b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sensor_data_t::pressure1_mbar</definition>
+        <argsstring></argsstring>
+        <name>pressure1_mbar</name>
+        <qualifiedname>sensor_data_t::pressure1_mbar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" line="7" column="11" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="utils_8h_1a4bc9bfc0677667a966d7ab73efafa4d1" compoundref="utils_8c" startline="8" endline="47">print_sensor_data</referencedby>
+        <referencedby refid="sensors_8h_1a9456bf17ccbaf37989d9a869c891a294" compoundref="sensors_8c" startline="61" endline="122">sensors_read</referencedby>
+        <referencedby refid="system_8h_1a012f23b509b22ea369b2f708e3d15330" compoundref="system_8c" startline="125" endline="188">update_system_status</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsensor__data__t_1acb01d4352323d49e7f841008907749b0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sensor_data_t::pressure2_mbar</definition>
+        <argsstring></argsstring>
+        <name>pressure2_mbar</name>
+        <qualifiedname>sensor_data_t::pressure2_mbar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" line="8" column="11" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="utils_8h_1a4bc9bfc0677667a966d7ab73efafa4d1" compoundref="utils_8c" startline="8" endline="47">print_sensor_data</referencedby>
+        <referencedby refid="sensors_8h_1a9456bf17ccbaf37989d9a869c891a294" compoundref="sensors_8c" startline="61" endline="122">sensors_read</referencedby>
+        <referencedby refid="system_8h_1a012f23b509b22ea369b2f708e3d15330" compoundref="system_8c" startline="125" endline="188">update_system_status</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsensor__data__t_1aac77aba79f4cf41c6bc0d149096d5e69" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sensor_data_t::temperature_C</definition>
+        <argsstring></argsstring>
+        <name>temperature_C</name>
+        <qualifiedname>sensor_data_t::temperature_C</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" line="9" column="11" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="utils_8h_1a4bc9bfc0677667a966d7ab73efafa4d1" compoundref="utils_8c" startline="8" endline="47">print_sensor_data</referencedby>
+        <referencedby refid="sensors_8h_1a9456bf17ccbaf37989d9a869c891a294" compoundref="sensors_8c" startline="61" endline="122">sensors_read</referencedby>
+        <referencedby refid="system_8h_1a012f23b509b22ea369b2f708e3d15330" compoundref="system_8c" startline="125" endline="188">update_system_status</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" line="6" column="1" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" bodystart="6" bodyend="10"/>
+    <listofallmembers>
+      <member refid="structsensor__data__t_1abeb0981b3499f2cac4214bca0957547b" prot="public" virt="non-virtual"><scope>sensor_data_t</scope><name>pressure1_mbar</name></member>
+      <member refid="structsensor__data__t_1acb01d4352323d49e7f841008907749b0" prot="public" virt="non-virtual"><scope>sensor_data_t</scope><name>pressure2_mbar</name></member>
+      <member refid="structsensor__data__t_1aac77aba79f4cf41c6bc0d149096d5e69" prot="public" virt="non-virtual"><scope>sensor_data_t</scope><name>temperature_C</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,31 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/include Directory Reference}
+\hypertarget{dir_9bbdc797b1d9d16a2c0b42b257bf4018}{}\label{dir_9bbdc797b1d9d16a2c0b42b257bf4018}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include Directory Reference@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include Directory Reference}}
+Directory dependency graph for include\+:
+% FIG 0
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{ethernet_8h}{ethernet.\+h}}
+\item 
+file \mbox{\hyperlink{lang__support_8h}{lang\+\_\+support.\+h}}
+\item 
+file \mbox{\hyperlink{nvs__manager_8h}{nvs\+\_\+manager.\+h}}
+\item 
+file \mbox{\hyperlink{pages_8h}{pages.\+h}}
+\item 
+file \mbox{\hyperlink{sensors_8h}{sensors.\+h}}
+\item 
+file \mbox{\hyperlink{serial__receive_8h}{serial\+\_\+receive.\+h}}
+\item 
+file \mbox{\hyperlink{serial__send_8h}{serial\+\_\+send.\+h}}
+\item 
+file \mbox{\hyperlink{setup_8h}{setup.\+h}}
+\item 
+file \mbox{\hyperlink{system_8h}{system.\+h}}
+\item 
+file \mbox{\hyperlink{tasks_8h}{tasks.\+h}}
+\item 
+file \mbox{\hyperlink{time__manager_8h}{time\+\_\+manager.\+h}}
+\item 
+file \mbox{\hyperlink{utils_8h}{utils.\+h}}
+\end{DoxyCompactItemize}

@@ -1,0 +1,260 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/main/serial\+\_\+send.c File Reference}
+\hypertarget{serial__send_8c}{}\label{serial__send_8c}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/serial\_send.c@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/serial\_send.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}driver/uart.\+h"{}}\newline
+{\ttfamily \#include "{}serial\+\_\+send.\+h"{}}\newline
+{\ttfamily \#include "{}setup.\+h"{}}\newline
+Include dependency graph for serial\+\_\+send.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{serial__send_8c_aa0463ce777016c795ce8597f2e04bf79}{uart\+\_\+send\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Add mutex initialization for UART communication. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__send_8c_a396d4a4f67f557de2870d2c47d9a7103}{uart\+\_\+send\+\_\+command}} (const char \texorpdfstring{$\ast$}{*}cmd)
+\begin{DoxyCompactList}\small\item\em Sends the termination command to the Nextion display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__send_8c_a79b60688c065ea5ed16bfc43a0b82c9b}{send\+\_\+int\+\_\+to\+\_\+display}} (const char \texorpdfstring{$\ast$}{*}object, const char \texorpdfstring{$\ast$}{*}attribute, int value)
+\begin{DoxyCompactList}\small\item\em Sends a command to update an integer attribute of an object on the Nextion display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__send_8c_a08ad982ff9f8d3883d855ed931d9b6f6}{send\+\_\+float\+\_\+to\+\_\+display}} (const char \texorpdfstring{$\ast$}{*}page, const char \texorpdfstring{$\ast$}{*}object, const char \texorpdfstring{$\ast$}{*}attribute, float value, int precision)
+\begin{DoxyCompactList}\small\item\em Sends a command to update a float attribute of an object on the Nextion display with precision. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__send_8c_aa46fe2f4b02e9852f9f7a06c4ebd08a3}{send\+\_\+text\+\_\+to\+\_\+display}} (const char \texorpdfstring{$\ast$}{*}page, const char \texorpdfstring{$\ast$}{*}object, const char \texorpdfstring{$\ast$}{*}attribute, const char \texorpdfstring{$\ast$}{*}text)
+\begin{DoxyCompactList}\small\item\em Sends a command to update a text attribute of an object on the Nextion display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__send_8c_ab370b65d42bfe89671d6895bd06849a0}{send\+\_\+method\+\_\+to\+\_\+display}} (const char \texorpdfstring{$\ast$}{*}page, const char \texorpdfstring{$\ast$}{*}object, const char \texorpdfstring{$\ast$}{*}method)
+\begin{DoxyCompactList}\small\item\em Sends a method call to an object on the Nextion display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__send_8c_a5054d67ac4b50fb8e90972bd55049e3f}{send\+\_\+global\+\_\+object}} (const char \texorpdfstring{$\ast$}{*}object, const char \texorpdfstring{$\ast$}{*}attribute, const char \texorpdfstring{$\ast$}{*}value)
+\begin{DoxyCompactList}\small\item\em Sends a command to update a global object attribute on the Nextion display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static Semaphore\+Handle\+\_\+t \mbox{\hyperlink{serial__send_8c_a8eca84d3e2c7c0adf364819e74b1bd9b}{uart\+\_\+mutex}} = NULL
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{serial__send_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{serial__send_8c_a08ad982ff9f8d3883d855ed931d9b6f6}\index{serial\_send.c@{serial\_send.c}!send\_float\_to\_display@{send\_float\_to\_display}}
+\index{send\_float\_to\_display@{send\_float\_to\_display}!serial\_send.c@{serial\_send.c}}
+\doxysubsubsection{\texorpdfstring{send\_float\_to\_display()}{send\_float\_to\_display()}}
+{\footnotesize\ttfamily \label{serial__send_8c_a08ad982ff9f8d3883d855ed931d9b6f6} 
+void send\+\_\+float\+\_\+to\+\_\+display (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{page}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{object}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{attribute}{, }\item[{float}]{value}{, }\item[{int}]{precision}{}\end{DoxyParamCaption})}
+
+
+
+Sends a command to update a float attribute of an object on the Nextion display with precision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & Const char pointer containing the page name. \\
+\hline
+{\em object} & Const char pointer containing the object name. \\
+\hline
+{\em attribute} & Const char pointer containing the attribute name to be updated. \\
+\hline
+{\em value} & Float value to set the attribute to. \\
+\hline
+{\em precision} & Integer va\+Lue indicating the number of decimal places to format the float value.\\
+\hline
+\end{DoxyParams}
+This function constructs a command string to update a float attribute of a specified object on the Nextion display, with a specified number of decimal places. This function does not return any value. \begin{DoxyAuthor}{Author}
+Ernesto Estrada. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 9, 2025. 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{serial__send_8c_a5054d67ac4b50fb8e90972bd55049e3f}\index{serial\_send.c@{serial\_send.c}!send\_global\_object@{send\_global\_object}}
+\index{send\_global\_object@{send\_global\_object}!serial\_send.c@{serial\_send.c}}
+\doxysubsubsection{\texorpdfstring{send\_global\_object()}{send\_global\_object()}}
+{\footnotesize\ttfamily \label{serial__send_8c_a5054d67ac4b50fb8e90972bd55049e3f} 
+void send\+\_\+global\+\_\+object (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{object}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{attribute}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Sends a command to update a global object attribute on the Nextion display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & const char pointer containing the global object name. \\
+\hline
+{\em attribute} & const char pointer containing the attribute name to be updated. \\
+\hline
+{\em value} & const char pointer containing the value to be set as the attribute value.\\
+\hline
+\end{DoxyParams}
+This function constructs a command string to update a global object attribute on the Nextion display. This function does not return any value. \begin{DoxyAuthor}{Author}
+Ernesto Estrada. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 9, 2025. 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{serial__send_8c_a79b60688c065ea5ed16bfc43a0b82c9b}\index{serial\_send.c@{serial\_send.c}!send\_int\_to\_display@{send\_int\_to\_display}}
+\index{send\_int\_to\_display@{send\_int\_to\_display}!serial\_send.c@{serial\_send.c}}
+\doxysubsubsection{\texorpdfstring{send\_int\_to\_display()}{send\_int\_to\_display()}}
+{\footnotesize\ttfamily \label{serial__send_8c_a79b60688c065ea5ed16bfc43a0b82c9b} 
+void send\+\_\+int\+\_\+to\+\_\+display (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{object}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{attribute}{, }\item[{int}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Sends a command to update an integer attribute of an object on the Nextion display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & Const char pointer containing the page name. \\
+\hline
+{\em object} & Const char pointer containing the object name. \\
+\hline
+{\em attribute} & Const char pointer containing the attribute name to be updated. \\
+\hline
+{\em value} & Integer value to set the attribute to.\\
+\hline
+\end{DoxyParams}
+This function constructs a command string to update an integer attribute of a specified object on the Nextion display. This function does not return any value. \begin{DoxyAuthor}{Author}
+Ernesto Estrada. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 9, 2025. 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\Hypertarget{serial__send_8c_ab370b65d42bfe89671d6895bd06849a0}\index{serial\_send.c@{serial\_send.c}!send\_method\_to\_display@{send\_method\_to\_display}}
+\index{send\_method\_to\_display@{send\_method\_to\_display}!serial\_send.c@{serial\_send.c}}
+\doxysubsubsection{\texorpdfstring{send\_method\_to\_display()}{send\_method\_to\_display()}}
+{\footnotesize\ttfamily \label{serial__send_8c_ab370b65d42bfe89671d6895bd06849a0} 
+void send\+\_\+method\+\_\+to\+\_\+display (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{page}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{object}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{method}{}\end{DoxyParamCaption})}
+
+
+
+Sends a method call to an object on the Nextion display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & Const char pointer containing the page name. \\
+\hline
+{\em object} & Const char pointer containing the object namne. \\
+\hline
+{\em method} & Const char pointer containig the method name to be called.\\
+\hline
+\end{DoxyParams}
+This function constructs a command string to call a method on a specified object on the Nextion display. This function does not return any value. \begin{DoxyAuthor}{Author}
+Ernesto Estrada. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+june 9, 2025. 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 7
+Here is the caller graph for this function\+:
+% FIG 8
+\Hypertarget{serial__send_8c_aa46fe2f4b02e9852f9f7a06c4ebd08a3}\index{serial\_send.c@{serial\_send.c}!send\_text\_to\_display@{send\_text\_to\_display}}
+\index{send\_text\_to\_display@{send\_text\_to\_display}!serial\_send.c@{serial\_send.c}}
+\doxysubsubsection{\texorpdfstring{send\_text\_to\_display()}{send\_text\_to\_display()}}
+{\footnotesize\ttfamily \label{serial__send_8c_aa46fe2f4b02e9852f9f7a06c4ebd08a3} 
+void send\+\_\+text\+\_\+to\+\_\+display (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{page}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{object}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{attribute}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{text}{}\end{DoxyParamCaption})}
+
+
+
+Sends a command to update a text attribute of an object on the Nextion display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & Const char pointer containing the page name. \\
+\hline
+{\em object} & Const char pointer containing the object name. \\
+\hline
+{\em attribute} & Const char pointer containing the attribute name to be updated. \\
+\hline
+{\em text} & Const char pointer conatining the text string to be set as the attribute value.\\
+\hline
+\end{DoxyParams}
+This function constructs a command string to update a text attribute of a specified object on the Nextion display. This function does not return any value. \begin{DoxyAuthor}{Author}
+Ernesto Estrada. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 9, 2025. 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 9
+Here is the caller graph for this function\+:
+% FIG 10
+\Hypertarget{serial__send_8c_a396d4a4f67f557de2870d2c47d9a7103}\index{serial\_send.c@{serial\_send.c}!uart\_send\_command@{uart\_send\_command}}
+\index{uart\_send\_command@{uart\_send\_command}!serial\_send.c@{serial\_send.c}}
+\doxysubsubsection{\texorpdfstring{uart\_send\_command()}{uart\_send\_command()}}
+{\footnotesize\ttfamily \label{serial__send_8c_a396d4a4f67f557de2870d2c47d9a7103} 
+void uart\+\_\+send\+\_\+command (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{cmd}{}\end{DoxyParamCaption})}
+
+
+
+Sends the termination command to the Nextion display. 
+
+This function sends the termination command x\+FF x\+FF x\+FF to the Nextion display to indicate the end of a command. This function does not return any value. \begin{DoxyAuthor}{Author}
+Ernesto Estrada. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 9, 2025. 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 11
+\Hypertarget{serial__send_8c_aa0463ce777016c795ce8597f2e04bf79}\index{serial\_send.c@{serial\_send.c}!uart\_send\_init@{uart\_send\_init}}
+\index{uart\_send\_init@{uart\_send\_init}!serial\_send.c@{serial\_send.c}}
+\doxysubsubsection{\texorpdfstring{uart\_send\_init()}{uart\_send\_init()}}
+{\footnotesize\ttfamily \label{serial__send_8c_aa0463ce777016c795ce8597f2e04bf79} 
+void uart\+\_\+send\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Add mutex initialization for UART communication. 
+
+This function initializes a mutex to ensure thread-\/safe access to the UART communication. This function does not return any value. \begin{DoxyNote}{Note}
+This function should be called after initializing the UART and before any UART communication. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 10, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 12
+
+
+\label{doc-var-members}
+\Hypertarget{serial__send_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{serial__send_8c_a8eca84d3e2c7c0adf364819e74b1bd9b}\index{serial\_send.c@{serial\_send.c}!uart\_mutex@{uart\_mutex}}
+\index{uart\_mutex@{uart\_mutex}!serial\_send.c@{serial\_send.c}}
+\doxysubsubsection{\texorpdfstring{uart\_mutex}{uart\_mutex}}
+{\footnotesize\ttfamily \label{serial__send_8c_a8eca84d3e2c7c0adf364819e74b1bd9b} 
+Semaphore\+Handle\+\_\+t uart\+\_\+mutex = NULL\hspace{0.3cm}{\ttfamily [static]}}
+

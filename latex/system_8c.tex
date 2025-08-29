@@ -1,0 +1,361 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/main/system.c File Reference}
+\hypertarget{system_8c}{}\label{system_8c}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/system.c@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/system.c}}
+{\ttfamily \#include "{}system.\+h"{}}\newline
+{\ttfamily \#include "{}setup.\+h"{}}\newline
+{\ttfamily \#include "{}serial\+\_\+send.\+h"{}}\newline
+{\ttfamily \#include "{}sensors.\+h"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include "{}nvs\+\_\+manager.\+h"{}}\newline
+{\ttfamily \#include "{}utils.\+h"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include "{}pages.\+h"{}}\newline
+{\ttfamily \#include "{}time\+\_\+manager.\+h"{}}\newline
+Include dependency graph for system.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{system_8c_a43f5e0d6db0fb41a437cc9096b32e9b5}{system\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{system_8c_a3f45cb82b07f9844b825d73f091413a7}{operation\+\_\+time}} (void)
+\begin{DoxyCompactList}\small\item\em Updates the operation time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{system_8c_add779b9d830853ab883651b998ad43d8}{store\+\_\+system\+\_\+event}} (int type, int sensor\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Stores a system event in the event log. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{system_8c_a012f23b509b22ea369b2f708e3d15330}{update\+\_\+system\+\_\+status}} (\mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Updates the system status based on sensor data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{system_8c_a97ec9415a474734bbfe4819763f72c3f}{update\+\_\+header}} (void)
+\begin{DoxyCompactList}\small\item\em Updates the header on the Nextion display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int32\+\_\+t \mbox{\hyperlink{system_8c_a8a41b8d5ae95b81f5b1ff677783a40dc}{system\+\_\+state}} = 0
+\begin{DoxyCompactList}\small\item\em Integer to store the system\textquotesingle{}s state. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{system_8c_a2ef5919214974cb155ce0f62aec2c46f}{operation\+\_\+minutes}} = 0
+\begin{DoxyCompactList}\small\item\em Integer to store the system\textquotesingle{}s operation time in minutes since the last reboot. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{system_8c_afefba2969f86ee117cf53a6709050a21}{operation\+\_\+hours}} = 0
+\begin{DoxyCompactList}\small\item\em Integer to store the system\textquotesingle{}s operation time in hours since the last reboot. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{system_8c_aae68550ad38d9fd2a74d96a4f6efdc54}{boot\+\_\+count}} = 0
+\begin{DoxyCompactList}\small\item\em Integer to keep track of the number of system reboots. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{system_8c_a10a3fa33bae024190264a8321128a41d}{system\+\_\+language}} = 0
+\begin{DoxyCompactList}\small\item\em Integer to store the system\textquotesingle{}s language. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{system_8c_a30436bd24c155c7ff8b58f89cc4907d9}{system\+\_\+color}} = 0
+\begin{DoxyCompactList}\small\item\em Integer to store the system\textquotesingle{}s color. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{system_8c_a792282433d9feffdd90742acc4b7cf84}{maintenance\+\_\+minutes}} = 0
+\begin{DoxyCompactList}\small\item\em Integer to store the minutes the system has been in operation since commissioning. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{system_8c_a7935be2326bd362ec59592d133232a12}{maintenance\+\_\+hours}} = 0
+\begin{DoxyCompactList}\small\item\em Integer to store the hours the system has been in operation since commissioning. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{system_8c_aa828b108037b528aa15a5dc2bbf20195}{number\+\_\+of\+\_\+maintenances}} = 0
+\begin{DoxyCompactList}\small\item\em Integer to store the number of maintenances performed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{system_8c_a059052b01f9d0d07827ac4a6829daff9}{acknowledged}} = false
+\begin{DoxyCompactList}\small\item\em Boolean to indicate if the user has acknowledged a warning or alarm. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{system_8c_aa6e9c9788e43b630369a07406e64b47e}{warning\+\_\+or\+\_\+alarm\+\_\+occurred}} = false
+\begin{DoxyCompactList}\small\item\em Boolean to indicate if a warning or alarm has occurred. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{system_8c_a0aa958ac5a7c712b3ea2f61fd27268be}{warning\+\_\+or\+\_\+alarm\+\_\+active}} = false
+\begin{DoxyCompactList}\small\item\em Boolean to indicate if a warning or alarm is currently active. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{system_8c_a9b9864a018686c986b17d57495766f24}{attributes}} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array of integers to store the values of the header components. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{system_8c_aa96758e46e482f01d8cc7baf87a6ee8b}{operation\+\_\+seconds}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{system_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{system_8c_a3f45cb82b07f9844b825d73f091413a7}\index{system.c@{system.c}!operation\_time@{operation\_time}}
+\index{operation\_time@{operation\_time}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{operation\_time()}{operation\_time()}}
+{\footnotesize\ttfamily \label{system_8c_a3f45cb82b07f9844b825d73f091413a7} 
+void operation\+\_\+time (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Updates the operation time. 
+
+This function updates the operation time by incrementing the seconds, minutes, and hours based on the system\textquotesingle{}s uptime. It also handles the rollover of seconds to minutes and minutes to hours. This function does not return any value. \begin{DoxyNote}{Note}
+This function should be called periodically to keep track of the system\textquotesingle{}s operation time. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 16, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{system_8c_add779b9d830853ab883651b998ad43d8}\index{system.c@{system.c}!store\_system\_event@{store\_system\_event}}
+\index{store\_system\_event@{store\_system\_event}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{store\_system\_event()}{store\_system\_event()}}
+{\footnotesize\ttfamily \label{system_8c_add779b9d830853ab883651b998ad43d8} 
+void store\+\_\+system\+\_\+event (\begin{DoxyParamCaption}\item[{int}]{type}{, }\item[{int}]{sensor\+\_\+index}{}\end{DoxyParamCaption})}
+
+
+
+Stores a system event in the event log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of event to store (e.\+g., 0 for normal, 1 for warning, 2 for alarm). \\
+\hline
+{\em sensor\+\_\+index} & The index of the sensor that triggered the event (0 for pressure sensor 1, 1 for pressure sensor 2, 2 for temperature sensor).\\
+\hline
+\end{DoxyParams}
+This function logs the event type and the sensor index that triggered the event. It is used to keep track of system events for diagnostics and monitoring purposes. \begin{DoxyNote}{Note}
+This function should be called whenever a significant event occurs in the system, such as a warning or alarm condition. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 19, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the sensor\+\_\+index is valid (0, 1, or 2) to avoid out-\/of-\/bounds access. 
+\end{DoxyWarning}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{system_8c_a43f5e0d6db0fb41a437cc9096b32e9b5}\index{system.c@{system.c}!system\_init@{system\_init}}
+\index{system\_init@{system\_init}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{system\_init()}{system\_init()}}
+{\footnotesize\ttfamily \label{system_8c_a43f5e0d6db0fb41a437cc9096b32e9b5} 
+void system\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the system. 
+
+This function initializes the system by setting up the necessary components such as UART, NVS, and display. It also waits for the Nextion display to be ready and for a valid date/time string to be received. \begin{DoxyNote}{Note}
+This function should be called at the beginning of the main application to ensure all components are ready for use. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 16, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\Hypertarget{system_8c_a97ec9415a474734bbfe4819763f72c3f}\index{system.c@{system.c}!update\_header@{update\_header}}
+\index{update\_header@{update\_header}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{update\_header()}{update\_header()}}
+{\footnotesize\ttfamily \label{system_8c_a97ec9415a474734bbfe4819763f72c3f} 
+void update\+\_\+header (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Updates the header on the Nextion display. 
+
+This function updates the header on the Nextion display to reflect the current system state. It updates the title color, status color, slider picture, and icon state based on the system state. \begin{DoxyNote}{Note}
+This function should be called whenever the system state changes or periodically to keep the display updated. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 18, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+This function should not be called directly; it is intended to be used as a Free\+RTOS task or called from the main application loop. 
+\end{DoxyWarning}
+Here is the call graph for this function\+:
+% FIG 7
+Here is the caller graph for this function\+:
+% FIG 8
+\Hypertarget{system_8c_a012f23b509b22ea369b2f708e3d15330}\index{system.c@{system.c}!update\_system\_status@{update\_system\_status}}
+\index{update\_system\_status@{update\_system\_status}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{update\_system\_status()}{update\_system\_status()}}
+{\footnotesize\ttfamily \label{system_8c_a012f23b509b22ea369b2f708e3d15330} 
+int32\+\_\+t update\+\_\+system\+\_\+status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsensor__data__t}{sensor\+\_\+data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Updates the system status based on sensor data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to the \doxylink{structsensor__data__t}{sensor\+\_\+data\+\_\+t} structure containing the latest sensor readings.\\
+\hline
+\end{DoxyParams}
+This function updates the global system state based on the provided sensor data. It checks the pressure and temperature readings to determine if the system is in a normal, warning, or alarm state. It also updates the acknowledged status and warning/alarm flags based on the sensor readings. \begin{DoxyReturn}{Returns}
+Returns an integer indicating the system state\+:
+\begin{DoxyItemize}
+\item 0\+: Normal
+\item 1\+: Warning
+\item 2\+: Alarm 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function should be called whenever new sensor data is available to keep the system status updated. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 17, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 9
+Here is the caller graph for this function\+:
+% FIG 10
+
+
+\label{doc-var-members}
+\Hypertarget{system_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{system_8c_a059052b01f9d0d07827ac4a6829daff9}\index{system.c@{system.c}!acknowledged@{acknowledged}}
+\index{acknowledged@{acknowledged}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{acknowledged}{acknowledged}}
+{\footnotesize\ttfamily \label{system_8c_a059052b01f9d0d07827ac4a6829daff9} 
+bool acknowledged = false}
+
+
+
+Boolean to indicate if the user has acknowledged a warning or alarm. 
+
+This variable is used to track if the user has acknowledged a warning or alarm in the system. \Hypertarget{system_8c_a9b9864a018686c986b17d57495766f24}\index{system.c@{system.c}!attributes@{attributes}}
+\index{attributes@{attributes}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{attributes}{attributes}}
+{\footnotesize\ttfamily \label{system_8c_a9b9864a018686c986b17d57495766f24} 
+int attributes\mbox{[}4\mbox{]}}
+
+
+
+Array of integers to store the values of the header components. 
+
+This array is used to store the values of the header components such as title color, status color, slider picture, and icon state. It is used to update the header display on the Nextion screen based on the current system state. \Hypertarget{system_8c_aae68550ad38d9fd2a74d96a4f6efdc54}\index{system.c@{system.c}!boot\_count@{boot\_count}}
+\index{boot\_count@{boot\_count}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{boot\_count}{boot\_count}}
+{\footnotesize\ttfamily \label{system_8c_aae68550ad38d9fd2a74d96a4f6efdc54} 
+int32\+\_\+t boot\+\_\+count = 0}
+
+
+
+Integer to keep track of the number of system reboots. 
+
+\Hypertarget{system_8c_a7935be2326bd362ec59592d133232a12}\index{system.c@{system.c}!maintenance\_hours@{maintenance\_hours}}
+\index{maintenance\_hours@{maintenance\_hours}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{maintenance\_hours}{maintenance\_hours}}
+{\footnotesize\ttfamily \label{system_8c_a7935be2326bd362ec59592d133232a12} 
+int32\+\_\+t maintenance\+\_\+hours = 0}
+
+
+
+Integer to store the hours the system has been in operation since commissioning. 
+
+This variable is used to track the hours of operation for maintenance purposes. \Hypertarget{system_8c_a792282433d9feffdd90742acc4b7cf84}\index{system.c@{system.c}!maintenance\_minutes@{maintenance\_minutes}}
+\index{maintenance\_minutes@{maintenance\_minutes}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{maintenance\_minutes}{maintenance\_minutes}}
+{\footnotesize\ttfamily \label{system_8c_a792282433d9feffdd90742acc4b7cf84} 
+int32\+\_\+t maintenance\+\_\+minutes = 0}
+
+
+
+Integer to store the minutes the system has been in operation since commissioning. 
+
+This variable is used to track the minutes of operation for maintenance purposes. \Hypertarget{system_8c_aa828b108037b528aa15a5dc2bbf20195}\index{system.c@{system.c}!number\_of\_maintenances@{number\_of\_maintenances}}
+\index{number\_of\_maintenances@{number\_of\_maintenances}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{number\_of\_maintenances}{number\_of\_maintenances}}
+{\footnotesize\ttfamily \label{system_8c_aa828b108037b528aa15a5dc2bbf20195} 
+int32\+\_\+t number\+\_\+of\+\_\+maintenances = 0}
+
+
+
+Integer to store the number of maintenances performed. 
+
+\Hypertarget{system_8c_afefba2969f86ee117cf53a6709050a21}\index{system.c@{system.c}!operation\_hours@{operation\_hours}}
+\index{operation\_hours@{operation\_hours}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{operation\_hours}{operation\_hours}}
+{\footnotesize\ttfamily \label{system_8c_afefba2969f86ee117cf53a6709050a21} 
+int32\+\_\+t operation\+\_\+hours = 0}
+
+
+
+Integer to store the system\textquotesingle{}s operation time in hours since the last reboot. 
+
+\Hypertarget{system_8c_a2ef5919214974cb155ce0f62aec2c46f}\index{system.c@{system.c}!operation\_minutes@{operation\_minutes}}
+\index{operation\_minutes@{operation\_minutes}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{operation\_minutes}{operation\_minutes}}
+{\footnotesize\ttfamily \label{system_8c_a2ef5919214974cb155ce0f62aec2c46f} 
+int32\+\_\+t operation\+\_\+minutes = 0}
+
+
+
+Integer to store the system\textquotesingle{}s operation time in minutes since the last reboot. 
+
+\Hypertarget{system_8c_aa96758e46e482f01d8cc7baf87a6ee8b}\index{system.c@{system.c}!operation\_seconds@{operation\_seconds}}
+\index{operation\_seconds@{operation\_seconds}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{operation\_seconds}{operation\_seconds}}
+{\footnotesize\ttfamily \label{system_8c_aa96758e46e482f01d8cc7baf87a6ee8b} 
+int operation\+\_\+seconds = 0}
+
+\Hypertarget{system_8c_a30436bd24c155c7ff8b58f89cc4907d9}\index{system.c@{system.c}!system\_color@{system\_color}}
+\index{system\_color@{system\_color}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{system\_color}{system\_color}}
+{\footnotesize\ttfamily \label{system_8c_a30436bd24c155c7ff8b58f89cc4907d9} 
+int32\+\_\+t system\+\_\+color = 0}
+
+
+
+Integer to store the system\textquotesingle{}s color. 
+
+0 = Light mode, 1 = Dark mode. \Hypertarget{system_8c_a10a3fa33bae024190264a8321128a41d}\index{system.c@{system.c}!system\_language@{system\_language}}
+\index{system\_language@{system\_language}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{system\_language}{system\_language}}
+{\footnotesize\ttfamily \label{system_8c_a10a3fa33bae024190264a8321128a41d} 
+int32\+\_\+t system\+\_\+language = 0}
+
+
+
+Integer to store the system\textquotesingle{}s language. 
+
+0 = English, 1 = Spanish, 2 = Portuguese, 3 = French, 4 = German. \Hypertarget{system_8c_a8a41b8d5ae95b81f5b1ff677783a40dc}\index{system.c@{system.c}!system\_state@{system\_state}}
+\index{system\_state@{system\_state}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{system\_state}{system\_state}}
+{\footnotesize\ttfamily \label{system_8c_a8a41b8d5ae95b81f5b1ff677783a40dc} 
+int32\+\_\+t system\+\_\+state = 0}
+
+
+
+Integer to store the system\textquotesingle{}s state. 
+
+0 = Normal, 1 = Warning, 2 = Alarm. This variable is used to track the current state of the system based on sensor readings and operational conditions. \Hypertarget{system_8c_a0aa958ac5a7c712b3ea2f61fd27268be}\index{system.c@{system.c}!warning\_or\_alarm\_active@{warning\_or\_alarm\_active}}
+\index{warning\_or\_alarm\_active@{warning\_or\_alarm\_active}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{warning\_or\_alarm\_active}{warning\_or\_alarm\_active}}
+{\footnotesize\ttfamily \label{system_8c_a0aa958ac5a7c712b3ea2f61fd27268be} 
+bool warning\+\_\+or\+\_\+alarm\+\_\+active = false}
+
+
+
+Boolean to indicate if a warning or alarm is currently active. 
+
+This variable is used to track if a warning or alarm is currently active in the system. It is set to true when a warning or alarm is acknowledged and can be used to control the display of notifications or alerts. \Hypertarget{system_8c_aa6e9c9788e43b630369a07406e64b47e}\index{system.c@{system.c}!warning\_or\_alarm\_occurred@{warning\_or\_alarm\_occurred}}
+\index{warning\_or\_alarm\_occurred@{warning\_or\_alarm\_occurred}!system.c@{system.c}}
+\doxysubsubsection{\texorpdfstring{warning\_or\_alarm\_occurred}{warning\_or\_alarm\_occurred}}
+{\footnotesize\ttfamily \label{system_8c_aa6e9c9788e43b630369a07406e64b47e} 
+bool warning\+\_\+or\+\_\+alarm\+\_\+occurred = false}
+
+
+
+Boolean to indicate if a warning or alarm has occurred. 
+
+This variable is used to track if any warning or alarm has occurred in the system. It is set to true when a warning or alarm is triggered and can be used to display notifications or alerts. 

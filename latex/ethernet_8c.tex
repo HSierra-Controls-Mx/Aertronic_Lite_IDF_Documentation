@@ -1,0 +1,283 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/main/ethernet.c File Reference}
+\hypertarget{ethernet_8c}{}\label{ethernet_8c}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/ethernet.c@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/ethernet.c}}
+{\ttfamily \#include "{}ethernet.\+h"{}}\newline
+{\ttfamily \#include "{}esp\+\_\+log.\+h"{}}\newline
+{\ttfamily \#include "{}esp\+\_\+mac.\+h"{}}\newline
+{\ttfamily \#include "{}driver/spi\+\_\+master.\+h"{}}\newline
+{\ttfamily \#include "{}driver/gpio.\+h"{}}\newline
+Include dependency graph for ethernet.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ethernet_8c_a2ae9912b161cb0e12abb084e5d2756c2}{ethernet\+\_\+event\+\_\+handler}} (void \texorpdfstring{$\ast$}{*}arg, esp\+\_\+event\+\_\+base\+\_\+t event\+\_\+base, int32\+\_\+t event\+\_\+id, void \texorpdfstring{$\ast$}{*}event\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Event handler for Ethernet events. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{ethernet_8c_a00e93e9c4cda2c8a6aac16b5bc195a09}{got\+\_\+ip\+\_\+event\+\_\+handler}} (void \texorpdfstring{$\ast$}{*}arg, esp\+\_\+event\+\_\+base\+\_\+t event\+\_\+base, int32\+\_\+t event\+\_\+id, void \texorpdfstring{$\ast$}{*}event\+\_\+data)
+\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{ethernet_8c_ac5a294a0efbd42bd9671903a60e4f52b}{ethernet\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the W5500 Ethernet module. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{ethernet_8c_a4f763d2ae63ab35e404488c1add5c852}{ethernet\+\_\+start}} (void)
+\begin{DoxyCompactList}\small\item\em Start the Ethernet connection. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{ethernet_8c_a4039eaf3762551e4c7b70c07a8abe1a4}{ethernet\+\_\+stop}} (void)
+\begin{DoxyCompactList}\small\item\em Stop the Ethernet connection. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{ethernet_8c_a413b14a7107939f76a186c5d459a4a84}{ethernet\+\_\+is\+\_\+connected}} (void)
+\begin{DoxyCompactList}\small\item\em Check if Ethernet is connected. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{ethernet_8c_afcdc1ac7a161416f9aa70c6802794598}{ethernet\+\_\+get\+\_\+ip}} (char \texorpdfstring{$\ast$}{*}ip\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Get the IP address assigned to the Ethernet interface. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{ethernet_8c_a864a2ddf998b216a85c97c640b841501}{ethernet\+\_\+set\+\_\+static\+\_\+ip}} (void)
+\begin{DoxyCompactList}\small\item\em Configure static IP settings for the Ethernet interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{ethernet_8c_a5a85b9c772bbeb480b209a3e6ea92b4c}{TAG}} = "{}ETHERNET"{}
+\item 
+static esp\+\_\+netif\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{ethernet_8c_a9ea2954ad22025318d0d8e31236cc8b3}{eth\+\_\+netif}} = NULL
+\item 
+static esp\+\_\+eth\+\_\+handle\+\_\+t \mbox{\hyperlink{ethernet_8c_a2de8665296107d26a2a527034e0bf2f9}{eth\+\_\+handle}} = NULL
+\item 
+static bool \mbox{\hyperlink{ethernet_8c_a7ca5d8cb100a666f2b459a70e2637554}{ethernet\+\_\+connected}} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{ethernet_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{ethernet_8c_a2ae9912b161cb0e12abb084e5d2756c2}\index{ethernet.c@{ethernet.c}!ethernet\_event\_handler@{ethernet\_event\_handler}}
+\index{ethernet\_event\_handler@{ethernet\_event\_handler}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{ethernet\_event\_handler()}{ethernet\_event\_handler()}}
+{\footnotesize\ttfamily \label{ethernet_8c_a2ae9912b161cb0e12abb084e5d2756c2} 
+void ethernet\+\_\+event\+\_\+handler (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{arg}{, }\item[{esp\+\_\+event\+\_\+base\+\_\+t}]{event\+\_\+base}{, }\item[{int32\+\_\+t}]{event\+\_\+id}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{event\+\_\+data}{}\end{DoxyParamCaption})}
+
+
+
+Event handler for Ethernet events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & Event handler argument \\
+\hline
+{\em event\+\_\+base} & Event base \\
+\hline
+{\em event\+\_\+id} & Event ID \\
+\hline
+{\em event\+\_\+data} & Event data\\
+\hline
+\end{DoxyParams}
+This function handles Ethernet events such as connection status changes \begin{DoxyNote}{Note}
+It logs the events and updates the connection status 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{ethernet_8c_afcdc1ac7a161416f9aa70c6802794598}\index{ethernet.c@{ethernet.c}!ethernet\_get\_ip@{ethernet\_get\_ip}}
+\index{ethernet\_get\_ip@{ethernet\_get\_ip}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{ethernet\_get\_ip()}{ethernet\_get\_ip()}}
+{\footnotesize\ttfamily \label{ethernet_8c_afcdc1ac7a161416f9aa70c6802794598} 
+esp\+\_\+err\+\_\+t ethernet\+\_\+get\+\_\+ip (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{ip\+\_\+str}{}\end{DoxyParamCaption})}
+
+
+
+Get the IP address assigned to the Ethernet interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+\_\+str} & Buffer to store the IP address string (minimum 16 bytes) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+esp\+\_\+err\+\_\+t ESP\+\_\+\+OK on success, error code otherwise
+\end{DoxyReturn}
+This function retrieves the current IP address of the Ethernet interface \begin{DoxyNote}{Note}
+The IP address is returned in standard dotted-\/decimal format 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{ethernet_8c_ac5a294a0efbd42bd9671903a60e4f52b}\index{ethernet.c@{ethernet.c}!ethernet\_init@{ethernet\_init}}
+\index{ethernet\_init@{ethernet\_init}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{ethernet\_init()}{ethernet\_init()}}
+{\footnotesize\ttfamily \label{ethernet_8c_ac5a294a0efbd42bd9671903a60e4f52b} 
+esp\+\_\+err\+\_\+t ethernet\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the W5500 Ethernet module. 
+
+Sets up SPI communication and initializes the W5500 chip \begin{DoxyReturn}{Returns}
+esp\+\_\+err\+\_\+t ESP\+\_\+\+OK on success, error code otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called before starting the Ethernet connection 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{ethernet_8c_a413b14a7107939f76a186c5d459a4a84}\index{ethernet.c@{ethernet.c}!ethernet\_is\_connected@{ethernet\_is\_connected}}
+\index{ethernet\_is\_connected@{ethernet\_is\_connected}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{ethernet\_is\_connected()}{ethernet\_is\_connected()}}
+{\footnotesize\ttfamily \label{ethernet_8c_a413b14a7107939f76a186c5d459a4a84} 
+bool ethernet\+\_\+is\+\_\+connected (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Check if Ethernet is connected. 
+
+\begin{DoxyReturn}{Returns}
+true if connected, false otherwise
+\end{DoxyReturn}
+This function checks the current connection status of the Ethernet interface \begin{DoxyNote}{Note}
+This function can be used to determine if the Ethernet connection is active 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{ethernet_8c_a864a2ddf998b216a85c97c640b841501}\index{ethernet.c@{ethernet.c}!ethernet\_set\_static\_ip@{ethernet\_set\_static\_ip}}
+\index{ethernet\_set\_static\_ip@{ethernet\_set\_static\_ip}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{ethernet\_set\_static\_ip()}{ethernet\_set\_static\_ip()}}
+{\footnotesize\ttfamily \label{ethernet_8c_a864a2ddf998b216a85c97c640b841501} 
+esp\+\_\+err\+\_\+t ethernet\+\_\+set\+\_\+static\+\_\+ip (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Configure static IP settings for the Ethernet interface. 
+
+Sets up static IP configuration instead of DHCP \begin{DoxyReturn}{Returns}
+esp\+\_\+err\+\_\+t ESP\+\_\+\+OK on success, error code otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function should be called after \doxylink{ethernet_8h_ac5a294a0efbd42bd9671903a60e4f52b}{ethernet\+\_\+init()} but before \doxylink{ethernet_8h_a4f763d2ae63ab35e404488c1add5c852}{ethernet\+\_\+start()} 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 6
+\Hypertarget{ethernet_8c_a4f763d2ae63ab35e404488c1add5c852}\index{ethernet.c@{ethernet.c}!ethernet\_start@{ethernet\_start}}
+\index{ethernet\_start@{ethernet\_start}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{ethernet\_start()}{ethernet\_start()}}
+{\footnotesize\ttfamily \label{ethernet_8c_a4f763d2ae63ab35e404488c1add5c852} 
+esp\+\_\+err\+\_\+t ethernet\+\_\+start (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Start the Ethernet connection. 
+
+Starts the Ethernet interface and begins network connectivity \begin{DoxyReturn}{Returns}
+esp\+\_\+err\+\_\+t ESP\+\_\+\+OK on success, error code otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function should be called after \doxylink{ethernet_8h_ac5a294a0efbd42bd9671903a60e4f52b}{ethernet\+\_\+init()} 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 7
+\Hypertarget{ethernet_8c_a4039eaf3762551e4c7b70c07a8abe1a4}\index{ethernet.c@{ethernet.c}!ethernet\_stop@{ethernet\_stop}}
+\index{ethernet\_stop@{ethernet\_stop}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{ethernet\_stop()}{ethernet\_stop()}}
+{\footnotesize\ttfamily \label{ethernet_8c_a4039eaf3762551e4c7b70c07a8abe1a4} 
+esp\+\_\+err\+\_\+t ethernet\+\_\+stop (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Stop the Ethernet connection. 
+
+Stops the Ethernet interface \begin{DoxyReturn}{Returns}
+esp\+\_\+err\+\_\+t ESP\+\_\+\+OK on success, error code otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function should be called to cleanly stop the Ethernet connection 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\Hypertarget{ethernet_8c_a00e93e9c4cda2c8a6aac16b5bc195a09}\index{ethernet.c@{ethernet.c}!got\_ip\_event\_handler@{got\_ip\_event\_handler}}
+\index{got\_ip\_event\_handler@{got\_ip\_event\_handler}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{got\_ip\_event\_handler()}{got\_ip\_event\_handler()}}
+{\footnotesize\ttfamily \label{ethernet_8c_a00e93e9c4cda2c8a6aac16b5bc195a09} 
+void got\+\_\+ip\+\_\+event\+\_\+handler (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{arg}{, }\item[{esp\+\_\+event\+\_\+base\+\_\+t}]{event\+\_\+base}{, }\item[{int32\+\_\+t}]{event\+\_\+id}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{event\+\_\+data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+% FIG 8
+
+
+\label{doc-var-members}
+\Hypertarget{ethernet_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{ethernet_8c_a2de8665296107d26a2a527034e0bf2f9}\index{ethernet.c@{ethernet.c}!eth\_handle@{eth\_handle}}
+\index{eth\_handle@{eth\_handle}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{eth\_handle}{eth\_handle}}
+{\footnotesize\ttfamily \label{ethernet_8c_a2de8665296107d26a2a527034e0bf2f9} 
+esp\+\_\+eth\+\_\+handle\+\_\+t eth\+\_\+handle = NULL\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{ethernet_8c_a9ea2954ad22025318d0d8e31236cc8b3}\index{ethernet.c@{ethernet.c}!eth\_netif@{eth\_netif}}
+\index{eth\_netif@{eth\_netif}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{eth\_netif}{eth\_netif}}
+{\footnotesize\ttfamily \label{ethernet_8c_a9ea2954ad22025318d0d8e31236cc8b3} 
+esp\+\_\+netif\+\_\+t\texorpdfstring{$\ast$}{*} eth\+\_\+netif = NULL\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{ethernet_8c_a7ca5d8cb100a666f2b459a70e2637554}\index{ethernet.c@{ethernet.c}!ethernet\_connected@{ethernet\_connected}}
+\index{ethernet\_connected@{ethernet\_connected}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{ethernet\_connected}{ethernet\_connected}}
+{\footnotesize\ttfamily \label{ethernet_8c_a7ca5d8cb100a666f2b459a70e2637554} 
+bool ethernet\+\_\+connected = false\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{ethernet_8c_a5a85b9c772bbeb480b209a3e6ea92b4c}\index{ethernet.c@{ethernet.c}!TAG@{TAG}}
+\index{TAG@{TAG}!ethernet.c@{ethernet.c}}
+\doxysubsubsection{\texorpdfstring{TAG}{TAG}}
+{\footnotesize\ttfamily \label{ethernet_8c_a5a85b9c772bbeb480b209a3e6ea92b4c} 
+const char\texorpdfstring{$\ast$}{*} TAG = "{}ETHERNET"{}\hspace{0.3cm}{\ttfamily [static]}}
+

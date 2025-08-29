@@ -1,0 +1,567 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/main/pages.c File Reference}
+\hypertarget{pages_8c}{}\label{pages_8c}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/pages.c@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/pages.c}}
+{\ttfamily \#include "{}pages.\+h"{}}\newline
+{\ttfamily \#include "{}serial\+\_\+send.\+h"{}}\newline
+{\ttfamily \#include "{}utils.\+h"{}}\newline
+Include dependency graph for pages.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{pages_8c_a97b680dc869c646b03f34ad2a3260a6b}{main\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the main page UI. This function is called when the current page is set to MAIN. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_a222f933f83745f908d2be52694fec0f0}{main\+\_\+menu\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the main menu page UI. This function is called when the current page is set to MAIN\+\_\+\+MENU. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_adb7e72ea57300775da4604fc0beb6ced}{equipment\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the equipment information page UI. This function is called when the current page is set to EQUIPMENT\+\_\+\+INFO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_ab7c27bc6f6c1a38a98f6ae4f21109bae}{module\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the module information page UI. This function is called when the current page is set to MODULE\+\_\+\+INFO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_ad114f02439a8b6bac8809faab054722e}{login\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the login page UI. This function is called when the current page is set to LOG\+\_\+\+IN. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_a7f50faf504e3d70c18cca6de2309ae9f}{maintenance\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the maintenance page UI. This function is called when the current page is set to MAINTENANCE. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_a6d91875cb7f48bd2dab021a271b8569e}{language\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the language selection page UI. This function is called when the current page is set to LANGUAGE. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_a96592eefdfdf59eb98544da393fe2c8f}{config\+\_\+menu\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the configuration menu page UI. This function is called when the current page is set to CONFIG\+\_\+\+MENU. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_abc67177785d78d87195c128dae5c71e1}{control\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the control page UI. This function is called when the current page is set to CONTROL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_a5a1c65a52fcb4b65ae9b394a013e0dbd}{service\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the service page UI. This function is called when the current page is set to SERVICE. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_a828e576a7d6d5cddff3ebd05ddc6685a}{machine\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the machine page UI. This function is called when the current page is set to MACHINE. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_a6dbb6384cdbff807810e3808aa4892b4}{system\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the system page UI. This function is called when the current page is set to SYSTEM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_a89fee45a3872eb376b252b861ab8c07e}{about\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the about page UI. This function is called when the current page is set to ABOUT. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_a80034c559e6388a025a88d0959456792}{system\+\_\+events\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the system events page UI. This function is called when the current page is set to SYSTEM\+\_\+\+EVENTS. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pages_8c_af2b584d19263555cfcf864b3bc9d0369}{no\+\_\+page}} (void)
+\begin{DoxyCompactList}\small\item\em Function to handle the case when no page is set. This function is called when the current page is set to NO\+\_\+\+PAGE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{pages_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{pages_8c_a89fee45a3872eb376b252b861ab8c07e}\index{pages.c@{pages.c}!about\_page@{about\_page}}
+\index{about\_page@{about\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{about\_page()}{about\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_a89fee45a3872eb376b252b861ab8c07e} 
+void about\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the about page UI. This function is called when the current page is set to ABOUT. 
+
+This function should contain the logic to update the about page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the about page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to ABOUT.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{pages_8c_a96592eefdfdf59eb98544da393fe2c8f}\index{pages.c@{pages.c}!config\_menu\_page@{config\_menu\_page}}
+\index{config\_menu\_page@{config\_menu\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{config\_menu\_page()}{config\_menu\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_a96592eefdfdf59eb98544da393fe2c8f} 
+void config\+\_\+menu\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the configuration menu page UI. This function is called when the current page is set to CONFIG\+\_\+\+MENU. 
+
+This function should contain the logic to update the configuration menu page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the configuration menu page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to CONFIG\+\_\+\+MENU.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{pages_8c_abc67177785d78d87195c128dae5c71e1}\index{pages.c@{pages.c}!control\_page@{control\_page}}
+\index{control\_page@{control\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{control\_page()}{control\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_abc67177785d78d87195c128dae5c71e1} 
+void control\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the control page UI. This function is called when the current page is set to CONTROL. 
+
+This function should contain the logic to update the control page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the control page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to CONTROL.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{pages_8c_adb7e72ea57300775da4604fc0beb6ced}\index{pages.c@{pages.c}!equipment\_page@{equipment\_page}}
+\index{equipment\_page@{equipment\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{equipment\_page()}{equipment\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_adb7e72ea57300775da4604fc0beb6ced} 
+void equipment\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the equipment information page UI. This function is called when the current page is set to EQUIPMENT\+\_\+\+INFO. 
+
+This function should contain the logic to update the equipment information page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the equipment information page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to EQUIPMENT\+\_\+\+INFO.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{pages_8c_a6d91875cb7f48bd2dab021a271b8569e}\index{pages.c@{pages.c}!language\_page@{language\_page}}
+\index{language\_page@{language\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{language\_page()}{language\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_a6d91875cb7f48bd2dab021a271b8569e} 
+void language\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the language selection page UI. This function is called when the current page is set to LANGUAGE. 
+
+This function should contain the logic to update the language selection page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the language selection page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to LANGUAGE.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{pages_8c_ad114f02439a8b6bac8809faab054722e}\index{pages.c@{pages.c}!login\_page@{login\_page}}
+\index{login\_page@{login\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{login\_page()}{login\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_ad114f02439a8b6bac8809faab054722e} 
+void login\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the login page UI. This function is called when the current page is set to LOG\+\_\+\+IN. 
+
+This function should contain the logic to update the login page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the login page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to LOG\+\_\+\+IN.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 6
+\Hypertarget{pages_8c_a828e576a7d6d5cddff3ebd05ddc6685a}\index{pages.c@{pages.c}!machine\_page@{machine\_page}}
+\index{machine\_page@{machine\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{machine\_page()}{machine\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_a828e576a7d6d5cddff3ebd05ddc6685a} 
+void machine\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the machine page UI. This function is called when the current page is set to MACHINE. 
+
+This function should contain the logic to update the machine page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the machine page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to MACHINE.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 7
+\Hypertarget{pages_8c_a222f933f83745f908d2be52694fec0f0}\index{pages.c@{pages.c}!main\_menu\_page@{main\_menu\_page}}
+\index{main\_menu\_page@{main\_menu\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{main\_menu\_page()}{main\_menu\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_a222f933f83745f908d2be52694fec0f0} 
+void main\+\_\+menu\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the main menu page UI. This function is called when the current page is set to MAIN\+\_\+\+MENU. 
+
+This function should contain the logic to update the main menu page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the main menu page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to MAIN\+\_\+\+MENU.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 8
+\Hypertarget{pages_8c_a97b680dc869c646b03f34ad2a3260a6b}\index{pages.c@{pages.c}!main\_page@{main\_page}}
+\index{main\_page@{main\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{main\_page()}{main\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_a97b680dc869c646b03f34ad2a3260a6b} 
+void main\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the main page UI. This function is called when the current page is set to MAIN. 
+
+This function should contain the logic to update the main page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the main page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to MAIN.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the call graph for this function\+:
+% FIG 9
+Here is the caller graph for this function\+:
+% FIG 10
+\Hypertarget{pages_8c_a7f50faf504e3d70c18cca6de2309ae9f}\index{pages.c@{pages.c}!maintenance\_page@{maintenance\_page}}
+\index{maintenance\_page@{maintenance\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{maintenance\_page()}{maintenance\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_a7f50faf504e3d70c18cca6de2309ae9f} 
+void maintenance\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the maintenance page UI. This function is called when the current page is set to MAINTENANCE. 
+
+This function should contain the logic to update the maintenance page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the maintenance page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to MAINTENANCE. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 11
+\Hypertarget{pages_8c_ab7c27bc6f6c1a38a98f6ae4f21109bae}\index{pages.c@{pages.c}!module\_page@{module\_page}}
+\index{module\_page@{module\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{module\_page()}{module\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_ab7c27bc6f6c1a38a98f6ae4f21109bae} 
+void module\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the module information page UI. This function is called when the current page is set to MODULE\+\_\+\+INFO. 
+
+This function should contain the logic to update the module information page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the module information page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to MODULE\+\_\+\+INFO.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 12
+\Hypertarget{pages_8c_af2b584d19263555cfcf864b3bc9d0369}\index{pages.c@{pages.c}!no\_page@{no\_page}}
+\index{no\_page@{no\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{no\_page()}{no\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_af2b584d19263555cfcf864b3bc9d0369} 
+void no\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the case when no page is set. This function is called when the current page is set to NO\+\_\+\+PAGE. 
+
+This function should contain the logic to handle the case when no specific page is set in the Nextion display. It may include clearing the display or showing a default message. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to NO\+\_\+\+PAGE.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+\Hypertarget{pages_8c_a5a1c65a52fcb4b65ae9b394a013e0dbd}\index{pages.c@{pages.c}!service\_page@{service\_page}}
+\index{service\_page@{service\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{service\_page()}{service\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_a5a1c65a52fcb4b65ae9b394a013e0dbd} 
+void service\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the service page UI. This function is called when the current page is set to SERVICE. 
+
+This function should contain the logic to update the service page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the service page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to SERVICE.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 13
+\Hypertarget{pages_8c_a80034c559e6388a025a88d0959456792}\index{pages.c@{pages.c}!system\_events\_page@{system\_events\_page}}
+\index{system\_events\_page@{system\_events\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{system\_events\_page()}{system\_events\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_a80034c559e6388a025a88d0959456792} 
+void system\+\_\+events\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the system events page UI. This function is called when the current page is set to SYSTEM\+\_\+\+EVENTS. 
+
+This function should contain the logic to update the system events page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the system events page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to SYSTEM\+\_\+\+EVENTS.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 14
+\Hypertarget{pages_8c_a6dbb6384cdbff807810e3808aa4892b4}\index{pages.c@{pages.c}!system\_page@{system\_page}}
+\index{system\_page@{system\_page}!pages.c@{pages.c}}
+\doxysubsubsection{\texorpdfstring{system\_page()}{system\_page()}}
+{\footnotesize\ttfamily \label{pages_8c_a6dbb6384cdbff807810e3808aa4892b4} 
+void system\+\_\+page (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle the system page UI. This function is called when the current page is set to SYSTEM. 
+
+This function should contain the logic to update the system page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the system page. This function does not return any value. \begin{DoxyNote}{Note}
+this function is part of the ui\+\_\+task and is called when the task is running and the current page is set to SYSTEM.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{tasks_8h_a38934c613f9e3b3071370604aa661010}{ui\+\_\+task} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is initialized before calling this function. 
+
+This function should not be called directly, it is called by the ui\+\_\+task. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+% FIG 15

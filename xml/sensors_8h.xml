@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="sensors_8h" kind="file" language="C++">
+    <compoundname>sensors.h</compoundname>
+    <includes local="yes">esp_err.h</includes>
+    <includedby refid="system_8h" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h</includedby>
+    <includedby refid="main_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</includedby>
+    <includedby refid="sensors_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/sensors.c</includedby>
+    <includedby refid="system_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</includedby>
+    <includedby refid="tasks_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</includedby>
+    <includedby refid="utils_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/utils.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h</label>
+        <link refid="sensors_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>esp_err.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h</label>
+        <link refid="sensors_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/system.h</label>
+        <link refid="system_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/nvs_manager.c</label>
+        <link refid="nvs__manager_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/sensors.c</label>
+        <link refid="sensors_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</label>
+        <link refid="serial__receive_8c"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c</label>
+        <link refid="setup_8c"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</label>
+        <link refid="system_8c"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</label>
+        <link refid="tasks_8c"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c</label>
+        <link refid="time__manager_8c"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/utils.c</label>
+        <link refid="utils_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsensor__data__t" prot="public">sensor_data_t</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="sensors_8h_1a7a541577440ac4cb1da9b8ef7261cfec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t sensors_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>sensors_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize the sensors. This function sets up the ADC channels for reading pressure and temperature sensors. It should be called before any sensor readings are performed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ESP_OK on success, or an error code on failure. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 10, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" line="21" column="11" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/sensors.c" bodystart="34" bodyend="59" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" declline="21" declcolumn="11"/>
+        <references refid="sensors_8c_1a0b95b5937de8bdf11f73c2636d897c49" compoundref="sensors_8c" startline="16">adc1_handle</references>
+        <references refid="sensors_8c_1a9851d7403086e8d8ce491625b0f8863d" compoundref="sensors_8c" startline="24">ADC_ATTEN</references>
+        <references refid="sensors_8c_1ae7be6136584e673152582baf499d6a6c" compoundref="sensors_8c" startline="25">ADC_WIDTH</references>
+        <references refid="sensors_8c_1ac62c80e871c8e752b7c75351ccb735c0" compoundref="sensors_8c" startline="20">PRESSURE1_CH</references>
+        <references refid="sensors_8c_1a58d51d66502351c02f095a960fff2169" compoundref="sensors_8c" startline="21">PRESSURE2_CH</references>
+        <references refid="sensors_8c_1a866a0d9d37fd0c9f40c72dd938aea77c" compoundref="sensors_8c" startline="11">sensor_data_mutex</references>
+        <references refid="sensors_8c_1a43e03865e90682051770d955bb29239a" compoundref="sensors_8c" startline="22">TEMP_PT1000_CH</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="sensors_8h_1a9456bf17ccbaf37989d9a869c891a294" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t sensors_read</definition>
+        <argsstring>(sensor_data_t *data)</argsstring>
+        <name>sensors_read</name>
+        <param>
+          <type><ref refid="structsensor__data__t" kindref="compound">sensor_data_t</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Read sensor data. This function reads the current values from the pressure and temperature sensors. It populates the provided <ref refid="structsensor__data__t" kindref="compound">sensor_data_t</ref> structure with the latest readings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a <ref refid="structsensor__data__t" kindref="compound">sensor_data_t</ref> structure where the sensor readings will be stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ESP_OK on success, or an error code on failure. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 10, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0</para>
+</simplesect>
+<simplesect kind="note"><para>The function assumes that <ref refid="sensors_8h_1a7a541577440ac4cb1da9b8ef7261cfec" kindref="member">sensors_init()</ref> has been called successfully before this function. It will read the ADC values, convert them to pressure and temperature, and store them in the provided structure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" line="36" column="11" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/sensors.c" bodystart="61" bodyend="122" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" declline="36" declcolumn="11"/>
+        <references refid="sensors_8c_1a0b95b5937de8bdf11f73c2636d897c49" compoundref="sensors_8c" startline="16">adc1_handle</references>
+        <references refid="sensors_8c_1a8e965b09ba8c46425032e6dd576f9bce" compoundref="sensors_8c" startline="28">ADC_MAX_VALUE</references>
+        <references refid="sensors_8c_1a9d3ea7ce740f91ace37ec28a85e74315" compoundref="sensors_8c" startline="27">ADC_REF_VOLTAGE</references>
+        <references refid="sensors_8c_1a501e4a9279435c4c618e5b4e5438e76b" compoundref="sensors_8c" startline="10">latest_sensor_data</references>
+        <references refid="sensors_8c_1ac62c80e871c8e752b7c75351ccb735c0" compoundref="sensors_8c" startline="20">PRESSURE1_CH</references>
+        <references refid="structsensor__data__t_1abeb0981b3499f2cac4214bca0957547b" compoundref="sensors_8h" startline="7">sensor_data_t::pressure1_mbar</references>
+        <references refid="sensors_8c_1a58d51d66502351c02f095a960fff2169" compoundref="sensors_8c" startline="21">PRESSURE2_CH</references>
+        <references refid="structsensor__data__t_1acb01d4352323d49e7f841008907749b0" compoundref="sensors_8h" startline="8">sensor_data_t::pressure2_mbar</references>
+        <references refid="sensors_8c_1a9d12e835884dcd9daf501e1a6876bb7b" compoundref="sensors_8c" startline="32">R_FIXED_OHMS</references>
+        <references refid="sensors_8c_1a866a0d9d37fd0c9f40c72dd938aea77c" compoundref="sensors_8c" startline="11">sensor_data_mutex</references>
+        <references refid="sensors_8c_1a93498e697343b0916cd3389d272530ef" compoundref="sensors_8c" startline="30">SHUNT_RESISTOR_OHMS</references>
+        <references refid="system_8h_1a8a41b8d5ae95b81f5b1ff677783a40dc" compoundref="system_8c" startline="12">system_state</references>
+        <references refid="sensors_8c_1a43e03865e90682051770d955bb29239a" compoundref="sensors_8c" startline="22">TEMP_PT1000_CH</references>
+        <references refid="structsensor__data__t_1aac77aba79f4cf41c6bc0d149096d5e69" compoundref="sensors_8h" startline="9">sensor_data_t::temperature_C</references>
+        <references refid="system_8h_1a012f23b509b22ea369b2f708e3d15330" compoundref="system_8c" startline="125" endline="188">update_system_status</references>
+        <referencedby refid="tasks_8h_1adc13c768c3882c534ba57bad636776ce" compoundref="tasks_8c" startline="45" endline="59">sensor_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="sensors_8h_1a4a239a8cec68742c37e150a05c836ecc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t sensors_get_latest</definition>
+        <argsstring>(sensor_data_t *data)</argsstring>
+        <name>sensors_get_latest</name>
+        <param>
+          <type><ref refid="structsensor__data__t" kindref="compound">sensor_data_t</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" line="38" column="11" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/sensors.c" bodystart="124" bodyend="132" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h" declline="38" declcolumn="11"/>
+        <references refid="sensors_8c_1a501e4a9279435c4c618e5b4e5438e76b" compoundref="sensors_8c" startline="10">latest_sensor_data</references>
+        <references refid="sensors_8c_1a866a0d9d37fd0c9f40c72dd938aea77c" compoundref="sensors_8c" startline="11">sensor_data_mutex</references>
+        <referencedby refid="utils_8h_1a4bc9bfc0677667a966d7ab73efafa4d1" compoundref="utils_8c" startline="8" endline="47">print_sensor_data</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SENSORS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSORS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp_err.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="structsensor__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="structsensor__data__t_1abeb0981b3499f2cac4214bca0957547b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structsensor__data__t_1abeb0981b3499f2cac4214bca0957547b" kindref="member">pressure1_mbar</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Inlet<sp/>pressure<sp/>in<sp/>bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structsensor__data__t_1acb01d4352323d49e7f841008907749b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structsensor__data__t_1acb01d4352323d49e7f841008907749b0" kindref="member">pressure2_mbar</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Outlet<sp/>pressure<sp/>in<sp/>bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="structsensor__data__t_1aac77aba79f4cf41c6bc0d149096d5e69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structsensor__data__t_1aac77aba79f4cf41c6bc0d149096d5e69" kindref="member">temperature_C</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PT1000<sp/>temperature<sp/>in<sp/>Celsius</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}<sp/><ref refid="structsensor__data__t" kindref="compound">sensor_data_t</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">esp_err_t<sp/><ref refid="sensors_8h_1a7a541577440ac4cb1da9b8ef7261cfec" kindref="member">sensors_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">esp_err_t<sp/><ref refid="sensors_8h_1a9456bf17ccbaf37989d9a869c891a294" kindref="member">sensors_read</ref>(<ref refid="structsensor__data__t" kindref="compound">sensor_data_t</ref><sp/>*data);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">esp_err_t<sp/><ref refid="sensors_8h_1a4a239a8cec68742c37e150a05c836ecc" kindref="member">sensors_get_latest</ref>(<ref refid="structsensor__data__t" kindref="compound">sensor_data_t</ref><sp/>*data);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SENSORS_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/sensors.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,337 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/include/ethernet.h File Reference}
+\hypertarget{ethernet_8h}{}\label{ethernet_8h}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/ethernet.h@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/ethernet.h}}
+{\ttfamily \#include "{}esp\+\_\+eth.\+h"{}}\newline
+{\ttfamily \#include "{}esp\+\_\+netif.\+h"{}}\newline
+{\ttfamily \#include "{}esp\+\_\+event.\+h"{}}\newline
+Include dependency graph for ethernet.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_aa0aec6e526d34bcfe24f3358063215b9}{W5500\+\_\+\+SPI\+\_\+\+HOST}}~SPI2\+\_\+\+HOST
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_aa8798174188a78b90d0004bfbbdaf604}{W5500\+\_\+\+SCLK\+\_\+\+GPIO}}~18
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_aaf35269321cce9cde911ab13c5bf2f1a}{W5500\+\_\+\+MOSI\+\_\+\+GPIO}}~23
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_a495ea13f4aa3459d0c1dfb4d3083252b}{W5500\+\_\+\+MISO\+\_\+\+GPIO}}~19
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_aaca87d2e40f5e4f13e4d250f196a5fac}{W5500\+\_\+\+CS\+\_\+\+GPIO}}~5
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_a0f0b99520b78fa99419437f9ecfeab34}{W5500\+\_\+\+INT\+\_\+\+GPIO}}~4
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_ac49ec3042b48b883e7900d9a234f207e}{W5500\+\_\+\+RST\+\_\+\+GPIO}}~-\/1
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_a5a1678cf71b992d4d8ebb10a25d323cd}{ETHERNET\+\_\+\+TIMEOUT\+\_\+\+MS}}~5000
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_ab9283eb38c098765c10d2029af6f1f7b}{STATIC\+\_\+\+IP\+\_\+\+ADDR}}~"{}192.\+168.\+1.\+100"{}
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_ae8d8c06f0e4668e677b3625c937744c5}{STATIC\+\_\+\+GATEWAY\+\_\+\+ADDR}}~"{}192.\+168.\+1.\+1"{}
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_a4db47e739ac129a07a381b875807af0c}{STATIC\+\_\+\+NETMASK\+\_\+\+ADDR}}~"{}255.\+255.\+255.\+0"{}
+\item 
+\#define \mbox{\hyperlink{ethernet_8h_a437d5adf3828750386f66bc45b3e7e9c}{USE\+\_\+\+STATIC\+\_\+\+IP}}~1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{ethernet_8h_ac5a294a0efbd42bd9671903a60e4f52b}{ethernet\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the W5500 Ethernet module. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{ethernet_8h_a864a2ddf998b216a85c97c640b841501}{ethernet\+\_\+set\+\_\+static\+\_\+ip}} (void)
+\begin{DoxyCompactList}\small\item\em Configure static IP settings for the Ethernet interface. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{ethernet_8h_a4f763d2ae63ab35e404488c1add5c852}{ethernet\+\_\+start}} (void)
+\begin{DoxyCompactList}\small\item\em Start the Ethernet connection. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{ethernet_8h_a4039eaf3762551e4c7b70c07a8abe1a4}{ethernet\+\_\+stop}} (void)
+\begin{DoxyCompactList}\small\item\em Stop the Ethernet connection. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{ethernet_8h_a413b14a7107939f76a186c5d459a4a84}{ethernet\+\_\+is\+\_\+connected}} (void)
+\begin{DoxyCompactList}\small\item\em Check if Ethernet is connected. \end{DoxyCompactList}\item 
+esp\+\_\+err\+\_\+t \mbox{\hyperlink{ethernet_8h_afcdc1ac7a161416f9aa70c6802794598}{ethernet\+\_\+get\+\_\+ip}} (char \texorpdfstring{$\ast$}{*}ip\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Get the IP address assigned to the Ethernet interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ethernet_8h_a2ae9912b161cb0e12abb084e5d2756c2}{ethernet\+\_\+event\+\_\+handler}} (void \texorpdfstring{$\ast$}{*}arg, esp\+\_\+event\+\_\+base\+\_\+t event\+\_\+base, int32\+\_\+t event\+\_\+id, void \texorpdfstring{$\ast$}{*}event\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Event handler for Ethernet events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{ethernet_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{ethernet_8h_a5a1678cf71b992d4d8ebb10a25d323cd}\index{ethernet.h@{ethernet.h}!ETHERNET\_TIMEOUT\_MS@{ETHERNET\_TIMEOUT\_MS}}
+\index{ETHERNET\_TIMEOUT\_MS@{ETHERNET\_TIMEOUT\_MS}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{ETHERNET\_TIMEOUT\_MS}{ETHERNET\_TIMEOUT\_MS}}
+{\footnotesize\ttfamily \label{ethernet_8h_a5a1678cf71b992d4d8ebb10a25d323cd} 
+\#define ETHERNET\+\_\+\+TIMEOUT\+\_\+\+MS~5000}
+
+\Hypertarget{ethernet_8h_ae8d8c06f0e4668e677b3625c937744c5}\index{ethernet.h@{ethernet.h}!STATIC\_GATEWAY\_ADDR@{STATIC\_GATEWAY\_ADDR}}
+\index{STATIC\_GATEWAY\_ADDR@{STATIC\_GATEWAY\_ADDR}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{STATIC\_GATEWAY\_ADDR}{STATIC\_GATEWAY\_ADDR}}
+{\footnotesize\ttfamily \label{ethernet_8h_ae8d8c06f0e4668e677b3625c937744c5} 
+\#define STATIC\+\_\+\+GATEWAY\+\_\+\+ADDR~"{}192.\+168.\+1.\+1"{}}
+
+\Hypertarget{ethernet_8h_ab9283eb38c098765c10d2029af6f1f7b}\index{ethernet.h@{ethernet.h}!STATIC\_IP\_ADDR@{STATIC\_IP\_ADDR}}
+\index{STATIC\_IP\_ADDR@{STATIC\_IP\_ADDR}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{STATIC\_IP\_ADDR}{STATIC\_IP\_ADDR}}
+{\footnotesize\ttfamily \label{ethernet_8h_ab9283eb38c098765c10d2029af6f1f7b} 
+\#define STATIC\+\_\+\+IP\+\_\+\+ADDR~"{}192.\+168.\+1.\+100"{}}
+
+\Hypertarget{ethernet_8h_a4db47e739ac129a07a381b875807af0c}\index{ethernet.h@{ethernet.h}!STATIC\_NETMASK\_ADDR@{STATIC\_NETMASK\_ADDR}}
+\index{STATIC\_NETMASK\_ADDR@{STATIC\_NETMASK\_ADDR}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{STATIC\_NETMASK\_ADDR}{STATIC\_NETMASK\_ADDR}}
+{\footnotesize\ttfamily \label{ethernet_8h_a4db47e739ac129a07a381b875807af0c} 
+\#define STATIC\+\_\+\+NETMASK\+\_\+\+ADDR~"{}255.\+255.\+255.\+0"{}}
+
+\Hypertarget{ethernet_8h_a437d5adf3828750386f66bc45b3e7e9c}\index{ethernet.h@{ethernet.h}!USE\_STATIC\_IP@{USE\_STATIC\_IP}}
+\index{USE\_STATIC\_IP@{USE\_STATIC\_IP}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{USE\_STATIC\_IP}{USE\_STATIC\_IP}}
+{\footnotesize\ttfamily \label{ethernet_8h_a437d5adf3828750386f66bc45b3e7e9c} 
+\#define USE\+\_\+\+STATIC\+\_\+\+IP~1}
+
+\Hypertarget{ethernet_8h_aaca87d2e40f5e4f13e4d250f196a5fac}\index{ethernet.h@{ethernet.h}!W5500\_CS\_GPIO@{W5500\_CS\_GPIO}}
+\index{W5500\_CS\_GPIO@{W5500\_CS\_GPIO}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{W5500\_CS\_GPIO}{W5500\_CS\_GPIO}}
+{\footnotesize\ttfamily \label{ethernet_8h_aaca87d2e40f5e4f13e4d250f196a5fac} 
+\#define W5500\+\_\+\+CS\+\_\+\+GPIO~5}
+
+\Hypertarget{ethernet_8h_a0f0b99520b78fa99419437f9ecfeab34}\index{ethernet.h@{ethernet.h}!W5500\_INT\_GPIO@{W5500\_INT\_GPIO}}
+\index{W5500\_INT\_GPIO@{W5500\_INT\_GPIO}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{W5500\_INT\_GPIO}{W5500\_INT\_GPIO}}
+{\footnotesize\ttfamily \label{ethernet_8h_a0f0b99520b78fa99419437f9ecfeab34} 
+\#define W5500\+\_\+\+INT\+\_\+\+GPIO~4}
+
+\Hypertarget{ethernet_8h_a495ea13f4aa3459d0c1dfb4d3083252b}\index{ethernet.h@{ethernet.h}!W5500\_MISO\_GPIO@{W5500\_MISO\_GPIO}}
+\index{W5500\_MISO\_GPIO@{W5500\_MISO\_GPIO}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{W5500\_MISO\_GPIO}{W5500\_MISO\_GPIO}}
+{\footnotesize\ttfamily \label{ethernet_8h_a495ea13f4aa3459d0c1dfb4d3083252b} 
+\#define W5500\+\_\+\+MISO\+\_\+\+GPIO~19}
+
+\Hypertarget{ethernet_8h_aaf35269321cce9cde911ab13c5bf2f1a}\index{ethernet.h@{ethernet.h}!W5500\_MOSI\_GPIO@{W5500\_MOSI\_GPIO}}
+\index{W5500\_MOSI\_GPIO@{W5500\_MOSI\_GPIO}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{W5500\_MOSI\_GPIO}{W5500\_MOSI\_GPIO}}
+{\footnotesize\ttfamily \label{ethernet_8h_aaf35269321cce9cde911ab13c5bf2f1a} 
+\#define W5500\+\_\+\+MOSI\+\_\+\+GPIO~23}
+
+\Hypertarget{ethernet_8h_ac49ec3042b48b883e7900d9a234f207e}\index{ethernet.h@{ethernet.h}!W5500\_RST\_GPIO@{W5500\_RST\_GPIO}}
+\index{W5500\_RST\_GPIO@{W5500\_RST\_GPIO}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{W5500\_RST\_GPIO}{W5500\_RST\_GPIO}}
+{\footnotesize\ttfamily \label{ethernet_8h_ac49ec3042b48b883e7900d9a234f207e} 
+\#define W5500\+\_\+\+RST\+\_\+\+GPIO~-\/1}
+
+\Hypertarget{ethernet_8h_aa8798174188a78b90d0004bfbbdaf604}\index{ethernet.h@{ethernet.h}!W5500\_SCLK\_GPIO@{W5500\_SCLK\_GPIO}}
+\index{W5500\_SCLK\_GPIO@{W5500\_SCLK\_GPIO}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{W5500\_SCLK\_GPIO}{W5500\_SCLK\_GPIO}}
+{\footnotesize\ttfamily \label{ethernet_8h_aa8798174188a78b90d0004bfbbdaf604} 
+\#define W5500\+\_\+\+SCLK\+\_\+\+GPIO~18}
+
+\Hypertarget{ethernet_8h_aa0aec6e526d34bcfe24f3358063215b9}\index{ethernet.h@{ethernet.h}!W5500\_SPI\_HOST@{W5500\_SPI\_HOST}}
+\index{W5500\_SPI\_HOST@{W5500\_SPI\_HOST}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{W5500\_SPI\_HOST}{W5500\_SPI\_HOST}}
+{\footnotesize\ttfamily \label{ethernet_8h_aa0aec6e526d34bcfe24f3358063215b9} 
+\#define W5500\+\_\+\+SPI\+\_\+\+HOST~SPI2\+\_\+\+HOST}
+
+
+
+\label{doc-func-members}
+\Hypertarget{ethernet_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{ethernet_8h_a2ae9912b161cb0e12abb084e5d2756c2}\index{ethernet.h@{ethernet.h}!ethernet\_event\_handler@{ethernet\_event\_handler}}
+\index{ethernet\_event\_handler@{ethernet\_event\_handler}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{ethernet\_event\_handler()}{ethernet\_event\_handler()}}
+{\footnotesize\ttfamily \label{ethernet_8h_a2ae9912b161cb0e12abb084e5d2756c2} 
+void ethernet\+\_\+event\+\_\+handler (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{arg}{, }\item[{esp\+\_\+event\+\_\+base\+\_\+t}]{event\+\_\+base}{, }\item[{int32\+\_\+t}]{event\+\_\+id}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{event\+\_\+data}{}\end{DoxyParamCaption})}
+
+
+
+Event handler for Ethernet events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & Event handler argument \\
+\hline
+{\em event\+\_\+base} & Event base \\
+\hline
+{\em event\+\_\+id} & Event ID \\
+\hline
+{\em event\+\_\+data} & Event data\\
+\hline
+\end{DoxyParams}
+This function handles Ethernet events such as connection status changes \begin{DoxyNote}{Note}
+It logs the events and updates the connection status 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{ethernet_8h_afcdc1ac7a161416f9aa70c6802794598}\index{ethernet.h@{ethernet.h}!ethernet\_get\_ip@{ethernet\_get\_ip}}
+\index{ethernet\_get\_ip@{ethernet\_get\_ip}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{ethernet\_get\_ip()}{ethernet\_get\_ip()}}
+{\footnotesize\ttfamily \label{ethernet_8h_afcdc1ac7a161416f9aa70c6802794598} 
+esp\+\_\+err\+\_\+t ethernet\+\_\+get\+\_\+ip (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{ip\+\_\+str}{}\end{DoxyParamCaption})}
+
+
+
+Get the IP address assigned to the Ethernet interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+\_\+str} & Buffer to store the IP address string (minimum 16 bytes) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+esp\+\_\+err\+\_\+t ESP\+\_\+\+OK on success, error code otherwise
+\end{DoxyReturn}
+This function retrieves the current IP address of the Ethernet interface \begin{DoxyNote}{Note}
+The IP address is returned in standard dotted-\/decimal format 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{ethernet_8h_ac5a294a0efbd42bd9671903a60e4f52b}\index{ethernet.h@{ethernet.h}!ethernet\_init@{ethernet\_init}}
+\index{ethernet\_init@{ethernet\_init}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{ethernet\_init()}{ethernet\_init()}}
+{\footnotesize\ttfamily \label{ethernet_8h_ac5a294a0efbd42bd9671903a60e4f52b} 
+esp\+\_\+err\+\_\+t ethernet\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the W5500 Ethernet module. 
+
+Sets up SPI communication and initializes the W5500 chip \begin{DoxyReturn}{Returns}
+esp\+\_\+err\+\_\+t ESP\+\_\+\+OK on success, error code otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called before starting the Ethernet connection 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{ethernet_8h_a413b14a7107939f76a186c5d459a4a84}\index{ethernet.h@{ethernet.h}!ethernet\_is\_connected@{ethernet\_is\_connected}}
+\index{ethernet\_is\_connected@{ethernet\_is\_connected}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{ethernet\_is\_connected()}{ethernet\_is\_connected()}}
+{\footnotesize\ttfamily \label{ethernet_8h_a413b14a7107939f76a186c5d459a4a84} 
+bool ethernet\+\_\+is\+\_\+connected (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Check if Ethernet is connected. 
+
+\begin{DoxyReturn}{Returns}
+true if connected, false otherwise
+\end{DoxyReturn}
+This function checks the current connection status of the Ethernet interface \begin{DoxyNote}{Note}
+This function can be used to determine if the Ethernet connection is active 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 6
+\Hypertarget{ethernet_8h_a864a2ddf998b216a85c97c640b841501}\index{ethernet.h@{ethernet.h}!ethernet\_set\_static\_ip@{ethernet\_set\_static\_ip}}
+\index{ethernet\_set\_static\_ip@{ethernet\_set\_static\_ip}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{ethernet\_set\_static\_ip()}{ethernet\_set\_static\_ip()}}
+{\footnotesize\ttfamily \label{ethernet_8h_a864a2ddf998b216a85c97c640b841501} 
+esp\+\_\+err\+\_\+t ethernet\+\_\+set\+\_\+static\+\_\+ip (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Configure static IP settings for the Ethernet interface. 
+
+Sets up static IP configuration instead of DHCP \begin{DoxyReturn}{Returns}
+esp\+\_\+err\+\_\+t ESP\+\_\+\+OK on success, error code otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function should be called after \doxylink{ethernet_8h_ac5a294a0efbd42bd9671903a60e4f52b}{ethernet\+\_\+init()} but before \doxylink{ethernet_8h_a4f763d2ae63ab35e404488c1add5c852}{ethernet\+\_\+start()} 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 7
+\Hypertarget{ethernet_8h_a4f763d2ae63ab35e404488c1add5c852}\index{ethernet.h@{ethernet.h}!ethernet\_start@{ethernet\_start}}
+\index{ethernet\_start@{ethernet\_start}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{ethernet\_start()}{ethernet\_start()}}
+{\footnotesize\ttfamily \label{ethernet_8h_a4f763d2ae63ab35e404488c1add5c852} 
+esp\+\_\+err\+\_\+t ethernet\+\_\+start (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Start the Ethernet connection. 
+
+Starts the Ethernet interface and begins network connectivity \begin{DoxyReturn}{Returns}
+esp\+\_\+err\+\_\+t ESP\+\_\+\+OK on success, error code otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function should be called after \doxylink{ethernet_8h_ac5a294a0efbd42bd9671903a60e4f52b}{ethernet\+\_\+init()} 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 8
+\Hypertarget{ethernet_8h_a4039eaf3762551e4c7b70c07a8abe1a4}\index{ethernet.h@{ethernet.h}!ethernet\_stop@{ethernet\_stop}}
+\index{ethernet\_stop@{ethernet\_stop}!ethernet.h@{ethernet.h}}
+\doxysubsubsection{\texorpdfstring{ethernet\_stop()}{ethernet\_stop()}}
+{\footnotesize\ttfamily \label{ethernet_8h_a4039eaf3762551e4c7b70c07a8abe1a4} 
+esp\+\_\+err\+\_\+t ethernet\+\_\+stop (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Stop the Ethernet connection. 
+
+Stops the Ethernet interface \begin{DoxyReturn}{Returns}
+esp\+\_\+err\+\_\+t ESP\+\_\+\+OK on success, error code otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function should be called to cleanly stop the Ethernet connection 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}

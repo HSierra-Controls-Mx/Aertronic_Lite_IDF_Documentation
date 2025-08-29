@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="time__manager_8h" kind="file" language="C++">
+    <compoundname>time_manager.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="serial__receive_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</includedby>
+    <includedby refid="setup_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c</includedby>
+    <includedby refid="system_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</includedby>
+    <includedby refid="tasks_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</includedby>
+    <includedby refid="time__manager_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h</label>
+        <link refid="time__manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h</label>
+        <link refid="time__manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</label>
+        <link refid="serial__receive_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c</label>
+        <link refid="setup_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</label>
+        <link refid="system_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</label>
+        <link refid="tasks_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c</label>
+        <link refid="time__manager_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="time__manager_8h_1a94c1c4594f51852e46a30e2f025ebc16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_system_time</definition>
+        <argsstring>(int year, int month, int day, int hour, int min, int sec)</argsstring>
+        <name>set_system_time</name>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sec</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the time manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function should be called inside the <ref refid="setup_8h_1a409b2f4c4106092dafb1db940c5f85d4" kindref="member">wait_for_datetime()</ref> function. This function sets up the system time based on the provided date and time from the Nextion display. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full year (e.g., 2025) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>month</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Month (1-12) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Day of the month (1-31) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hour of the day (0-23) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minute of the hour (0-59) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h" line="19" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="14" bodyend="29" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h" declline="19" declcolumn="6"/>
+        <referencedby refid="setup_8h_1a409b2f4c4106092dafb1db940c5f85d4" compoundref="setup_8c" startline="78" endline="119">wait_for_datetime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="time__manager_8h_1aa10b7c32c7bb9654c6d13256ba88e217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * format_current_time</definition>
+        <argsstring>(void)</argsstring>
+        <name>format_current_time</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Formats the current time as a string in 12-hour format with AM/PM. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function returns a pointer to a static string, so it should not be modified or freed. </para>
+</simplesect>
+<simplesect kind="return"><para>A pointer to a static string containing the formatted time (e.g., &quot;02:30pm&quot;). </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h" line="29" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="31" bodyend="46" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h" declline="29" declcolumn="12"/>
+        <referencedby refid="tasks_8h_1adfc61f610137566e1a44bca38c2fb368" compoundref="tasks_8c" startline="36" endline="43">update_time_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="time__manager_8h_1a7adef7574674ceb8389ad51f9865a608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * format_current_date</definition>
+        <argsstring>(int language)</argsstring>
+        <name>format_current_date</name>
+        <param>
+          <type>int</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Formats the current date as a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the system language:<itemizedlist>
+<listitem><para>0: English -1: Spanish -2: Portuguese -3: French -4: German </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function returns a pointer to a static string, so it should not be modified or freed. </para>
+</simplesect>
+<simplesect kind="return"><para>A pointer to a static string containing the formatted date according to the system language selected. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h" line="45" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="48" bodyend="80" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h" declline="45" declcolumn="12"/>
+        <references refid="lang__support_8h_1a326089ff74f824b77e9bf1274a74fa5f" compoundref="lang__support_8c" startline="5" endline="15">get_day_of_week</references>
+        <references refid="lang__support_8h_1a2682334f405ae6d109b45818d1e61abf" compoundref="lang__support_8c" startline="17" endline="27">get_month_name</references>
+        <references refid="system_8h_1a10a3fa33bae024190264a8321128a41d" compoundref="system_8c" startline="18">system_language</references>
+        <referencedby refid="tasks_8h_1af6775fd71f463f5b4bd0281831adf189" compoundref="tasks_8c" startline="27" endline="34">update_date_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="time__manager_8h_1ac1f62fd134f587b2f14e3fe565f84e11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_operation_time</definition>
+        <argsstring>(int hours, int minutes, int32_t language)</argsstring>
+        <name>print_operation_time</name>
+        <param>
+          <type>int</type>
+          <declname>hours</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minutes</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Prints the current operation time to the console. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function does not return any value. <simplesect kind="note"><para>This function prints the operation time in the format &quot;HH:MM&quot; to the console. It is useful for debugging and monitoring the system&apos;s operation time. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 19, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h" line="56" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="82" bodyend="92" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h" declline="56" declcolumn="6"/>
+        <references refid="time__manager_8c_1a44d7af51d64492c3d6fd86681425a202" compoundref="time__manager_8c" startline="10" endline="10">hours_text</references>
+        <references refid="time__manager_8c_1a6d06573199e575fdcb4325e592e21832" compoundref="time__manager_8c" startline="12" endline="12">minutes_text</references>
+        <references refid="serial__send_8h_1aa46fe2f4b02e9852f9f7a06c4ebd08a3" compoundref="serial__send_8c" startline="40" endline="44">send_text_to_display</references>
+        <referencedby refid="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" compoundref="serial__receive_8c" startline="58" endline="674">received_data</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="time__manager_8h_1a7219d3bd77a4384411b452afbe1874ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * get_event_timestamp</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_event_timestamp</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the current event timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function returns a pointer to a static string containing the current event timestamp. The timestamp is formatted as &quot;YYYY-MM-DD HH:MM:SS&quot;. <simplesect kind="note"><para>The returned string is static and should not be modified or freed. </para>
+</simplesect>
+<simplesect kind="return"><para>A pointer to a static string containing the current event timestamp. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 19, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h" line="68" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="94" bodyend="110" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h" declline="68" declcolumn="12"/>
+        <referencedby refid="system_8h_1add779b9d830853ab883651b998ad43d8" compoundref="system_8c" startline="81" endline="123">store_system_event</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TIME_MANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIME_MANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="time__manager_8h_1a94c1c4594f51852e46a30e2f025ebc16" kindref="member">set_system_time</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>year,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>month,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>day,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sec);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="time__manager_8h_1aa10b7c32c7bb9654c6d13256ba88e217" kindref="member">format_current_time</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="time__manager_8h_1a7adef7574674ceb8389ad51f9865a608" kindref="member">format_current_date</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>language);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="time__manager_8h_1ac1f62fd134f587b2f14e3fe565f84e11" kindref="member">print_operation_time</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hours,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minutes,<sp/>int32_t<sp/>language);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="time__manager_8h_1a7219d3bd77a4384411b452afbe1874ac" kindref="member">get_event_timestamp</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>TIME_MANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/time_manager.h"/>
+  </compounddef>
+</doxygen>

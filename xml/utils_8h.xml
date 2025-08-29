@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="utils_8h" kind="file" language="C++">
+    <compoundname>utils.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="pages_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c</includedby>
+    <includedby refid="system_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</includedby>
+    <includedby refid="utils_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/utils.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c</label>
+        <link refid="pages_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</label>
+        <link refid="system_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/utils.c</label>
+        <link refid="utils_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="utils_8h_1a4bc9bfc0677667a966d7ab73efafa4d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_sensor_data</definition>
+        <argsstring>(void)</argsstring>
+        <name>print_sensor_data</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Prints the data from the sensors. This function retrieves the latest sensor data and prints it to the console. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function does not return any value. <simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 16, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/utils.h" line="14" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/utils.c" bodystart="8" bodyend="47" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/utils.h" declline="14" declcolumn="6"/>
+        <references refid="structsensor__data__t_1abeb0981b3499f2cac4214bca0957547b" compoundref="sensors_8h" startline="7">sensor_data_t::pressure1_mbar</references>
+        <references refid="structsensor__data__t_1acb01d4352323d49e7f841008907749b0" compoundref="sensors_8h" startline="8">sensor_data_t::pressure2_mbar</references>
+        <references refid="serial__send_8h_1a08ad982ff9f8d3883d855ed931d9b6f6" compoundref="serial__send_8c" startline="34" endline="38">send_float_to_display</references>
+        <references refid="serial__send_8h_1aa46fe2f4b02e9852f9f7a06c4ebd08a3" compoundref="serial__send_8c" startline="40" endline="44">send_text_to_display</references>
+        <references refid="sensors_8h_1a4a239a8cec68742c37e150a05c836ecc" compoundref="sensors_8c" startline="124" endline="132">sensors_get_latest</references>
+        <references refid="structsensor__data__t_1aac77aba79f4cf41c6bc0d149096d5e69" compoundref="sensors_8h" startline="9">sensor_data_t::temperature_C</references>
+        <referencedby refid="pages_8h_1a97b680dc869c646b03f34ad2a3260a6b" compoundref="pages_8c" startline="5" endline="7">main_page</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="utils_8h_1ab430aab7d7c17ab2aba9374eed7d1bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void get_status_attributes</definition>
+        <argsstring>(int32_t state, int status_attributes[4])</argsstring>
+        <name>get_status_attributes</name>
+        <param>
+          <type>int32_t</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>status_attributes</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Updates the header to reflect the current system state. This function updates the header on the Nextion display to show the current system state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>system_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current state of the system (0 = Normal, 1 = Warning, 2 = Alarm). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status_attributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array containing status attributes to be displayed in the header. The array should contain 6 elements representing different status indicators.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This function does not return any value. <simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 17, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/utils.h" line="27" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/utils.c" bodystart="49" bodyend="86" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/utils.h" declline="27" declcolumn="6"/>
+        <references refid="system_8h_1a30436bd24c155c7ff8b58f89cc4907d9" compoundref="system_8c" startline="19">system_color</references>
+        <referencedby refid="system_8h_1a97ec9415a474734bbfe4819763f72c3f" compoundref="system_8c" startline="190" endline="208">update_header</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="utils_8h_1af273a5ebcae2631c89cbee7c2bb96e9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * get_status_text</definition>
+        <argsstring>(int32_t state, int32_t language)</argsstring>
+        <name>get_status_text</name>
+        <param>
+          <type>int32_t</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the status text based on the current system state and language. This function returns a string representing the status text for the given state and language. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current state of the system (0 = Normal, 1 = Warning, 2 = Alarm). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The language code (0 = English, 1 = Spanish, 2 = Portuguese, 3 = French, 4 = German). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the status text in the specified language.</para>
+</simplesect>
+The function uses a switch-case structure to determine the appropriate status text based on the state and language. <simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 18, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/utils.h" line="40" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/utils.c" bodystart="88" bodyend="113" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/utils.h" declline="40" declcolumn="12"/>
+        <referencedby refid="system_8h_1a97ec9415a474734bbfe4819763f72c3f" compoundref="system_8c" startline="190" endline="208">update_header</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="utils_8h_1a4bc9bfc0677667a966d7ab73efafa4d1" kindref="member">print_sensor_data</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="utils_8h_1ab430aab7d7c17ab2aba9374eed7d1bd8" kindref="member">get_status_attributes</ref>(int32_t<sp/>state,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status_attributes[4]);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="utils_8h_1af273a5ebcae2631c89cbee7c2bb96e9b" kindref="member">get_status_text</ref>(int32_t<sp/>state,<sp/>int32_t<sp/>language);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/utils.h"/>
+  </compounddef>
+</doxygen>

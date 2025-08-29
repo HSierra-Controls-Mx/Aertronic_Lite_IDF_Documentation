@@ -1,0 +1,33 @@
+\doxysection{nvs\+\_\+manager.\+h}
+\hypertarget{nvs__manager_8h_source}{}\label{nvs__manager_8h_source}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/nvs\_manager.h@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/nvs\_manager.h}}
+\mbox{\hyperlink{nvs__manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NVS\_MANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NVS\_MANAGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Define\ the\ namespace\ used\ in\ NVS\ for\ storing\ our\ data}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ NAMESPACE\ "{}memory"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ Define\ KEYS\ for\ storing\ data\ in\ NVS}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ KEY\_NVS\_INIT\ "{}nvs\_init"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ KEY\_OP\_MIN\ "{}op\_minutes"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ KEY\_OP\_HOURS\ "{}op\_hours"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ KEY\_BOOT\_COUNTER\ "{}boot\_count"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ KEY\_SYS\_LANGUAGE\ "{}language"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ KEY\_SYS\_COLOR\ "{}color"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ KEY\_MAINTENANCE\_MIN\ "{}mnt\_minutes"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ KEY\_MAINTENANCE\_HOURS\ "{}mnt\_hours"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ KEY\_NUMBER\_OF\_MAINTENANCES\ "{}mnt\_count"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ Function\ declarations}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{nvs__manager_8h_a77336aed281bafc61cdc6ecfc8572d15}{init\_nvs\_manager}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{nvs__manager_8h_aaec9f002eed7b2794c9babcfa7d3f50b}{save\_int\_to\_nvs}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *key,\ int32\_t\ value);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ NVS\_MANAGER\_H}}
+
+\end{DoxyCode}

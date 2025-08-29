@@ -1,0 +1,92 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/main/nvs\+\_\+manager.c File Reference}
+\hypertarget{nvs__manager_8c}{}\label{nvs__manager_8c}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/nvs\_manager.c@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/nvs\_manager.c}}
+{\ttfamily \#include "{}nvs\+\_\+flash.\+h"{}}\newline
+{\ttfamily \#include "{}nvs.\+h"{}}\newline
+{\ttfamily \#include "{}esp\+\_\+log.\+h"{}}\newline
+{\ttfamily \#include "{}nvs\+\_\+manager.\+h"{}}\newline
+{\ttfamily \#include "{}system.\+h"{}}\newline
+Include dependency graph for nvs\+\_\+manager.\+c\+:
+% FIG 0
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{nvs__manager_8c_afc3d101f633a076cc1ca84b85b6224b2}{TAG}}~"{}NVS\+\_\+\+MANAGER"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{nvs__manager_8c_a77336aed281bafc61cdc6ecfc8572d15}{init\+\_\+nvs\+\_\+manager}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the NVS (Non-\/\+Volatile Storage). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{nvs__manager_8c_aaec9f002eed7b2794c9babcfa7d3f50b}{save\+\_\+int\+\_\+to\+\_\+nvs}} (const char \texorpdfstring{$\ast$}{*}key, int32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Loads an integer value from NVS using the specified key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{nvs__manager_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{nvs__manager_8c_afc3d101f633a076cc1ca84b85b6224b2}\index{nvs\_manager.c@{nvs\_manager.c}!TAG@{TAG}}
+\index{TAG@{TAG}!nvs\_manager.c@{nvs\_manager.c}}
+\doxysubsubsection{\texorpdfstring{TAG}{TAG}}
+{\footnotesize\ttfamily \label{nvs__manager_8c_afc3d101f633a076cc1ca84b85b6224b2} 
+\#define TAG~"{}NVS\+\_\+\+MANAGER"{}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{nvs__manager_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{nvs__manager_8c_a77336aed281bafc61cdc6ecfc8572d15}\index{nvs\_manager.c@{nvs\_manager.c}!init\_nvs\_manager@{init\_nvs\_manager}}
+\index{init\_nvs\_manager@{init\_nvs\_manager}!nvs\_manager.c@{nvs\_manager.c}}
+\doxysubsubsection{\texorpdfstring{init\_nvs\_manager()}{init\_nvs\_manager()}}
+{\footnotesize\ttfamily \label{nvs__manager_8c_a77336aed281bafc61cdc6ecfc8572d15} 
+void init\+\_\+nvs\+\_\+manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the NVS (Non-\/\+Volatile Storage). 
+
+This function initializes the NVS system, allowing for data storage and retrieval. \begin{DoxyNote}{Note}
+This function should be called before using any NVS functions. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 5, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{nvs__manager_8c_aaec9f002eed7b2794c9babcfa7d3f50b}\index{nvs\_manager.c@{nvs\_manager.c}!save\_int\_to\_nvs@{save\_int\_to\_nvs}}
+\index{save\_int\_to\_nvs@{save\_int\_to\_nvs}!nvs\_manager.c@{nvs\_manager.c}}
+\doxysubsubsection{\texorpdfstring{save\_int\_to\_nvs()}{save\_int\_to\_nvs()}}
+{\footnotesize\ttfamily \label{nvs__manager_8c_aaec9f002eed7b2794c9babcfa7d3f50b} 
+void save\+\_\+int\+\_\+to\+\_\+nvs (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{key}{, }\item[{int32\+\_\+t}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Loads an integer value from NVS using the specified key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key associated with the integer value in NVS. \\
+\hline
+{\em value} & int32\+\_\+t variable to store the loaded value.\\
+\hline
+\end{DoxyParams}
+This function does not return a value. Instead, it updates the global variable associated with the key. \begin{DoxyNote}{Note}
+Make sure that all keys used in this function are defined in the NVS namespace. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 16, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 2

@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="time__manager_8c" kind="file" language="C++">
+    <compoundname>time_manager.c</compoundname>
+    <includes local="no">time.h</includes>
+    <includes local="no">sys/time.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes refid="time__manager_8h" local="yes">time_manager.h</includes>
+    <includes refid="lang__support_8h" local="yes">lang_support.h</includes>
+    <includes refid="system_8h" local="yes">system.h</includes>
+    <includes refid="serial__send_8h" local="yes">serial_send.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>ethernet.h</label>
+        <link refid="ethernet_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lang_support.h</label>
+        <link refid="lang__support_8h"/>
+      </node>
+      <node id="9">
+        <label>sensors.h</label>
+        <link refid="sensors_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>serial_send.h</label>
+        <link refid="serial__send_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>system.h</label>
+        <link refid="system_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>time_manager.h</label>
+        <link refid="time__manager_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c</label>
+        <link refid="time__manager_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>esp_err.h</label>
+      </node>
+      <node id="13">
+        <label>esp_eth.h</label>
+      </node>
+      <node id="15">
+        <label>esp_event.h</label>
+      </node>
+      <node id="14">
+        <label>esp_netif.h</label>
+      </node>
+      <node id="11">
+        <label>stdbool.h</label>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>sys/time.h</label>
+      </node>
+      <node id="2">
+        <label>time.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="time__manager_8c_1a44d7af51d64492c3d6fd86681425a202" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* hours_text[]</definition>
+        <argsstring>[]</argsstring>
+        <name>hours_text</name>
+        <initializer>= {&quot;hours&quot;, &quot;horas&quot;, &quot;horas&quot;, &quot;heures&quot;, &quot;Stunden&quot;}</initializer>
+        <briefdescription>
+<para>Array containing the words for &quot;hours&quot; in different languages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" line="10" column="19" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="10" bodyend="10"/>
+        <referencedby refid="time__manager_8h_1ac1f62fd134f587b2f14e3fe565f84e11" compoundref="time__manager_8c" startline="82" endline="92">print_operation_time</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="time__manager_8c_1a6d06573199e575fdcb4325e592e21832" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* minutes_text[]</definition>
+        <argsstring>[]</argsstring>
+        <name>minutes_text</name>
+        <initializer>= {&quot;minutes&quot;, &quot;minutos&quot;, &quot;minutos&quot;, &quot;minutes&quot;, &quot;Minuten&quot;}</initializer>
+        <briefdescription>
+<para>Array containing the words for &quot;minutes&quot; in different languages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" line="12" column="19" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="12" bodyend="12"/>
+        <referencedby refid="time__manager_8h_1ac1f62fd134f587b2f14e3fe565f84e11" compoundref="time__manager_8c" startline="82" endline="92">print_operation_time</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="time__manager_8c_1a94c1c4594f51852e46a30e2f025ebc16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_system_time</definition>
+        <argsstring>(int year, int month, int day, int hour, int min, int sec)</argsstring>
+        <name>set_system_time</name>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sec</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the time manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function should be called inside the <ref refid="setup_8h_1a409b2f4c4106092dafb1db940c5f85d4" kindref="member">wait_for_datetime()</ref> function. This function sets up the system time based on the provided date and time from the Nextion display. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full year (e.g., 2025) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>month</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Month (1-12) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Day of the month (1-31) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hour of the day (0-23) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minute of the hour (0-59) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" line="14" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="14" bodyend="29"/>
+        <referencedby refid="setup_8h_1a409b2f4c4106092dafb1db940c5f85d4" compoundref="setup_8c" startline="78" endline="119">wait_for_datetime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="time__manager_8c_1aa10b7c32c7bb9654c6d13256ba88e217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * format_current_time</definition>
+        <argsstring>(void)</argsstring>
+        <name>format_current_time</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Formats the current time as a string in 12-hour format with AM/PM. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function returns a pointer to a static string, so it should not be modified or freed. </para>
+</simplesect>
+<simplesect kind="return"><para>A pointer to a static string containing the formatted time (e.g., &quot;02:30pm&quot;). </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" line="31" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="31" bodyend="46"/>
+        <referencedby refid="tasks_8h_1adfc61f610137566e1a44bca38c2fb368" compoundref="tasks_8c" startline="36" endline="43">update_time_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="time__manager_8c_1a7adef7574674ceb8389ad51f9865a608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * format_current_date</definition>
+        <argsstring>(int language)</argsstring>
+        <name>format_current_date</name>
+        <param>
+          <type>int</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Formats the current date as a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the system language:<itemizedlist>
+<listitem><para>0: English -1: Spanish -2: Portuguese -3: French -4: German </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function returns a pointer to a static string, so it should not be modified or freed. </para>
+</simplesect>
+<simplesect kind="return"><para>A pointer to a static string containing the formatted date according to the system language selected. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" line="48" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="48" bodyend="80"/>
+        <references refid="lang__support_8h_1a326089ff74f824b77e9bf1274a74fa5f" compoundref="lang__support_8c" startline="5" endline="15">get_day_of_week</references>
+        <references refid="lang__support_8h_1a2682334f405ae6d109b45818d1e61abf" compoundref="lang__support_8c" startline="17" endline="27">get_month_name</references>
+        <references refid="system_8h_1a10a3fa33bae024190264a8321128a41d" compoundref="system_8c" startline="18">system_language</references>
+        <referencedby refid="tasks_8h_1af6775fd71f463f5b4bd0281831adf189" compoundref="tasks_8c" startline="27" endline="34">update_date_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="time__manager_8c_1ac1f62fd134f587b2f14e3fe565f84e11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_operation_time</definition>
+        <argsstring>(int hours, int minutes, int32_t language)</argsstring>
+        <name>print_operation_time</name>
+        <param>
+          <type>int</type>
+          <declname>hours</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minutes</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Prints the current operation time to the console. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function does not return any value. <simplesect kind="note"><para>This function prints the operation time in the format &quot;HH:MM&quot; to the console. It is useful for debugging and monitoring the system&apos;s operation time. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 19, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" line="82" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="82" bodyend="92"/>
+        <references refid="time__manager_8c_1a44d7af51d64492c3d6fd86681425a202" compoundref="time__manager_8c" startline="10" endline="10">hours_text</references>
+        <references refid="time__manager_8c_1a6d06573199e575fdcb4325e592e21832" compoundref="time__manager_8c" startline="12" endline="12">minutes_text</references>
+        <references refid="serial__send_8h_1aa46fe2f4b02e9852f9f7a06c4ebd08a3" compoundref="serial__send_8c" startline="40" endline="44">send_text_to_display</references>
+        <referencedby refid="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" compoundref="serial__receive_8c" startline="58" endline="674">received_data</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="time__manager_8c_1a7219d3bd77a4384411b452afbe1874ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * get_event_timestamp</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_event_timestamp</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the current event timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function returns a pointer to a static string containing the current event timestamp. The timestamp is formatted as &quot;YYYY-MM-DD HH:MM:SS&quot;. <simplesect kind="note"><para>The returned string is static and should not be modified or freed. </para>
+</simplesect>
+<simplesect kind="return"><para>A pointer to a static string containing the current event timestamp. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 19, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" line="94" column="12" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c" bodystart="94" bodyend="110"/>
+        <referencedby refid="system_8h_1add779b9d830853ab883651b998ad43d8" compoundref="system_8c" startline="81" endline="123">store_system_event</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="time__manager_8h" kindref="compound">time_manager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lang__support_8h" kindref="compound">lang_support.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="system_8h" kindref="compound">system.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="serial__send_8h" kindref="compound">serial_send.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="time__manager_8c_1a44d7af51d64492c3d6fd86681425a202" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="time__manager_8c_1a44d7af51d64492c3d6fd86681425a202" kindref="member">hours_text</ref>[]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;hours&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;horas&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;horas&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;heures&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Stunden&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="12" refid="time__manager_8c_1a6d06573199e575fdcb4325e592e21832" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="time__manager_8c_1a6d06573199e575fdcb4325e592e21832" kindref="member">minutes_text</ref>[]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;minutes&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;minutos&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;minutos&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;minutes&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Minuten&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="time__manager_8h_1a94c1c4594f51852e46a30e2f025ebc16" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="time__manager_8c_1a94c1c4594f51852e46a30e2f025ebc16" kindref="member">set_system_time</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>year,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>month,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>day,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sec)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm<sp/>t<sp/>=<sp/>{<sp/></highlight><highlight class="comment">//<sp/>tm<sp/>struct<sp/>to<sp/>hold<sp/>time<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.tm_year<sp/>=<sp/>year<sp/>-<sp/>1900,<sp/></highlight><highlight class="comment">//<sp/>tm_year<sp/>is<sp/>years<sp/>since<sp/>1900</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.tm_mon<sp/>=<sp/>month<sp/>-<sp/>1,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.tm_mday<sp/>=<sp/>day,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.tm_hour<sp/>=<sp/>hour,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.tm_min<sp/>=<sp/>min,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.tm_sec<sp/>=<sp/>sec</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>time_t<sp/>now<sp/>=<sp/>mktime(&amp;t);<sp/></highlight><highlight class="comment">//<sp/>Convert<sp/>tm<sp/>struct<sp/>to<sp/>epoch<sp/>time<sp/>seconds<sp/>since<sp/>Jan<sp/>1,<sp/>1970.<sp/>It<sp/>returns<sp/>the<sp/>time<sp/>in<sp/>seconds<sp/>since<sp/>the<sp/>epoch.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timeval<sp/>tv<sp/>=<sp/>{<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.tv_sec<sp/>=<sp/>now<sp/></highlight><highlight class="comment">//<sp/>Set<sp/>seconds<sp/>since<sp/>epoch<sp/>into<sp/>timeval<sp/>struct,<sp/>settimeofday<sp/>expects<sp/>this<sp/>format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>settimeofday(&amp;tv,<sp/>NULL);<sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>system<sp/>time,<sp/>no<sp/>timezone<sp/>struct<sp/>is<sp/>needed<sp/>=<sp/>NULL.<sp/>Returns<sp/>0<sp/>on<sp/>success,<sp/>-1<sp/>on<sp/>error.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="time__manager_8h_1aa10b7c32c7bb9654c6d13256ba88e217" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="time__manager_8c_1aa10b7c32c7bb9654c6d13256ba88e217" kindref="member">format_current_time</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>formatted_time[16];<sp/></highlight><highlight class="comment">//<sp/>Static<sp/>buffer<sp/>to<sp/>hold<sp/>the<sp/>formatted<sp/>time<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>time_t<sp/>now;<sp/></highlight><highlight class="comment">//<sp/>Variable<sp/>to<sp/>hold<sp/>the<sp/>current<sp/>time<sp/>in<sp/>seconds<sp/>since<sp/>the<sp/>epoch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm<sp/>timeinfo;<sp/></highlight><highlight class="comment">//<sp/>tm<sp/>struct<sp/>to<sp/>hold<sp/>the<sp/>broken-down<sp/>time<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>time(&amp;now);<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>current<sp/>time<sp/>in<sp/>seconds<sp/>since<sp/>the<sp/>epoch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>localtime_r(&amp;now,<sp/>&amp;timeinfo);<sp/></highlight><highlight class="comment">//<sp/>Convert<sp/>the<sp/>epoch<sp/>time<sp/>to<sp/>local<sp/>time,<sp/>fills<sp/>the<sp/>tm<sp/>struct<sp/>with<sp/>local<sp/>time<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour<sp/>=<sp/>timeinfo.tm_hour<sp/>%<sp/>12;<sp/></highlight><highlight class="comment">//<sp/>Convert<sp/>to<sp/>12-hour<sp/>format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hour<sp/>==<sp/>0)<sp/>hour<sp/>=<sp/>12;<sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>midnight<sp/>case</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>am_pm<sp/>=<sp/>(timeinfo.tm_hour<sp/>&gt;=<sp/>12)<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;pm&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;am&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>Determine<sp/>AM/PM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>snprintf(formatted_time,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(formatted_time),<sp/></highlight><highlight class="stringliteral">&quot;%02d:%02d<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>hour,<sp/>timeinfo.tm_min,<sp/>am_pm);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>formatted_time;<sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>formatted<sp/>time<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="time__manager_8h_1a7adef7574674ceb8389ad51f9865a608" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="time__manager_8c_1a7adef7574674ceb8389ad51f9865a608" kindref="member">format_current_date</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>language)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>formatted_date[64];<sp/></highlight><highlight class="comment">//<sp/>Static<sp/>buffer<sp/>to<sp/>hold<sp/>the<sp/>formatted<sp/>date<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>time_t<sp/>now<sp/>=<sp/>time(NULL);<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>current<sp/>time<sp/>in<sp/>seconds<sp/>since<sp/>the<sp/>epoch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm<sp/>dateinfo;<sp/></highlight><highlight class="comment">//<sp/>tm<sp/>struct<sp/>to<sp/>hold<sp/>the<sp/>broken-down<sp/>date<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>localtime_r(&amp;now,<sp/>&amp;dateinfo);<sp/></highlight><highlight class="comment">//<sp/>Converts<sp/>the<sp/>epoch<sp/>time<sp/>to<sp/>human-readable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week_day<sp/>=<sp/>dateinfo.tm_wday;<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>day<sp/>of<sp/>the<sp/>week<sp/>(0<sp/>=<sp/>Sunday,<sp/>1<sp/>=<sp/>Monday,<sp/>...,<sp/>6<sp/>=<sp/>Saturday)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>month_day<sp/>=<sp/>dateinfo.tm_mday;<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>day<sp/>of<sp/>the<sp/>month<sp/>(1-31)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>month<sp/>=<sp/>dateinfo.tm_mon<sp/>+<sp/>1;<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>month<sp/>(0-11),<sp/>0<sp/>=<sp/>January,<sp/>so<sp/>we<sp/>add<sp/>1<sp/>to<sp/>get<sp/>the<sp/>month<sp/>(1-12)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>year<sp/>=<sp/>dateinfo.tm_year<sp/>+<sp/>1900;<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>year<sp/>(years<sp/>since<sp/>1900,<sp/>so<sp/>we<sp/>add<sp/>1900)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>month_name<sp/>=<sp/><ref refid="lang__support_8h_1a2682334f405ae6d109b45818d1e61abf" kindref="member">get_month_name</ref>(<ref refid="system_8h_1a10a3fa33bae024190264a8321128a41d" kindref="member">system_language</ref>,<sp/>month);<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>month<sp/>name<sp/>in<sp/>the<sp/>specified<sp/>language</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>day_name<sp/>=<sp/><ref refid="lang__support_8h_1a326089ff74f824b77e9bf1274a74fa5f" kindref="member">get_day_of_week</ref>(<ref refid="system_8h_1a10a3fa33bae024190264a8321128a41d" kindref="member">system_language</ref>,<sp/>week_day);<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>day<sp/>of<sp/>the<sp/>week<sp/>in<sp/>the<sp/>specified<sp/>language</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(language)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:<sp/></highlight><highlight class="comment">//<sp/>Format<sp/>for<sp/>English</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>snprintf(formatted_date,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(formatted_date),<sp/></highlight><highlight class="stringliteral">&quot;%s,<sp/>%s<sp/>%d,<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>day_name,<sp/>month_name,<sp/>month_day,<sp/>year);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:<sp/></highlight><highlight class="comment">//<sp/>Format<sp/>for<sp/>Spanish<sp/>and<sp/>Portuguese</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>snprintf(formatted_date,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(formatted_date),<sp/></highlight><highlight class="stringliteral">&quot;%s,<sp/>%d<sp/>de<sp/>%s<sp/>de<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>day_name,<sp/>month_day,<sp/>month_name,<sp/>year);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:<sp/></highlight><highlight class="comment">//<sp/>Format<sp/>for<sp/>French</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>snprintf(formatted_date,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(formatted_date),<sp/></highlight><highlight class="stringliteral">&quot;%s<sp/>%d<sp/>%s<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>day_name,<sp/>month_day,<sp/>month_name,<sp/>year);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:<sp/></highlight><highlight class="comment">//<sp/>Format<sp/>for<sp/>German</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>snprintf(formatted_date,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(formatted_date),<sp/></highlight><highlight class="stringliteral">&quot;%s,<sp/>%d.<sp/>%s<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>day_name,<sp/>month_day,<sp/>month_name,<sp/>year);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>formatted_date;<sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>formatted<sp/>date<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="time__manager_8h_1ac1f62fd134f587b2f14e3fe565f84e11" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="time__manager_8c_1ac1f62fd134f587b2f14e3fe565f84e11" kindref="member">print_operation_time</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hours,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minutes,<sp/>int32_t<sp/>language)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clamp<sp/>language<sp/>index<sp/>to<sp/>valid<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(language<sp/>&lt;<sp/>0<sp/>||<sp/>language<sp/>&gt;<sp/>4)<sp/>language<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>Default<sp/>to<sp/>English<sp/>if<sp/>out<sp/>of<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>operation_time_str[64];<sp/></highlight><highlight class="comment">//<sp/>Buffer<sp/>to<sp/>hold<sp/>the<sp/>formatted<sp/>operation<sp/>time<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>snprintf(operation_time_str,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(operation_time_str),<sp/></highlight><highlight class="stringliteral">&quot;%02d<sp/>%s<sp/>%02d<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>hours,<sp/><ref refid="time__manager_8c_1a44d7af51d64492c3d6fd86681425a202" kindref="member">hours_text</ref>[language],<sp/>minutes,<sp/><ref refid="time__manager_8c_1a6d06573199e575fdcb4325e592e21832" kindref="member">minutes_text</ref>[language]);<sp/></highlight><highlight class="comment">//<sp/>Format<sp/>the<sp/>operation<sp/>time<sp/>as<sp/>&quot;HH:MM&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Print<sp/>the<sp/>operation<sp/>time<sp/>to<sp/>the<sp/>console</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="serial__send_8h_1aa46fe2f4b02e9852f9f7a06c4ebd08a3" kindref="member">send_text_to_display</ref>(</highlight><highlight class="stringliteral">&quot;equipment_info&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;tOp2Conf1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;txt&quot;</highlight><highlight class="normal">,<sp/>operation_time_str);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="time__manager_8h_1a7219d3bd77a4384411b452afbe1874ac" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="time__manager_8c_1a7219d3bd77a4384411b452afbe1874ac" kindref="member">get_event_timestamp</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>timestamp[100];<sp/></highlight><highlight class="comment">//<sp/>Static<sp/>buffer<sp/>to<sp/>hold<sp/>the<sp/>timestamp<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>time_t<sp/>now<sp/>=<sp/>time(NULL);<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>current<sp/>time<sp/>in<sp/>seconds<sp/>since<sp/>the<sp/>epoch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm<sp/>timeinfo;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>localtime_r(&amp;now,<sp/>&amp;timeinfo);<sp/></highlight><highlight class="comment">//<sp/>Convert<sp/>the<sp/>epoch<sp/>time<sp/>to<sp/>local<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Format<sp/>the<sp/>timestamp<sp/>as<sp/>&quot;YYYY-MM-DD<sp/>HH:MM:SS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>snprintf(timestamp,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(timestamp),<sp/></highlight><highlight class="stringliteral">&quot;%04d-%02d-%02d<sp/>%02d:%02d:%02d&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timeinfo.tm_year<sp/>+<sp/>1900,<sp/></highlight><highlight class="comment">//<sp/>Year<sp/>since<sp/>1900</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timeinfo.tm_mon<sp/>+<sp/>1,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Month<sp/>(0-11,<sp/>so<sp/>we<sp/>add<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timeinfo.tm_mday,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Day<sp/>of<sp/>the<sp/>month<sp/>(1-31)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timeinfo.tm_hour,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Hour<sp/>(0-23)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timeinfo.tm_min,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Minute<sp/>(0-59)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timeinfo.tm_sec);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Second<sp/>(0-59)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>timestamp;<sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>formatted<sp/>timestamp<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/time_manager.c"/>
+  </compounddef>
+</doxygen>

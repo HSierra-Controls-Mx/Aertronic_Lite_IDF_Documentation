@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="setup_8c" kind="file" language="C++">
+    <compoundname>setup.c</compoundname>
+    <includes refid="setup_8h" local="yes">setup.h</includes>
+    <includes refid="nvs__manager_8h" local="yes">nvs_manager.h</includes>
+    <includes local="yes">driver/uart.h</includes>
+    <includes local="yes">esp_log.h</includes>
+    <includes local="yes">esp_system.h</includes>
+    <includes local="yes">nvs.h</includes>
+    <includes local="yes">nvs_flash.h</includes>
+    <includes refid="serial__send_8h" local="yes">serial_send.h</includes>
+    <includes refid="system_8h" local="yes">system.h</includes>
+    <includes refid="time__manager_8h" local="yes">time_manager.h</includes>
+    <includes local="yes">freertos/FreeRTOS.h</includes>
+    <includes local="yes">freertos/semphr.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>ethernet.h</label>
+        <link refid="ethernet_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nvs_manager.h</label>
+        <link refid="nvs__manager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>sensors.h</label>
+        <link refid="sensors_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>serial_send.h</label>
+        <link refid="serial__send_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>setup.h</label>
+        <link refid="setup_8h"/>
+      </node>
+      <node id="11">
+        <label>system.h</label>
+        <link refid="system_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>time_manager.h</label>
+        <link refid="time__manager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c</label>
+        <link refid="setup_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>driver/uart.h</label>
+      </node>
+      <node id="13">
+        <label>esp_err.h</label>
+      </node>
+      <node id="16">
+        <label>esp_eth.h</label>
+      </node>
+      <node id="18">
+        <label>esp_event.h</label>
+      </node>
+      <node id="6">
+        <label>esp_log.h</label>
+      </node>
+      <node id="17">
+        <label>esp_netif.h</label>
+      </node>
+      <node id="7">
+        <label>esp_system.h</label>
+      </node>
+      <node id="20">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="21">
+        <label>freertos/semphr.h</label>
+      </node>
+      <node id="8">
+        <label>nvs.h</label>
+      </node>
+      <node id="9">
+        <label>nvs_flash.h</label>
+      </node>
+      <node id="14">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="setup_8c_1a7c8ab9435f095e55019fe880192c3537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_uart</definition>
+        <argsstring>()</argsstring>
+        <name>init_uart</name>
+        <briefdescription>
+<para>Initializes the serial communication. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets up the UART(Universal Asynchronous Receiver-Transmitter). <simplesect kind="note"><para>This function should be called before using any serial communication functions. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>May 5, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" line="16" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" bodystart="16" bodyend="34"/>
+        <references refid="setup_8h_1a615aed21aa6825462b7c17b0c238ffe2" compoundref="setup_8h" startline="6">UART_BAUD_RATE</references>
+        <references refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" compoundref="setup_8h" startline="5">UART_PORT_NUM</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="setup_8c_1aa2c353c6e3271404cdf45ce4601951c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_nvs</definition>
+        <argsstring>()</argsstring>
+        <name>init_nvs</name>
+        <briefdescription>
+<para>Initializes the NVS (Non-Volatile Storage). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function initializes the NVS system, allowing for data storage and retrieval. This function does not return any value. <simplesect kind="note"><para>This function should be called before attempting to read or write any data to NVS. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>May 6, 2025 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" line="36" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" bodystart="36" bodyend="44"/>
+        <references refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" compoundref="nvs__manager_8c" startline="12" endline="82">init_nvs_manager</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="setup_8c_1abf1f7169537cbd8629caa4345fe28394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_ready</definition>
+        <argsstring>(void)</argsstring>
+        <name>display_ready</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Waits for the Nextion display to send the command indicating that it is ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function blocks until the display sends the command: 0x88, 0xFF, 0xFF, 0xFF <simplesect kind="note"><para>This function should be called right after the initialization of the UART and NVS. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada. </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025. </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" line="46" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" bodystart="46" bodyend="76"/>
+        <references refid="system_8h_1a30436bd24c155c7ff8b58f89cc4907d9" compoundref="system_8c" startline="19">system_color</references>
+        <references refid="system_8h_1a10a3fa33bae024190264a8321128a41d" compoundref="system_8c" startline="18">system_language</references>
+        <references refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" compoundref="setup_8h" startline="5">UART_PORT_NUM</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="setup_8c_1a409b2f4c4106092dafb1db940c5f85d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wait_for_datetime</definition>
+        <argsstring>(void)</argsstring>
+        <name>wait_for_datetime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Blocks until a valid date/time string is received via UART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The expected string format is p00,MM,HH,DD,MM,YYYY followed by three 0xFF bytes. <simplesect kind="warning"><para>Ensure that the Nextion display is properly configured to send the date and time in the expected format. </para>
+</simplesect>
+<simplesect kind="note"><para>This function should be called before starting any FreeRTOS tasks. </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 5, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" line="78" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c" bodystart="78" bodyend="119"/>
+        <references refid="time__manager_8h_1a94c1c4594f51852e46a30e2f025ebc16" compoundref="time__manager_8c" startline="14" endline="29">set_system_time</references>
+        <references refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" compoundref="setup_8h" startline="5">UART_PORT_NUM</references>
+        <referencedby refid="system_8h_1a43f5e0d6db0fb41a437cc9096b32e9b5" compoundref="system_8c" startline="30" endline="54">system_init</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="setup_8h" kindref="compound">setup.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nvs__manager_8h" kindref="compound">nvs_manager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;driver/uart.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp_log.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp_system.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;nvs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;nvs_flash.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="serial__send_8h" kindref="compound">serial_send.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="system_8h" kindref="compound">system.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="time__manager_8h" kindref="compound">time_manager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;freertos/FreeRTOS.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;freertos/semphr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>definitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="setup_8h_1a7c8ab9435f095e55019fe880192c3537" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="setup_8c_1a7c8ab9435f095e55019fe880192c3537" kindref="member">init_uart</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>UART<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>uart_config_t<sp/>uart_config<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.baud_rate<sp/>=<sp/><ref refid="setup_8h_1a615aed21aa6825462b7c17b0c238ffe2" kindref="member">UART_BAUD_RATE</ref>,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.data_bits<sp/>=<sp/>UART_DATA_8_BITS,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.parity<sp/>=<sp/>UART_PARITY_DISABLE,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.stop_bits<sp/>=<sp/>UART_STOP_BITS_1,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.flow_ctrl<sp/>=<sp/>UART_HW_FLOWCTRL_DISABLE</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Apply<sp/>UART<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>uart_param_config(<ref refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" kindref="member">UART_PORT_NUM</ref>,<sp/>&amp;uart_config);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Install<sp/>UART<sp/>driver<sp/>(buffered<sp/>IO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>uart_driver_install(<ref refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" kindref="member">UART_PORT_NUM</ref>,<sp/>2048,<sp/>0,<sp/>0,<sp/>NULL,<sp/>0);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Optional:<sp/>redirect<sp/>prinf<sp/>to<sp/>UART</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_log_level_set(</highlight><highlight class="stringliteral">&quot;*&quot;</highlight><highlight class="normal">,<sp/>ESP_LOG_INFO);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;UART<sp/>initialized<sp/>at<sp/>%d<sp/>baud\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="setup_8h_1a615aed21aa6825462b7c17b0c238ffe2" kindref="member">UART_BAUD_RATE</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="setup_8h_1aa2c353c6e3271404cdf45ce4601951c7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="setup_8c_1aa2c353c6e3271404cdf45ce4601951c7" kindref="member">init_nvs</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>NVS<sp/>(Non-Volatile<sp/>Storage)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_err_t<sp/>ret<sp/>=<sp/>nvs_flash_init();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>==<sp/>ESP_ERR_NVS_NO_FREE_PAGES<sp/>||<sp/>ret<sp/>==<sp/>ESP_ERR_NVS_NEW_VERSION_FOUND)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nvs_flash_erase();<sp/></highlight><highlight class="comment">//<sp/>Erase<sp/>NVS<sp/>if<sp/>there<sp/>are<sp/>no<sp/>free<sp/>pages<sp/>or<sp/>a<sp/>new<sp/>version<sp/>has<sp/>been<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nvs_flash_init();<sp/></highlight><highlight class="comment">//<sp/>Re-initialize<sp/>NVS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvs__manager_8h_1a77336aed281bafc61cdc6ecfc8572d15" kindref="member">init_nvs_manager</ref>();<sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>the<sp/>NVS<sp/>manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="setup_8h_1abf1f7169537cbd8629caa4345fe28394" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="setup_8c_1abf1f7169537cbd8629caa4345fe28394" kindref="member">display_ready</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>ready_command[]<sp/>=<sp/>{0x88,<sp/>0xFF,<sp/>0xFF,<sp/>0xFF};<sp/></highlight><highlight class="comment">//<sp/>The<sp/>display<sp/>sends<sp/>this<sp/>command<sp/>when<sp/>it<sp/>is<sp/>ready<sp/>to<sp/>receive<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>Index<sp/>to<sp/>track<sp/>the<sp/>position<sp/>in<sp/>the<sp/>ready_command<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>infinite<sp/>loop<sp/>to<sp/>wait<sp/>for<sp/>the<sp/>display<sp/>to<sp/>send<sp/>the<sp/>ready<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>byte;<sp/></highlight><highlight class="comment">//<sp/>Variable<sp/>to<sp/>store<sp/>the<sp/>received<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>uart_read_bytes(<ref refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" kindref="member">UART_PORT_NUM</ref>,<sp/>&amp;</highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">,<sp/>1,<sp/>portMAX_DELAY);<sp/></highlight><highlight class="comment">//<sp/>Block<sp/>until<sp/>a<sp/>byte<sp/>is<sp/>received</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>==<sp/>1)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>If<sp/>a<sp/>byte<sp/>was<sp/>successfully<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>==<sp/>ready_command[index])<sp/>{<sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>received<sp/>byte<sp/>matches<sp/>the<sp/>expected<sp/>byte<sp/>in<sp/>the<sp/>ready_command<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index++;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>==<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(ready_command))<sp/>{<sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>entire<sp/>ready_command<sp/>has<sp/>been<sp/>matched</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>values<sp/>already<sp/>loaded<sp/>during<sp/>init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[32];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>written;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>written<sp/>=<sp/>snprintf(buffer,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(buffer),<sp/></highlight><highlight class="stringliteral">&quot;sys_lang=%ld\xFF\xFF\xFF&quot;</highlight><highlight class="normal">,<sp/><ref refid="system_8h_1a10a3fa33bae024190264a8321128a41d" kindref="member">system_language</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uart_write_bytes(<ref refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" kindref="member">UART_PORT_NUM</ref>,<sp/>buffer,<sp/>written);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>written<sp/>=<sp/>snprintf(buffer,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(buffer),<sp/></highlight><highlight class="stringliteral">&quot;sys_color=%ld\xFF\xFF\xFF&quot;</highlight><highlight class="normal">,<sp/><ref refid="system_8h_1a30436bd24c155c7ff8b58f89cc4907d9" kindref="member">system_color</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uart_write_bytes(<ref refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" kindref="member">UART_PORT_NUM</ref>,<sp/>buffer,<sp/>written);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>Exit<sp/>loop<sp/>after<sp/>sending<sp/>response</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>received<sp/>byte<sp/>does<sp/>not<sp/>match<sp/>the<sp/>expected<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>index<sp/>if<sp/>the<sp/>byte<sp/>does<sp/>not<sp/>match<sp/>the<sp/>expected<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>=<sp/>(</highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>==<sp/>ready_command[0])<sp/>?<sp/>1<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="setup_8h_1a409b2f4c4106092dafb1db940c5f85d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="setup_8c_1a409b2f4c4106092dafb1db940c5f85d4" kindref="member">wait_for_datetime</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>rx_buffer[64]<sp/>=<sp/>{0};<sp/></highlight><highlight class="comment">//<sp/>Character<sp/>array<sp/>to<sp/>store<sp/>received<sp/>data,<sp/>it<sp/>has<sp/>a<sp/>size<sp/>of<sp/>64<sp/>bytes<sp/>and<sp/>every<sp/>byte<sp/>is<sp/>initialized<sp/>at<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>Integer<sp/>to<sp/>store<sp/>the<sp/>length<sp/>of<sp/>the<sp/>received<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Waiting<sp/>for<sp/>date/time<sp/>string<sp/>from<sp/>display...\n&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>Print<sp/>a<sp/>message<sp/>to<sp/>indicate<sp/>that<sp/>the<sp/>system<sp/>is<sp/>waiting<sp/>for<sp/>a<sp/>date/time<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>until<sp/>a<sp/>valid<sp/>date/time<sp/>string<sp/>is<sp/>received</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>up<sp/>to<sp/>64<sp/>bytes<sp/>from<sp/>UART<sp/>with<sp/>1000<sp/>ms<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/>=<sp/>uart_read_bytes(<ref refid="setup_8h_1ab74ec82c9f5211b716c017e6f4b26c4d" kindref="member">UART_PORT_NUM</ref>,<sp/>(uint8_t<sp/>*)rx_buffer,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(rx_buffer)<sp/>-<sp/>1,<sp/>pdMS_TO_TICKS(1000));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(len<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>any<sp/>trailing<sp/>0xFF<sp/>characters<sp/>(ÿ<sp/>from<sp/>Nextion)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((uint8_t)rx_buffer[i]<sp/>==<sp/>0xFF)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>Explicitly<sp/>cast<sp/>to<sp/>uint8_t<sp/>to<sp/>avoid<sp/>sign<sp/>issues</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rx_buffer[i]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>When<sp/>it<sp/>finds<sp/>a<sp/>0xFF<sp/>character,<sp/>it<sp/>replaces<sp/>it<sp/>with<sp/>the<sp/>null<sp/>character<sp/>&apos;\0&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Received:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>rx_buffer);<sp/></highlight><highlight class="comment">//<sp/>Print<sp/>the<sp/>received<sp/>string<sp/>until<sp/>it<sp/>finds<sp/>a<sp/>null<sp/>character</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parse<sp/>the<sp/>data<sp/>in<sp/>format:<sp/>p00,MM,HH,DD,MM,YYYY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/>hour,<sp/>day,<sp/>month,<sp/>year;<sp/></highlight><highlight class="comment">//<sp/>Variables<sp/>to<sp/>store<sp/>parsed<sp/>date/time<sp/>components</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sscanf(rx_buffer,<sp/></highlight><highlight class="stringliteral">&quot;p00,%d,%d,%d,%d,%d&quot;</highlight><highlight class="normal">,<sp/>&amp;min,<sp/>&amp;hour,<sp/>&amp;day,<sp/>&amp;month,<sp/>&amp;year)<sp/>==<sp/>5)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>string<sp/>matches<sp/>the<sp/>expected<sp/>format,<sp/>is<sp/>true<sp/>if<sp/>the<sp/>sscanf<sp/>function<sp/>returns<sp/>5,<sp/>which<sp/>means<sp/>it<sp/>successfully<sp/>parsed<sp/>all<sp/>5<sp/>components</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sec<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>Default<sp/>to<sp/>0<sp/>seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Parsed<sp/>time:<sp/>%02d:%02d:%02d,<sp/>%02d/%02d/%04d\n&quot;</highlight><highlight class="normal">,<sp/>hour,<sp/>min,<sp/>sec,<sp/>day,<sp/>month,<sp/>year);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>system<sp/>time<sp/>using<sp/>the<sp/>parsed<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="time__manager_8h_1a94c1c4594f51852e46a30e2f025ebc16" kindref="member">set_system_time</ref>(year,<sp/>month,<sp/>day,<sp/>hour,<sp/>min,<sp/>sec);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;System<sp/>time<sp/>set.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>Valid<sp/>string<sp/>received;<sp/>exit<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>string<sp/>format.<sp/>Waiting<sp/>again<sp/>...\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;No<sp/>data<sp/>received,<sp/>retrying...\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vTaskDelay(pdMS_TO_TICKS(100));<sp/></highlight><highlight class="comment">//<sp/>Small<sp/>delay<sp/>to<sp/>avoid<sp/>tight<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/setup.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,772 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="pages_8h" kind="file" language="C++">
+    <compoundname>pages.h</compoundname>
+    <includedby refid="main_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</includedby>
+    <includedby refid="pages_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c</includedby>
+    <includedby refid="serial__receive_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</includedby>
+    <includedby refid="system_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</includedby>
+    <includedby refid="tasks_8c" local="yes">C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h</label>
+        <link refid="pages_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c</label>
+        <link refid="pages_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c</label>
+        <link refid="serial__receive_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/system.c</label>
+        <link refid="system_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/tasks.c</label>
+        <link refid="tasks_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="pages_8h_1a65c296e040e660e12495c13450d8dc58" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Pages</name>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58a41c6eb506ccf657cc7e958c8e8c769cd" prot="public">
+          <name>MAIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58ac22743f1fc74de09544ecc9bab74a17b" prot="public">
+          <name>MAIN_MENU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58a495f3a2e1ce970ceba725978599c5b8a" prot="public">
+          <name>EQUIPMENT_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58ad8b12610bd58f48af24ed720cb166805" prot="public">
+          <name>MODULE_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58ae50ef0288ee11ef27d19d69fc8e2a121" prot="public">
+          <name>LOG_IN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58a6e79df44a2025f7b4a2822e608389c58" prot="public">
+          <name>MAINTENANCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58ab0814cb9deac69bea037955cecf9b2c4" prot="public">
+          <name>LANGUAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58a09d06a1d7569f0d7df95702b87278489" prot="public">
+          <name>CONFIG_MENU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58af722a5faa36087c914da53ebe4711f08" prot="public">
+          <name>CONTROL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58a5f6d448017ecd0a56245e38b76596e07" prot="public">
+          <name>SERVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58adf02ded475565758943c5d421224efec" prot="public">
+          <name>MACHINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58a57cc238145ec1361c72c327674c0d754" prot="public">
+          <name>SYSTEM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58aaef4dc1e4f450a4c9e61a3699d75af0a" prot="public">
+          <name>ABOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58a4d99d5a96cbadbc56944a179561deb74" prot="public">
+          <name>SYSTEM_EVENTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pages_8h_1a65c296e040e660e12495c13450d8dc58ad6a3d48ea292eaa3be05d8aa02248153" prot="public">
+          <name>NO_PAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="4" column="1" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" bodystart="4" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="pages_8h_1ad3dbd5a2ff3dafed0fcdb227d018e091" prot="public" static="no" extern="yes" mutable="no">
+        <type><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58" kindref="member">Pages</ref></type>
+        <definition>Pages current_page</definition>
+        <argsstring></argsstring>
+        <name>current_page</name>
+        <briefdescription>
+<para>Variable to store the current page number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="23" column="14" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/serial_receive.c" bodystart="17" bodyend="-1" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="23" declcolumn="14"/>
+        <referencedby refid="serial__receive_8h_1a09a926c2654b02052b2286a68b5ac51a" compoundref="serial__receive_8c" startline="58" endline="674">received_data</referencedby>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+        <referencedby refid="system_8h_1a97ec9415a474734bbfe4819763f72c3f" compoundref="system_8c" startline="190" endline="208">update_header</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="pages_8h_1a97b680dc869c646b03f34ad2a3260a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void main_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>main_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the main page UI. This function is called when the current page is set to MAIN. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the main page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the main page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to MAIN.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="41" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="5" bodyend="7" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="41" declcolumn="6"/>
+        <references refid="utils_8h_1a4bc9bfc0677667a966d7ab73efafa4d1" compoundref="utils_8c" startline="8" endline="47">print_sensor_data</references>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1a222f933f83745f908d2be52694fec0f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void main_menu_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>main_menu_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the main menu page UI. This function is called when the current page is set to MAIN_MENU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the main menu page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the main menu page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to MAIN_MENU.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="57" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="9" bodyend="11" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="57" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1adb7e72ea57300775da4604fc0beb6ced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void equipment_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>equipment_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the equipment information page UI. This function is called when the current page is set to EQUIPMENT_INFO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the equipment information page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the equipment information page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to EQUIPMENT_INFO.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="73" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="13" bodyend="15" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="73" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1ab7c27bc6f6c1a38a98f6ae4f21109bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void module_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>module_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the module information page UI. This function is called when the current page is set to MODULE_INFO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the module information page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the module information page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to MODULE_INFO.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="89" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="17" bodyend="19" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="89" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1ad114f02439a8b6bac8809faab054722e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void login_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>login_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the login page UI. This function is called when the current page is set to LOG_IN. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the login page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the login page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to LOG_IN.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="105" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="21" bodyend="23" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="105" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1a7f50faf504e3d70c18cca6de2309ae9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void maintenance_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>maintenance_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the maintenance page UI. This function is called when the current page is set to MAINTENANCE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the maintenance page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the maintenance page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to MAINTENANCE. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="121" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="25" bodyend="27" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="121" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1a6d91875cb7f48bd2dab021a271b8569e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void language_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>language_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the language selection page UI. This function is called when the current page is set to LANGUAGE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the language selection page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the language selection page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to LANGUAGE.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="137" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="29" bodyend="31" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="137" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1a96592eefdfdf59eb98544da393fe2c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void config_menu_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>config_menu_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the configuration menu page UI. This function is called when the current page is set to CONFIG_MENU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the configuration menu page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the configuration menu page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to CONFIG_MENU.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="153" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="33" bodyend="35" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="153" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1abc67177785d78d87195c128dae5c71e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void control_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>control_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the control page UI. This function is called when the current page is set to CONTROL. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the control page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the control page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to CONTROL.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="169" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="37" bodyend="39" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="169" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1a5a1c65a52fcb4b65ae9b394a013e0dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void service_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>service_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the service page UI. This function is called when the current page is set to SERVICE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the service page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the service page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to SERVICE.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="185" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="41" bodyend="43" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="185" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1a828e576a7d6d5cddff3ebd05ddc6685a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void machine_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>machine_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the machine page UI. This function is called when the current page is set to MACHINE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the machine page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the machine page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to MACHINE.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="201" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="45" bodyend="47" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="201" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1a6dbb6384cdbff807810e3808aa4892b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void system_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>system_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the system page UI. This function is called when the current page is set to SYSTEM. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the system page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the system page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to SYSTEM.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="217" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="49" bodyend="51" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="217" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1a89fee45a3872eb376b252b861ab8c07e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void about_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>about_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the about page UI. This function is called when the current page is set to ABOUT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the about page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the about page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to ABOUT.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="233" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="53" bodyend="55" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="233" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1a80034c559e6388a025a88d0959456792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void system_events_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>system_events_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the system events page UI. This function is called when the current page is set to SYSTEM_EVENTS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to update the system events page of the Nextion display. It may include updating text fields, images, and other UI elements specific to the system events page. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to SYSTEM_EVENTS.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="249" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="57" bodyend="59" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="249" declcolumn="6"/>
+        <referencedby refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" compoundref="tasks_8c" startline="69" endline="126">ui_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pages_8h_1af2b584d19263555cfcf864b3bc9d0369" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void no_page</definition>
+        <argsstring>(void)</argsstring>
+        <name>no_page</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to handle the case when no page is set. This function is called when the current page is set to NO_PAGE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should contain the logic to handle the case when no specific page is set in the Nextion display. It may include clearing the display or showing a default message. This function does not return any value. <simplesect kind="note"><para>this function is part of the ui_task and is called when the task is running and the current page is set to NO_PAGE.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="tasks_8h_1a38934c613f9e3b3071370604aa661010" kindref="member">ui_task</ref> </para>
+</simplesect>
+<simplesect kind="author"><para>Ernesto Estrada </para>
+</simplesect>
+<simplesect kind="date"><para>June 6, 2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="warning"><para>Ensure that the Nextion display is initialized before calling this function. </para>
+</simplesect>
+<simplesect kind="warning"><para>This function should not be called directly, it is called by the ui_task. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" line="265" column="6" bodyfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/main/pages.c" bodystart="61" bodyend="63" declfile="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h" declline="265" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PAGES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAGES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="5" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a41c6eb506ccf657cc7e958c8e8c769cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a41c6eb506ccf657cc7e958c8e8c769cd" kindref="member">MAIN</ref>,</highlight></codeline>
+<codeline lineno="6" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ac22743f1fc74de09544ecc9bab74a17b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ac22743f1fc74de09544ecc9bab74a17b" kindref="member">MAIN_MENU</ref>,</highlight></codeline>
+<codeline lineno="7" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a495f3a2e1ce970ceba725978599c5b8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a495f3a2e1ce970ceba725978599c5b8a" kindref="member">EQUIPMENT_INFO</ref>,</highlight></codeline>
+<codeline lineno="8" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ad8b12610bd58f48af24ed720cb166805" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ad8b12610bd58f48af24ed720cb166805" kindref="member">MODULE_INFO</ref>,</highlight></codeline>
+<codeline lineno="9" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ae50ef0288ee11ef27d19d69fc8e2a121" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ae50ef0288ee11ef27d19d69fc8e2a121" kindref="member">LOG_IN</ref>,</highlight></codeline>
+<codeline lineno="10" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a6e79df44a2025f7b4a2822e608389c58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a6e79df44a2025f7b4a2822e608389c58" kindref="member">MAINTENANCE</ref>,</highlight></codeline>
+<codeline lineno="11" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ab0814cb9deac69bea037955cecf9b2c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ab0814cb9deac69bea037955cecf9b2c4" kindref="member">LANGUAGE</ref>,</highlight></codeline>
+<codeline lineno="12" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a09d06a1d7569f0d7df95702b87278489" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a09d06a1d7569f0d7df95702b87278489" kindref="member">CONFIG_MENU</ref>,</highlight></codeline>
+<codeline lineno="13" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58af722a5faa36087c914da53ebe4711f08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58af722a5faa36087c914da53ebe4711f08" kindref="member">CONTROL</ref>,</highlight></codeline>
+<codeline lineno="14" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a5f6d448017ecd0a56245e38b76596e07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a5f6d448017ecd0a56245e38b76596e07" kindref="member">SERVICE</ref>,</highlight></codeline>
+<codeline lineno="15" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58adf02ded475565758943c5d421224efec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58adf02ded475565758943c5d421224efec" kindref="member">MACHINE</ref>,</highlight></codeline>
+<codeline lineno="16" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a57cc238145ec1361c72c327674c0d754" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a57cc238145ec1361c72c327674c0d754" kindref="member">SYSTEM</ref>,</highlight></codeline>
+<codeline lineno="17" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58aaef4dc1e4f450a4c9e61a3699d75af0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58aaef4dc1e4f450a4c9e61a3699d75af0a" kindref="member">ABOUT</ref>,</highlight></codeline>
+<codeline lineno="18" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a4d99d5a96cbadbc56944a179561deb74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58a4d99d5a96cbadbc56944a179561deb74" kindref="member">SYSTEM_EVENTS</ref>,</highlight></codeline>
+<codeline lineno="19" refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ad6a3d48ea292eaa3be05d8aa02248153" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58ad6a3d48ea292eaa3be05d8aa02248153" kindref="member">NO_PAGE</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58" kindref="member">Pages</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1a65c296e040e660e12495c13450d8dc58" kindref="member">Pages</ref><sp/><ref refid="pages_8h_1ad3dbd5a2ff3dafed0fcdb227d018e091" kindref="member">current_page</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>declarations<sp/>for<sp/>handling<sp/>different<sp/>pages</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1a97b680dc869c646b03f34ad2a3260a6b" kindref="member">main_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1a222f933f83745f908d2be52694fec0f0" kindref="member">main_menu_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1adb7e72ea57300775da4604fc0beb6ced" kindref="member">equipment_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1ab7c27bc6f6c1a38a98f6ae4f21109bae" kindref="member">module_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1ad114f02439a8b6bac8809faab054722e" kindref="member">login_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1a7f50faf504e3d70c18cca6de2309ae9f" kindref="member">maintenance_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1a6d91875cb7f48bd2dab021a271b8569e" kindref="member">language_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1a96592eefdfdf59eb98544da393fe2c8f" kindref="member">config_menu_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1abc67177785d78d87195c128dae5c71e1" kindref="member">control_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1a5a1c65a52fcb4b65ae9b394a013e0dbd" kindref="member">service_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1a828e576a7d6d5cddff3ebd05ddc6685a" kindref="member">machine_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1a6dbb6384cdbff807810e3808aa4892b4" kindref="member">system_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1a89fee45a3872eb376b252b861ab8c07e" kindref="member">about_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1a80034c559e6388a025a88d0959456792" kindref="member">system_events_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pages_8h_1af2b584d19263555cfcf864b3bc9d0369" kindref="member">no_page</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PAGES_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/Aertronic_Lite/include/pages.h"/>
+  </compounddef>
+</doxygen>

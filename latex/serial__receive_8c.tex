@@ -1,0 +1,152 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/main/serial\+\_\+receive.c File Reference}
+\hypertarget{serial__receive_8c}{}\label{serial__receive_8c}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/serial\_receive.c@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/serial\_receive.c}}
+{\ttfamily \#include "{}driver/uart.\+h"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}serial\+\_\+receive.\+h"{}}\newline
+{\ttfamily \#include "{}setup.\+h"{}}\newline
+{\ttfamily \#include "{}pages.\+h"{}}\newline
+{\ttfamily \#include "{}time\+\_\+manager.\+h"{}}\newline
+{\ttfamily \#include "{}system.\+h"{}}\newline
+{\ttfamily \#include "{}nvs\+\_\+manager.\+h"{}}\newline
+Include dependency graph for serial\+\_\+receive.\+c\+:
+% FIG 0
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{serial__receive_8c_ab0249d81dd53336b7810ebcf29511210}{UART\+\_\+\+BUF\+\_\+\+SIZE}}~128
+\item 
+\#define \mbox{\hyperlink{serial__receive_8c_afd92cf4977fa778fd1e64a31d4451988}{END\+\_\+\+SEQUENCE\+\_\+\+LEN}}~3
+\item 
+\#define \mbox{\hyperlink{serial__receive_8c_a1683cf20cb6e91b381579ff93b309714}{DEFAULT\+\_\+\+VALUE}}~0
+\item 
+\#define \mbox{\hyperlink{serial__receive_8c_a6bfddf84ea47d906536cc8ffcc9dd5cc}{UART\+\_\+\+TIMEOUT\+\_\+\+MS}}~20
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{serial__receive_8c_ac59bf1ef42c41a76073468fec8e82d74}{serial\+\_\+read}} (void)
+\begin{DoxyCompactList}\small\item\em Function to read data coming from the serial port. This function is design to handle the data from the display and process it accordingly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__receive_8c_a09a926c2654b02052b2286a68b5ac51a}{received\+\_\+data}} (uint8\+\_\+t code, uint8\+\_\+t data1, uint8\+\_\+t data2)
+\begin{DoxyCompactList}\small\item\em Function that handles the data received from the Nextion display over the serial port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pages_8h_a65c296e040e660e12495c13450d8dc58}{Pages}} \mbox{\hyperlink{serial__receive_8c_ad3dbd5a2ff3dafed0fcdb227d018e091}{current\+\_\+page}} = \mbox{\hyperlink{pages_8h_a65c296e040e660e12495c13450d8dc58ad6a3d48ea292eaa3be05d8aa02248153}{NO\+\_\+\+PAGE}}
+\begin{DoxyCompactList}\small\item\em Variable to store the current page number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{serial__receive_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{serial__receive_8c_a1683cf20cb6e91b381579ff93b309714}\index{serial\_receive.c@{serial\_receive.c}!DEFAULT\_VALUE@{DEFAULT\_VALUE}}
+\index{DEFAULT\_VALUE@{DEFAULT\_VALUE}!serial\_receive.c@{serial\_receive.c}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_VALUE}{DEFAULT\_VALUE}}
+{\footnotesize\ttfamily \label{serial__receive_8c_a1683cf20cb6e91b381579ff93b309714} 
+\#define DEFAULT\+\_\+\+VALUE~0}
+
+\Hypertarget{serial__receive_8c_afd92cf4977fa778fd1e64a31d4451988}\index{serial\_receive.c@{serial\_receive.c}!END\_SEQUENCE\_LEN@{END\_SEQUENCE\_LEN}}
+\index{END\_SEQUENCE\_LEN@{END\_SEQUENCE\_LEN}!serial\_receive.c@{serial\_receive.c}}
+\doxysubsubsection{\texorpdfstring{END\_SEQUENCE\_LEN}{END\_SEQUENCE\_LEN}}
+{\footnotesize\ttfamily \label{serial__receive_8c_afd92cf4977fa778fd1e64a31d4451988} 
+\#define END\+\_\+\+SEQUENCE\+\_\+\+LEN~3}
+
+\Hypertarget{serial__receive_8c_ab0249d81dd53336b7810ebcf29511210}\index{serial\_receive.c@{serial\_receive.c}!UART\_BUF\_SIZE@{UART\_BUF\_SIZE}}
+\index{UART\_BUF\_SIZE@{UART\_BUF\_SIZE}!serial\_receive.c@{serial\_receive.c}}
+\doxysubsubsection{\texorpdfstring{UART\_BUF\_SIZE}{UART\_BUF\_SIZE}}
+{\footnotesize\ttfamily \label{serial__receive_8c_ab0249d81dd53336b7810ebcf29511210} 
+\#define UART\+\_\+\+BUF\+\_\+\+SIZE~128}
+
+\Hypertarget{serial__receive_8c_a6bfddf84ea47d906536cc8ffcc9dd5cc}\index{serial\_receive.c@{serial\_receive.c}!UART\_TIMEOUT\_MS@{UART\_TIMEOUT\_MS}}
+\index{UART\_TIMEOUT\_MS@{UART\_TIMEOUT\_MS}!serial\_receive.c@{serial\_receive.c}}
+\doxysubsubsection{\texorpdfstring{UART\_TIMEOUT\_MS}{UART\_TIMEOUT\_MS}}
+{\footnotesize\ttfamily \label{serial__receive_8c_a6bfddf84ea47d906536cc8ffcc9dd5cc} 
+\#define UART\+\_\+\+TIMEOUT\+\_\+\+MS~20}
+
+
+
+\label{doc-func-members}
+\Hypertarget{serial__receive_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{serial__receive_8c_a09a926c2654b02052b2286a68b5ac51a}\index{serial\_receive.c@{serial\_receive.c}!received\_data@{received\_data}}
+\index{received\_data@{received\_data}!serial\_receive.c@{serial\_receive.c}}
+\doxysubsubsection{\texorpdfstring{received\_data()}{received\_data()}}
+{\footnotesize\ttfamily \label{serial__receive_8c_a09a926c2654b02052b2286a68b5ac51a} 
+void received\+\_\+data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{code}{, }\item[{uint8\+\_\+t}]{data1}{, }\item[{uint8\+\_\+t}]{data2}{}\end{DoxyParamCaption})}
+
+
+
+Function that handles the data received from the Nextion display over the serial port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The code that was received from the Nextion display, depends on the command sent \\
+\hline
+{\em data1} & The data received from the Nextion display, depends on the page number received \\
+\hline
+{\em data2} & The data received from the Nextion display, depends on the page number received. Defaults to 0x00 if not used.\\
+\hline
+\end{DoxyParams}
+This function does not return a value. \begin{DoxyNote}{Note}
+This function is used to handle the data received from the Nextion display and execute the corresponding features or commands based on the received data. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 5, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{serial__receive_8c_ac59bf1ef42c41a76073468fec8e82d74}\index{serial\_receive.c@{serial\_receive.c}!serial\_read@{serial\_read}}
+\index{serial\_read@{serial\_read}!serial\_receive.c@{serial\_receive.c}}
+\doxysubsubsection{\texorpdfstring{serial\_read()}{serial\_read()}}
+{\footnotesize\ttfamily \label{serial__receive_8c_ac59bf1ef42c41a76073468fec8e82d74} 
+void serial\+\_\+read (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Function to read data coming from the serial port. This function is design to handle the data from the display and process it accordingly. 
+
+\begin{DoxyNote}{Note}
+The command received has the following format\+: code + data1 + data2.
+\begin{DoxyItemize}
+\item The code is a single byte that identifies the command.
+\item The data1 is a single byte that contains the value associated with the command.
+\item The data2 is a single byte that contains additional information related to the command. Defaults to 0x00 if not used.
+\end{DoxyItemize}
+\end{DoxyNote}
+This function does not return any value. \begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\label{doc-var-members}
+\Hypertarget{serial__receive_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{serial__receive_8c_ad3dbd5a2ff3dafed0fcdb227d018e091}\index{serial\_receive.c@{serial\_receive.c}!current\_page@{current\_page}}
+\index{current\_page@{current\_page}!serial\_receive.c@{serial\_receive.c}}
+\doxysubsubsection{\texorpdfstring{current\_page}{current\_page}}
+{\footnotesize\ttfamily \label{serial__receive_8c_ad3dbd5a2ff3dafed0fcdb227d018e091} 
+\mbox{\hyperlink{pages_8h_a65c296e040e660e12495c13450d8dc58}{Pages}} current\+\_\+page = \mbox{\hyperlink{pages_8h_a65c296e040e660e12495c13450d8dc58ad6a3d48ea292eaa3be05d8aa02248153}{NO\+\_\+\+PAGE}}}
+
+
+
+Variable to store the current page number. 
+

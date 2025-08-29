@@ -1,0 +1,28 @@
+\doxysection{setup.\+h}
+\hypertarget{setup_8h_source}{}\label{setup_8h_source}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/setup.h@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/include/setup.h}}
+\mbox{\hyperlink{setup_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ This\ header\ file\ is\ part\ of\ the\ AERtronic\ Lite\ project.\ It\ contains\ function\ declarations\ for\ the\ setup\ and\ initialization\ of\ the\ system.}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ SETUP\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ SETUP\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ UART\_PORT\_NUM\ \ \ \ \ \ UART\_NUM\_0\ }\textcolor{comment}{//\ Defines\ UART\_PORT\_NUM\ as\ UART\_NUM\_0\ (a\ constant\ from\ ESP-\/IDF)}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ UART\_BAUD\_RATE\ \ \ \ \ 115200\ }\textcolor{comment}{//\ Defines\ UART\_BAUD\_RATE\ as\ 115200\ (an\ integer\ constant)}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ UART\_TX\_PIN\ \ \ \ \ \ \ \ UART\_PIN\_NO\_CHANGE\ }\textcolor{comment}{//\ Uses\ a\ special\ macro\ from\ ESP-\/IDF\ meaning\ "{}don't\ change\ default\ pin"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ UART\_RX\_PIN\ \ \ \ \ \ \ \ UART\_PIN\_NO\_CHANGE}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ END\_COMMAND\ "{}\(\backslash\)xFF\(\backslash\)xFF\(\backslash\)xFF"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Function\ declarations}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00022\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{setup_8h_a7c8ab9435f095e55019fe880192c3537}{init\_uart}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{setup_8h_aa2c353c6e3271404cdf45ce4601951c7}{init\_nvs}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{setup_8h_abf1f7169537cbd8629caa4345fe28394}{display\_ready}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00053\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{setup_8h_a409b2f4c4106092dafb1db940c5f85d4}{wait\_for\_datetime}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SETUP\_H}}
+
+\end{DoxyCode}

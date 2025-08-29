@@ -1,0 +1,132 @@
+\doxysection{C\+:/\+Users/\+Hammurabi.Sierra/\+Documents/\+GIT/\+AERtronic\+\_\+\+Lite\+\_\+2.0/\+ESP-\/\+IDF/\+Aertronic\+\_\+\+Lite/main/setup.c File Reference}
+\hypertarget{setup_8c}{}\label{setup_8c}\index{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/setup.c@{C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic\_Lite\_2.0/ESP-\/IDF/Aertronic\_Lite/main/setup.c}}
+{\ttfamily \#include "{}setup.\+h"{}}\newline
+{\ttfamily \#include "{}nvs\+\_\+manager.\+h"{}}\newline
+{\ttfamily \#include "{}driver/uart.\+h"{}}\newline
+{\ttfamily \#include "{}esp\+\_\+log.\+h"{}}\newline
+{\ttfamily \#include "{}esp\+\_\+system.\+h"{}}\newline
+{\ttfamily \#include "{}nvs.\+h"{}}\newline
+{\ttfamily \#include "{}nvs\+\_\+flash.\+h"{}}\newline
+{\ttfamily \#include "{}serial\+\_\+send.\+h"{}}\newline
+{\ttfamily \#include "{}system.\+h"{}}\newline
+{\ttfamily \#include "{}time\+\_\+manager.\+h"{}}\newline
+{\ttfamily \#include "{}freertos/\+Free\+RTOS.\+h"{}}\newline
+{\ttfamily \#include "{}freertos/semphr.\+h"{}}\newline
+Include dependency graph for setup.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{setup_8c_a7c8ab9435f095e55019fe880192c3537}{init\+\_\+uart}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the serial communication. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{setup_8c_aa2c353c6e3271404cdf45ce4601951c7}{init\+\_\+nvs}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the NVS (Non-\/\+Volatile Storage). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{setup_8c_abf1f7169537cbd8629caa4345fe28394}{display\+\_\+ready}} (void)
+\begin{DoxyCompactList}\small\item\em Waits for the Nextion display to send the command indicating that it is ready. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{setup_8c_a409b2f4c4106092dafb1db940c5f85d4}{wait\+\_\+for\+\_\+datetime}} (void)
+\begin{DoxyCompactList}\small\item\em Blocks until a valid date/time string is received via UART. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{setup_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{setup_8c_abf1f7169537cbd8629caa4345fe28394}\index{setup.c@{setup.c}!display\_ready@{display\_ready}}
+\index{display\_ready@{display\_ready}!setup.c@{setup.c}}
+\doxysubsubsection{\texorpdfstring{display\_ready()}{display\_ready()}}
+{\footnotesize\ttfamily \label{setup_8c_abf1f7169537cbd8629caa4345fe28394} 
+void display\+\_\+ready (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Waits for the Nextion display to send the command indicating that it is ready. 
+
+This function blocks until the display sends the command\+: 0x88, 0x\+FF, 0x\+FF, 0x\+FF \begin{DoxyNote}{Note}
+This function should be called right after the initialization of the UART and NVS. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 6, 2025. 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{setup_8c_aa2c353c6e3271404cdf45ce4601951c7}\index{setup.c@{setup.c}!init\_nvs@{init\_nvs}}
+\index{init\_nvs@{init\_nvs}!setup.c@{setup.c}}
+\doxysubsubsection{\texorpdfstring{init\_nvs()}{init\_nvs()}}
+{\footnotesize\ttfamily \label{setup_8c_aa2c353c6e3271404cdf45ce4601951c7} 
+void init\+\_\+nvs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the NVS (Non-\/\+Volatile Storage). 
+
+This function initializes the NVS system, allowing for data storage and retrieval. This function does not return any value. \begin{DoxyNote}{Note}
+This function should be called before attempting to read or write any data to NVS. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 6, 2025 
+\end{DoxyDate}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{setup_8c_a7c8ab9435f095e55019fe880192c3537}\index{setup.c@{setup.c}!init\_uart@{init\_uart}}
+\index{init\_uart@{init\_uart}!setup.c@{setup.c}}
+\doxysubsubsection{\texorpdfstring{init\_uart()}{init\_uart()}}
+{\footnotesize\ttfamily \label{setup_8c_a7c8ab9435f095e55019fe880192c3537} 
+void init\+\_\+uart (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the serial communication. 
+
+This function sets up the UART(Universal Asynchronous Receiver-\/\+Transmitter). \begin{DoxyNote}{Note}
+This function should be called before using any serial communication functions. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 5, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{setup_8c_a409b2f4c4106092dafb1db940c5f85d4}\index{setup.c@{setup.c}!wait\_for\_datetime@{wait\_for\_datetime}}
+\index{wait\_for\_datetime@{wait\_for\_datetime}!setup.c@{setup.c}}
+\doxysubsubsection{\texorpdfstring{wait\_for\_datetime()}{wait\_for\_datetime()}}
+{\footnotesize\ttfamily \label{setup_8c_a409b2f4c4106092dafb1db940c5f85d4} 
+void wait\+\_\+for\+\_\+datetime (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Blocks until a valid date/time string is received via UART. 
+
+The expected string format is p00,MM,HH,DD,MM,YYYY followed by three 0x\+FF bytes. \begin{DoxyWarning}{Warning}
+Ensure that the Nextion display is properly configured to send the date and time in the expected format. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+This function should be called before starting any Free\+RTOS tasks. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ernesto Estrada 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 5, 2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
