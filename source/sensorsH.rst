@@ -12,7 +12,7 @@ sensors_init
 Declaration
 ^^^^^^^^^^^
  
-.. literalinclude:: C:\Users\Hammurabi.Sierra\Documents\GIT\AERtronic_Lite_2.0\ESP-IDF\AERtronic_Lite\main\sensors.c
+.. literalinclude:: C:/Users/Hammurabi.Sierra/Documents/GIT/AERtronic_Lite_2.0/ESP-IDF/AERtronic_Lite/main/sensors.c
    :language: c
    :lines: 34-52
 
